@@ -15,9 +15,13 @@ jobs:
         uses: actions/setup-dotnet@v1.6.0
         with:
           dotnet-version: 3.1
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'  
       # publishes Blazor project to the release-folder
       - name: Publish .NET Core Project
         run: dotnet publish BlazorGitHubPagesDemo.csproj -c Release -o release --nologo
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
