@@ -2,8 +2,8 @@
 
 @inject HttpClient Http
 
-<h1>Raidboss List Level 20-40</h1>
-<h5>Information may be up to 10 minutes old</h5>
+<h1>Raidboss List</h1>
+<h5>For Level 20-40 spawn status is given, may be up to 10 minutes old</h5>
 <button @onclick="Reload" class="btn btn-primary" style="margin-bottom:1rem">Reload</button>
 
 @if (rbData == null)
@@ -35,19 +35,21 @@ else
         </thead>
         <tbody>
 
-            @foreach (var dataEntry in rbData)
+            @foreach (var rb in rbData)
             {
                 <tr>
-                    <td>@dataEntry.rb.Title</td>
-                    <td class="text-center">@dataEntry.rb.Level</td>
-                    <td class="@(dataEntry.isAlive ? "table-success" : "table-danger") text-center">@(dataEntry.isAlive ? "Alive" : "Dead")</td>
+                    <td>@rb.Title</td>
+                    <td class="text-center">@rb.Level</td>
+                    <td class="@(rb.Alive == null ? "table-secondary" : (rb.Alive.Value ? "table-success" : "table-danger")) text-center">
+                        @(rb.Alive == null ? "Unknown" : (rb.Alive.Value ? "Alive" : "Dead"))
+                    </td>
                     <td class="text-center">
-                        <a href="@dataEntry.rb.RebornSummaryAddress" target="_blank">
+                        <a href="@rb.RebornSummaryAddress" target="_blank">
                             <span class="oi oi-external-link" aria-hidden="true"></span>&nbsp; Summary
                         </a>
                     </td>
                     <td class="text-center">
-                        <a href="@(@"http://gracia.l2portal.com/Map.aspx?NpcID=" + dataEntry.rb.ID)" target="_blank">
+                        <a href="@(@"http://gracia.l2portal.com/Map.aspx?NpcID=" + rb.ID)" target="_blank">
                             <span class="oi oi-external-link" aria-hidden="true"></span>&nbsp; Location
                         </a>
                     </td>
@@ -59,7 +61,7 @@ else
 
 @code {
     @code {
-        private List<(RaidBoss rb, bool isAlive)> rbData;
+        private List<RaidBoss> rbData;
         private bool loadingError;
 
 
@@ -79,10 +81,15 @@ else
                 Task<List<RaidBossStatus>> rbsTask = DataAccess.FetchRaidbossStatus(Http);
                 await Task.WhenAll(rbTask, rbsTask);
 
-                rbData = rbsTask.Result
-                    .Join(rbTask.Result, r => r.ID, r => r.ID, (s, r) => (r, s.Alive))
-                    .OrderBy(d => d.r.Level).ThenBy(d => d.r.Title)
-                    .ToList();
+                rbData = rbTask.Result.ToList();
+                foreach (RaidBoss rb in rbData)
+                {
+                    RaidBossStatus st = rbsTask.Result.FirstOrDefault(s => s.ID == rb.ID);
+                    if (st != null)
+                    {
+                        rb.Alive = st.Alive;
+                    }
+                }
             }
             catch
             {
