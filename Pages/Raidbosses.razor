@@ -1,0 +1,93 @@
+﻿@page "/raidbosses"
+
+@inject HttpClient Http
+
+<h1>Raidboss List</h1>
+<h5>Information may be up to 10 minutes old</h5>
+<button @onclick="Reload" class="btn btn-primary" style="margin-bottom:1rem">Reload</button>
+
+@if (rbData == null)
+{
+    @if (loadingError)
+    {
+        <div class="alert alert-danger" role="alert">
+            Something went wrong.
+        </div>
+    }
+    else
+    {
+        <div class="spinner-border" role="status" style="margin-left: 1rem">
+            <span class="sr-only">Loading...</span>
+        </div>
+    }
+}
+else
+{
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th class="text-center">Level</th>
+                <th class="text-center">Status</th>
+                <th class="text-center">Summary(L2Reborn)</th>
+                <th class="text-center">Location(L2Portal)</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var dataEntry in rbData)
+            {
+                <tr>
+                    <td>@dataEntry.rb.Title</td>
+                    <td class="text-center">@dataEntry.rb.Level</td>
+                    <td class="@(dataEntry.isAlive ? "table-success" : "table-danger") text-center">@(dataEntry.isAlive ? "Alive" : "Dead")</td>
+                    <td class="text-center">
+                        <a href="@dataEntry.rb.RebornSummaryAddress" target="_blank">
+                            <span class="oi oi-external-link" aria-hidden="true"></span>&nbsp; Summary
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        <a href="@(@"http://gracia.l2portal.com/Map.aspx?NpcID=" + dataEntry.rb.ID)" target="_blank">
+                            <span class="oi oi-external-link" aria-hidden="true"></span>&nbsp; Location
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    @code {
+        private List<(RaidBoss rb, bool isAlive)> rbData;
+        private bool loadingError;
+
+
+        protected override async Task OnInitializedAsync()
+        {
+            await Reload();
+        }
+
+        private async Task Reload()
+        {
+            rbData = null;
+            loadingError = false;
+
+            try
+            {
+                Task<List<RaidBoss>> rbTask = DataAccess.FetchRaidbosses(Http);
+                Task<List<RaidBossStatus>> rbsTask = DataAccess.FetchRaidbossStatus(Http);
+                await Task.WhenAll(rbTask, rbsTask);
+
+                rbData = rbsTask.Result
+                    .Join(rbTask.Result, r => r.ID, r => r.ID, (s, r) => (r, s.Alive))
+                    .OrderBy(d => d.r.Level).ThenBy(d => d.r.Title)
+                    .ToList();
+            }
+            catch
+            {
+                loadingError = true;
+            }
+        }
+    }
+}
