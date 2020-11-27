@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,10 +8,15 @@
     <base href="/reborn-tools/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
+    <link href="Reborn Tools.styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <app>Loading...</app>
+    <div id="app">
+        <div class="spinner-border" role="status" style="margin: 1rem">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.

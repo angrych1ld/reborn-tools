@@ -1,0 +1,1303 @@
+﻿
+<!doctype html>
+<html lang="en-US">
+<head class="no-js">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+	    <!-- This site is running CAOS for Wordpress -->
+<script >
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments);
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', 'https://l2reborn.com/wp-content/cache/caos-analytics/analytics.js', 'ga');
+    </script>
+
+<script >
+        if (document.cookie.indexOf('viewed_cookie_policy=') === -1) {
+        window['ga-disable-UA-55573153-19'] = true;
+    }
+    </script>
+
+<script >
+    ga('create', 'UA-55573153-19', {"cookieName":"caosLocalGa","cookieDomain":"l2reborn.com","cookieExpires":0});
+
+        
+    ga('send', 'pageview');
+
+        
+    </script>
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>NPC Data</title>
+<script type="text/javascript">
+var trackScrolling=false;
+var trackScrollingPercentage=false;
+var ScrollingPercentageNumber=25;
+var stLogInterval=10*1000;
+var cutOffTime=900;
+var trackNoEvents=false;
+var trackNoMaxTime=false;
+var docTitle='NPC Data';
+</script>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Given many people is getting confused by different npc data provided by websites like l2pmfun, l2portal, etc., which correspond to other Lineage 2"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://l2reborn.com/npc-data/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="NPC Data" />
+<meta property="og:description" content="Given many people is getting confused by different npc data provided by websites like l2pmfun, l2portal, etc., which correspond to other Lineage 2" />
+<meta property="og:url" content="https://l2reborn.com/npc-data/" />
+<meta property="og:site_name" content="Lineage II Reborn" />
+<meta property="og:image" content="https://l2reborn.com/wp-content/uploads/2020/03/54125.png" />
+<meta property="og:image:secure_url" content="https://l2reborn.com/wp-content/uploads/2020/03/54125.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Given many people is getting confused by different npc data provided by websites like l2pmfun, l2portal, etc., which correspond to other Lineage 2" />
+<meta name="twitter:title" content="NPC Data" />
+<meta name="twitter:image" content="https://l2reborn.com/wp-content/uploads/2020/03/54125.png" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://l2reborn.com/#organization","name":"L2 Reborn Interlude Server","url":"https://l2reborn.com/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://l2reborn.com/#logo","url":"https://statics.l2reborn.com/wp-content/uploads//2019/07/l2reborn_mail-1.jpg","width":766,"height":125,"caption":"L2 Reborn Interlude Server"},"image":{"@id":"https://l2reborn.com/#logo"}},{"@type":"WebSite","@id":"https://l2reborn.com/#website","url":"https://l2reborn.com/","name":"Lineage II Reborn","description":"The Real Classic L2 Experience","publisher":{"@id":"https://l2reborn.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://l2reborn.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://l2reborn.com/npc-data/#primaryimage","url":"https://l2reborn.com/wp-content/uploads/2020/03/54125.png"},{"@type":"WebPage","@id":"https://l2reborn.com/npc-data/#webpage","url":"https://l2reborn.com/npc-data/","inLanguage":"en-US","name":"NPC Data","isPartOf":{"@id":"https://l2reborn.com/#website"},"primaryImageOfPage":{"@id":"https://l2reborn.com/npc-data/#primaryimage"},"datePublished":"2019-12-20T08:30:08+00:00","dateModified":"2020-05-25T13:24:45+00:00","description":"Given many people is getting confused by different npc data provided by websites like l2pmfun, l2portal, etc., which correspond to other Lineage 2"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//cdn.datatables.net' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Lineage II Reborn &raquo; Feed" href="https://l2reborn.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Lineage II Reborn &raquo; Comments Feed" href="https://l2reborn.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/l2reborn.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.5"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://statics.l2reborn.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='https://statics.l2reborn.com/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=1.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='https://statics.l2reborn.com/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=1.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wpcdt-public-css-css'  href='https://statics.l2reborn.com/wp-content/plugins/countdown-timer-ultimate/assets/css/wpcdt-timecircles.css?ver=1.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='stripe-handler-ng-style-css'  href='https://statics.l2reborn.com/wp-content/plugins/stripe-payments/public/assets/css/public.css?ver=2.0.24' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-helpdesk-css'  href='https://statics.l2reborn.com/wp-content/plugins/wordpress-helpdesk/public/css/wordpress-helpdesk-public.css?ver=1.7.7' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://statics.l2reborn.com/wp-content/plugins/wordpress-helpdesk/public/vendor/font-awesome-4.7.0/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='Luminous-css'  href='https://statics.l2reborn.com/wp-content/plugins/wordpress-helpdesk/public/vendor/luminous-2.2.1/dist/luminous-basic.min.css?ver=2.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='datatables-css'  href='https://statics.l2reborn.com/wp-content/plugins/wordpress-helpdesk/public/vendor/DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css?ver=1.10.18' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-helpdesk-custom-css'  href='https://statics.l2reborn.com/wp-content/plugins/wordpress-helpdesk/public/css/wordpress-helpdesk-custom.css?ver=1.7.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wpforo-widgets-css'  href='https://statics.l2reborn.com/wp-content/plugins/wpforo/wpf-themes/classic/widgets.css?ver=1.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='thesimplest-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700%2C800%7CPT+Serif%3A400%2C400i%2C700%2C700i&#038;ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://statics.l2reborn.com/wp-content/themes/thesimplest/assets/css/bootstrap.min.css?ver=3.3.7' type='text/css' media='all' />
+<link rel='stylesheet' id='thesimplest-style-css'  href='https://statics.l2reborn.com/wp-content/themes/thesimplest/style.css?ver=5.2.5' type='text/css' media='all' />
+<script type='text/javascript' src='https://l2reborn.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://l2reborn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function($){
+            var wpforo_wrap = $('#wpforo-wrap');
+            $(wpforo_wrap).on('click', '.attach_cant_view', function(){
+               wpforo_notice_show(
+                    '<p>Please <a href=\"https://l2reborn.com/community/?wpforo=signin\">Login</a> or <a href=\"https://l2reborn.com/community/?wpforo=signup\">Register</a></p>'
+               );
+            });
+        })
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[]};
+var log_object = {"ajax_url":"https:\/\/l2reborn.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://l2reborn.com/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=1.7.6'></script>
+<link rel='https://api.w.org/' href='https://l2reborn.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://l2reborn.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://l2reborn.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.5" />
+<link rel='shortlink' href='https://l2reborn.com/?p=3096' />
+<link rel="alternate" type="application/json+oembed" href="https://l2reborn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fl2reborn.com%2Fnpc-data%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://l2reborn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fl2reborn.com%2Fnpc-data%2F&#038;format=xml" />
+<link rel="alternate" href="https://l2reborn.com/npc-data/" hreflang="en" />
+<link rel="alternate" href="https://l2reborn.com/es/enciclopedia/" hreflang="es" />
+		<script type="text/javascript">
+			var cli_flush_cache=2;
+		</script>
+			<style id="thesimplest-custom-header-styles" type="text/css">
+    .site-branding .site-title a,
+    .site-description {
+        color: #blank;
+    }
+	</style>
+
+		<style type="text/css" id="header-css">
+		.site-branding {
+			margin: 0 auto 0 0;
+		}
+
+		.site-branding .site-title,
+		.site-description {
+			clip: rect(1px, 1px, 1px, 1px);
+			position: absolute;
+		}
+	</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #0d0d0d; }
+</style>
+			<style type="text/css" id="wp-custom-css">
+			/* Banners Section */
+.banners-section {
+	padding:20px;
+	border:2px ridge #222;
+	columns:200px 3;
+}
+
+.banners-section2 {
+	padding:20px;
+	border:2px ridge #222;
+	columns:200px 3;
+}
+
+.banner-section-h2 {
+	font-size:24px!important;
+	margin:0!important;
+	margin-bottom:10px!important;
+	margin-top:10px !important;
+	font-weight:normal;
+}
+
+.mp4-banner-page {
+text-align:center;
+columns:2;
+}
+
+.mp4-banner-page1 {
+	border:2px ridge #222;
+	padding:20px;
+}
+
+/* End */
+
+
+/* Images */
+
+.wp-image-6233 {
+	margin-top:20px;
+}
+
+.wp-image-6203 {
+	margin-top:-100px;
+}
+
+.wp-image-5490 {
+ margin-top:-25px;	
+}
+
+.wp-image-5567 {
+	margin-top:-40px;
+}
+
+.wp-image-5573 {
+	margin-top:-40px;
+}
+
+.wp-image-5465 {
+	margin-top:-15px;
+}
+
+.wp-image-5478 {
+	margin-bottom:-10px;
+}
+
+.wp-image-2343 {
+	margin-top:-70px;
+}
+
+.custom-logo {
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+.wp-image-2602 {
+	
+	margin-bottom:-50px;
+}
+
+.wp-image-1003 {
+	padding-bottom:0px;
+	margin-top:-15px;
+}
+
+.wp-image-992 {
+	margin-top:-20px;
+}
+
+.wp-image-942 {
+	margin-top:-30px;
+}
+
+.wp-image-1366 {
+	margin-bottom:0px;
+}
+
+.wp-image-981 {
+	margin-top:-15px;
+	
+}
+
+.wp-image-994 {
+	margin-top:-15px;
+	padding-bottom:0px;
+}
+
+.wp-image-4718 {
+	margin-top:-20px;
+}
+
+
+/* END */
+
+/* Support Center */
+
+.wordpress-helpdesk-faq-boxed {
+	margin:0px auto;
+	height:200px;
+	width:40%;
+	border:0;
+}
+
+.wordpress-helpdesk-faq-boxed-title {
+	text-align:center;
+}
+
+.wordpress-helpdesk-faq-boxed-count {
+	visibility:hidden;
+}
+
+hr {
+	visibility:hidden;
+}
+
+/* END */
+
+
+.budget {
+    height: 15px;
+    border-radius: 1em;
+    margin:5px;
+    background: 
+      linear-gradient(-45deg,
+        rgba(255, 255, 255, 0.15) 25%,transparent 25%, 
+        transparent 50%, rgba(255, 255, 255, 0.15) 50%, 
+        rgba(255, 255, 255, 0.15) 75%,transparent 75%) 
+      left/30px 30px repeat-x,
+      linear-gradient(to right, red 0%, yellow 50%, green 100%) left/var(--p,100%) fixed,
+      lightgray;
+  box-shadow:inset 0px -2px 5px rgba(0, 0, 0, 0.5);
+  animation: bchange 1s linear infinite;
+}
+@keyframes bchange {
+  from {background-position:0 0,left}
+  to {background-position:30px 0,left}
+}
+
+.status-server {
+	display:table; margin-right: auto; margin-left: auto;
+}
+
+#custom_html-8 {
+	margin-bottom: 0;
+}
+
+.buttonvote {
+	background-color:green !important;
+}
+
+p {
+	font-size:14px;
+}
+.server-status {
+	text-align: center;
+}
+
+.quests-left {
+		width:65%;
+		float:left;
+		height: 100%;
+}
+
+.quests-right {
+		width:35%;
+		float:left;
+    align-items: center;
+    justify-content: left;
+	  height: 100%;
+}
+
+table {
+	border-collapse:collapse !important;
+}
+
+h4 {
+	font-size:14px !important;
+}
+
+/* VIP Section */
+.asp_product_custom_field_label {
+
+	color:#b6b6b6;
+}
+
+.asp_product_description {
+	border:0 !important;
+}
+
+
+.asp_product_description p {
+	color:#fff;
+}
+
+.asp_price_amount {
+	color:#4bb069;
+}
+
+.asp_product_name {
+	color:#fff9;
+	font-weight:normal !important;
+}
+
+input {
+	margin:15px 0px 15px 0px;
+}
+
+span {
+	color:#c8c8c8;
+}
+
+p {
+	color:#c8c8c8;
+}
+
+.asp_product_buy_btn.blue
+{
+	width:110px;
+	background:none !important;
+	background-color:#247ab9 !important;
+	box-shadow:none !important;
+}
+
+
+.asp_product_item {
+	
+	background-color:#2229;
+	border:2px solid #3338 !important;
+	margin-bottom:50px !important;
+}
+
+/* END */
+
+
+/* table */
+
+table,td,tr,th {
+	border-color:#555;
+}
+
+td {
+	background-color:#111;
+}
+
+/* END */
+
+
+.content-area.row {
+	margin-top:-25px;
+}
+
+.primary-menu {
+	border-bottom:1px solid #fff1!important;
+	text-align:center;
+	background-color:#2221;
+	margin:0 auto !important;
+	margin-bottom:-31px!important;
+	margin-top:17px!important;
+}
+
+a {
+	color: #528fb4;
+}
+a:hover, .main-navigation a:hover {
+	color: white !important;
+}
+
+.type-page h1.entry-title {
+	font-size:1px;
+	visibility:hidden;
+}
+h2.entry-title a{
+	color: #fff9;
+}
+.cat-tags-links {
+	display: none !important;
+}
+
+body {
+	font-family:Ubuntu,sans-serif;
+	color:#fff9;
+}
+.site-header, .site, .site-footer {
+	background:#0c0c0c;
+}
+.site-title {
+	margin: 0;
+}
+.site-title img {
+	width:300px;
+	height:50px;
+}
+.site-header {
+	border-bottom: 0;
+	padding: 0;
+	background:#0d0d0d;
+}
+.main-navigation a {
+	color: white;
+	font-size: 14px;
+	font-family: avenir-lt-w01_35-light1475496,sans-serif;
+}
+.site-description {
+	font-style:italic;
+}
+.custom-background-image  {
+	padding-top: 0;
+}
+
+.site-footer {
+	font-weight: normal;
+	font-family: avenir-lt-w01_35-light1475496,sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	background: -webkit-linear-gradient(rgba(225, 199, 156, 0.779), rgb(90, 76, 52));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+		color:#528fb4;
+	  text-align: left;
+}
+#footer-sidebar {
+display:block;
+height: 230px;
+}
+
+#footer-sidebar1 {
+float: left;
+width: 31%;
+margin-left:5px;
+margin-right:5px;
+}
+
+#footer-sidebar2 {
+float: left;
+width: 32%;
+margin-right:5px;
+}
+
+#footer-sidebar3 {
+float: left;
+width: 32%;
+}
+.widget_polylang {
+	margin:0;
+	border: 0;
+}
+body.wpforo main {
+	width: 90%;
+	margin-left: 5%;
+}
+
+/* mobile */
+
+.menu-toggle {
+	margin: 0px auto 0px auto;
+}
+.menu-wrapper {
+    margin: 0 0 5px 0;
+}
+@media screen and (max-width: 910px) {
+	#siege-title {
+		font-size: 32px !important;
+	}
+	#siege-count {
+		width: 100% !important;
+	}
+	.site-branding {
+		margin: 0;
+	}
+	.custom-logo-link {
+		margin: 0;
+	}
+	.site-header {
+		margin-bottom: 1em;
+	}
+	body.wpforo main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+	}
+	footer .site-info {
+		clear:both;
+	}
+
+	#menu-toggle {
+		float: left;
+    margin-left: 25px;
+		margin-top: -80px;
+		background: 000;
+		color: white;
+	}
+		#menu-toggle.toggled-on {
+		margin-top: -80px !important;
+	}
+	.menu-toggle:after {
+		padding-left: 0;
+	}
+	.site-title {
+		margin-left: 48px;
+	}
+	.size-medium {
+		  max-width: 150px;
+	}
+	.all-in-one {
+		clear: both;
+	}
+	strong.rates {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.rates-icons {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.quests-left {
+		float:none;
+		width: 100%;
+		text-align: center;
+		padding-left: 56px
+	}
+	.quests-left p {
+		min-height: 50px;
+	}
+	.quests-left img {
+		position: absolute;
+		left: 0;
+	}
+	.quests-right {
+		margin-top: 20px;
+		width:100%;
+		float:none;
+		height: 100%;
+	}
+	.starting-quests {
+		min-width: 640px;
+	}
+	html {
+		background: #0c0c0c;
+	}
+}
+	#anniversary h2 {
+		font-size: 30px;
+	}
+	#anniversary h3{
+		font-size: 18px ;
+	}
+	#anniversary h3.link{
+		font-size: 16px ;
+	}
+	#anniversary h2.sub {
+		font-size: 20px ;
+	}
+@media (min-width: 768px) {
+		#anniversary h2 {
+		font-size: 42px ;
+	}
+	#anniversary h2.sub {
+		font-size: 29px;
+	}
+	#anniversary h3.link{
+		font-size: 24px ;
+	}
+	#anniversary h3 {
+		font-size: 24px ;
+	}
+	.container {
+			width: auto;
+	}
+
+	.home .footer-twitch {
+		position: fixed;
+    bottom: 0;
+    left: 0;
+		width: 100%;
+		height: 200px;
+	}
+}
+
+
+.main-navigation ul ul li {
+	background: #0c0c0c;	
+	border-color:#333;
+}
+.dropdown-toggle {
+	color: white;
+}
+/*
+h3 {
+	white-space:nowrap;
+}*/
+
+.wpf-forgot-pass {
+    font-size: 20px !important;
+}
+/** HELP DESK **/
+.wordpress-helpdesk-Simple {
+        margin-top: 20px;
+        color: white;
+}
+.wordpress-helpdesk-my-tickets-table .sorting_1 {
+	background-color: #222 !important;
+}
+.wordpress-helpdesk-my-tickets-table td {
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* FIREFOX BUG FIX !*/
+@supports (-moz-appearance:none) {
+	.wpforo-feed {
+		float: none !important;
+	}
+}		</style>
+			<!-- Global site tag (gtag.js) - Google Ads: 938742576 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-938742576"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-938742576');
+</script>
+        <!-- Event snippet for L2 Reborn conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+!function(e,t){"use strict";jQuery.localStorage={get:function(t){if(null===e.localStorage){var o=document.cookie.match("(^|[^;]+)\\s*"+a+"\\s*=\\s*([^;]+)");return o?o.pop():""}if(localStorage.getItem(t+"_expiry")>(new Date).getTime())return localStorage.getItem(t)},set:function(t,o,a){if(null!==e.localStorage)localStorage.setItem(t,o),localStorage.setItem(t+"_expiry",(new Date).getTime()+a);else{var l=new Date;l.setTime(l.getTime()+a),document.cookie=t+"="+o+"; expires="+l.toGMTString()}}}}(window);
+
+function showFeaturedStreamer()
+{
+	if (!jQuery('#featured-streamer').length) return;
+    var embed = new Twitch.Embed("featured-streamer", {
+		width: '100%',
+		height: '100%',
+		channel: "frostyfrozenn", layout: "video"
+	});
+}
+
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-938742576/LdWqCPv-iqcBELCm0L8D',
+      'event_callback': callback
+  });
+        ga("send", "event", { eventCategory: "Registration", eventAction: "Submit", eventLabel: "Registration Page", eventValue: 50});
+  return false;
+}
+function registration()
+        {
+                jQuery( "#wpfreg_user_login" ).keypress(function(event) {
+                        console.log(event.key);
+                        var letters = /^[0-9a-z]/gi;
+                        if (!(event.key).match(letters)) { alert("Only alphanumeric characters are allowed in the username"); return false; }
+                        if (jQuery( "#wpfreg_user_login" ).val().length > 12) { alert("Maximum allowed length is 12."); return false; }
+                });
+                jQuery( "#wpfreg_user_email" ).keypress(function(event) {
+                        console.log(event.key);
+                        if (event.key == "+") { alert("Emails like test+1@gmail.com are not allowed"); return false; }
+                });
+                jQuery('input[name="wpfororeg"]').click(function() { 
+                        console.log("User registration!");
+                        gtag_report_conversion();
+						fbq('track', 'CompleteRegistration', {
+							value: 1, currency: 'EUR'
+						});
+                });
+        }
+document.addEventListener('DOMContentLoaded', registration, false);
+	
+function donations() {
+    if (!jQuery('#change_account_account_name').length) return;
+
+    // Second class change
+    jQuery('#2nd_char_name').change(function() {
+        var charName = this.value;
+        var classId = jQuery(this).parents(".asp_product_item:first").find("select").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + classId);
+    });
+
+    jQuery('#2nd_class').change(function() {
+        var classId  = this.value;
+        var charName = jQuery(this).parents(".asp_product_item:first").find("input").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + classId);
+    });
+
+    jQuery('#2nd_char_name').parents(".asp_product_item:first").find("button").mousedown(function(e) {
+        if (!jQuery('#2nd_char_name').val() || jQuery('#2nd_class').val() <= 0) { alert("Please fill in all the details");
+            jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val("");
+            jQuery('#2nd_char_name').focus();
+            return false;
+        }
+    });
+    jQuery('#2nd_char_name').parents(".asp_product_item:first").find(".asp_product_custom_field_input_container").hide();
+
+	   // first class change
+    jQuery('#1st_char_name').change(function() {
+        var charName = this.value;
+        var classId = jQuery(this).parents(".asp_product_item:first").find("select").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + classId);
+    });
+
+    jQuery('#1st_class').change(function() {
+        var classId  = this.value;
+        var charName = jQuery(this).parents(".asp_product_item:first").find("input").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + classId);
+    });
+
+    jQuery('#1st_char_name').parents(".asp_product_item:first").find("button").mousedown(function(e) {
+        if (!jQuery('#1st_char_name').val() || jQuery('#1st_class').val() <= 0) { alert("Please fill in all the details");
+            jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val("");
+            jQuery('#1st_char_name').focus();
+            return false;
+        }
+    });
+    jQuery('#1st_char_name').parents(".asp_product_item:first").find(".asp_product_custom_field_input_container").hide();
+
+	
+    // Cosmetic
+    jQuery('#cosmetic_char_name').change(function() {
+        var charName = this.value;
+        var classId = jQuery(this).parents(".asp_product_item:first").find("select").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + classId);
+    });
+
+    jQuery('#cosmetic_item').change(function() {
+        var classId  = this.value;
+        var charName = jQuery(this).parents(".asp_product_item:first").find("input").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + classId);
+    });
+
+    jQuery('#cosmetic_char_name').parents(".asp_product_item:first").find("button").mousedown(function(e) {
+        if (!jQuery('#cosmetic_char_name').val() || jQuery('#cosmetic_item').val() <= 0) { alert("Please fill in all the details");
+            jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val("");
+            jQuery('#cosmetic_char_name').focus();
+            return false;
+        }
+    });
+    jQuery('#cosmetic_char_name').parents(".asp_product_item:first").find(".asp_product_custom_field_input_container").hide();
+
+// Set title
+    jQuery('#title_char_name').change(function() {
+        var charName = this.value;
+        var newName = jQuery(this).parents(".asp_product_item:first").find("#title_title").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + newName);
+    });
+
+    jQuery('#title_title').change(function() {
+        var newName  = this.value;
+        var charName = jQuery(this).parents(".asp_product_item:first").find("input").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + newName);
+    });
+
+    jQuery('#title_char_name').parents(".asp_product_item:first").find("button").mousedown(function(e) {
+        if (!jQuery('#title_char_name').val() || !jQuery('#title_title').val()) { alert("Please fill in all the details");
+            jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val("");
+            jQuery('#title_char_name').focus();
+            return false;
+        }
+    });
+    jQuery('#title_char_name').parents(".asp_product_item:first").find(".asp_product_custom_field_input_container").hide();
+	
+    // Rename
+    jQuery('#change_name_current').change(function() {
+        var charName = this.value;
+        var newName = jQuery(this).parents(".asp_product_item:first").find("#change_name_new").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + newName);
+    });
+
+    jQuery('#change_name_new').change(function() {
+        var newName  = this.value;
+        var charName = jQuery(this).parents(".asp_product_item:first").find("input").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + newName);
+    });
+
+    jQuery('#change_name_current').parents(".asp_product_item:first").find("button").mousedown(function(e) {
+        if (!jQuery('#change_name_current').val() || !jQuery('#change_name_new').val()) { alert("Please fill in all the details");
+            jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val("");
+            jQuery('#change_name_current').focus();
+            return false;
+        }
+    });
+    jQuery('#change_name_current').parents(".asp_product_item:first").find(".asp_product_custom_field_input_container").hide();
+
+
+    // Change gender
+    jQuery('#change_gender_name').change(function() {
+        var charName = this.value;
+        var gender = jQuery(this).parents(".asp_product_item:first").find("select").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + gender);
+    });
+
+    jQuery('#change_gender_sex').change(function() {
+        var gender  = this.value;
+        var charName = jQuery(this).parents(".asp_product_item:first").find("input").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(charName + '|' + gender);
+    });
+
+    jQuery('#change_gender_name').parents(".asp_product_item:first").find("button").mousedown(function(e) {
+        if (!jQuery('#change_gender_name').val() || jQuery('#change_gender_sex').val() <= 0) { alert("Please fill in all the details");
+            jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val("");
+            jQuery('#change_gender_name').focus();
+            return false;
+        }
+    });
+    jQuery('#change_gender_name').parents(".asp_product_item:first").find(".asp_product_custom_field_input_container").hide();
+
+    // Move Character
+    jQuery('#change_account_account_name').change(function() {
+        var accountName = this.value;
+        var charName = jQuery(this).parents(".asp_product_item:first").find("#change_account_char_name").val();
+        var newAccount = jQuery(this).parents(".asp_product_item:first").find("#change_account_new_account").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(accountName + '|' + charName + '|' + newAccount);
+    });
+
+    jQuery('#change_account_char_name').change(function() {
+        var charName  = this.value;
+        var accountName = jQuery(this).parents(".asp_product_item:first").find("input").val();
+        var newAccount = jQuery(this).parents(".asp_product_item:first").find("#change_account_new_account").val();
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(accountName + '|' + charName + '|' + newAccount);
+    });
+
+    jQuery('#change_account_new_account').change(function() {
+        var accountName = jQuery(this).parents(".asp_product_item:first").find("#change_account_account_name").val();
+        var charName = jQuery(this).parents(".asp_product_item:first").find("#change_account_char_name").val();
+        var newAccount  = this.value;
+        jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(accountName + '|' + charName + '|' + newAccount);
+    });
+
+    jQuery('#change_account_account_name').parents(".asp_product_item:first").find("button").mousedown(function(e) {
+        if (!jQuery('#change_account_account_name').val() || !jQuery('#change_account_char_name').val() || !jQuery('#change_account_new_account').val()) { alert("Please fill in all the details");
+            jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val("");
+            jQuery('#change_account_account_name').focus();
+            return false;
+        }
+    });
+    jQuery('#change_account_account_name').parents(".asp_product_item:first").find(".asp_product_custom_field_input_container").hide();
+	
+	// Change leader Clan
+	jQuery('#current_owner').change(function() {
+	var leader = this.value;
+	var clan = jQuery(this).parents(".asp_product_item:first").find("#clan_name").val();
+	var newLeader = jQuery(this).parents(".asp_product_item:first").find("#new_leader").val();
+	jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(newLeader + '|' + clan + '|' + leader);
+	});
+
+	jQuery('#clan_name').change(function() {
+	var leader = jQuery(this).parents(".asp_product_item:first").find("#current_owner").val();
+	var clan = this.value;
+	var newLeader = jQuery(this).parents(".asp_product_item:first").find("#new_leader").val();
+	jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(newLeader + '|' + clan + '|' + leader);
+	});
+
+	jQuery('#new_leader').change(function() {
+	var leader = jQuery(this).parents(".asp_product_item:first").find("#current_owner").val();
+	var clan = jQuery(this).parents(".asp_product_item:first").find("#clan_name").val();
+	var newLeader = this.value;
+	jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(newLeader + '|' + clan + '|' + leader);
+	});
+
+	jQuery('#current_owner').parents(".asp_product_item:first").find("button").mousedown(function(e) {
+	if (!jQuery('#current_owner').val() || !jQuery('#clan_name').val() || !jQuery('#new_leader').val()) { alert("Please fill in all the details");
+	jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val("");
+	jQuery('#current_owner').focus();
+	return false;
+	}
+	});
+	jQuery('#current_owner').parents(".asp_product_item:first").find(".asp_product_custom_field_input_container").hide();
+	
+	// Rename Clan
+	jQuery('#rename_clan_owner').change(function() {
+	var leader = this.value;
+	var clan = jQuery(this).parents(".asp_product_item:first").find("#rename_clan_name").val();
+	var newName = jQuery(this).parents(".asp_product_item:first").find("#rename_new_name").val();
+	jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(leader + '|' + clan + '|' + newName);
+	});
+
+	jQuery('#rename_clan_name').change(function() {
+	var leader = jQuery(this).parents(".asp_product_item:first").find("#rename_clan_owner").val();
+	var clan = this.value;
+	var newName = jQuery(this).parents(".asp_product_item:first").find("#rename_new_name").val();
+	jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(leader + '|' + clan + '|' + newName);
+	});
+
+	jQuery('#rename_new_name').change(function() {
+	var leader = jQuery(this).parents(".asp_product_item:first").find("#rename_clan_owner").val();
+	var clan = jQuery(this).parents(".asp_product_item:first").find("#rename_clan_name").val();
+	var newName = this.value;
+	jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val(leader + '|' + clan + '|' + newName);
+	});
+
+	jQuery('#rename_clan_owner').parents(".asp_product_item:first").find("button").mousedown(function(e) {
+	if (!jQuery('#rename_clan_owner').val() || !jQuery('#rename_clan_name').val() || !jQuery('#rename_new_name').val()) { alert("Please fill in all the details");
+	jQuery(this).parents(".asp_product_item:first").find("form .asp_product_custom_field_input").val("");
+	jQuery('#rename_clan_owner').focus();
+	return false;
+	}
+	});
+	jQuery('#rename_clan_owner').parents(".asp_product_item:first").find(".asp_product_custom_field_input_container").hide();
+}
+
+document.addEventListener('DOMContentLoaded', donations, false);
+	
+	
+function shows(streamer, width, height, id, volumeEnabled) {
+	var embed = new Twitch.Embed(id, {
+		width: width,
+		height: height,
+		channel: streamer, layout: "video"
+	});
+	embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+		var player = embed.getPlayer();
+		if (volumeEnabled) {
+			player.setVolume(0.05);
+		} else {
+			player.setVolume(0);
+			player.setMuted(true);
+		}
+	});
+}
+/**
+ * Shuffles array in place. ES6 version
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+function stream() {
+	setTimeout(
+	showFeaturedStreamer(), 2000);
+		    if (!jQuery('#twitch-embed').length) return;
+			if ((isMobileDevice() && document.title.indexOf("Stream") == -1) ||  document.title.indexOf("Contrib") >= 0 || document.title.indexOf("Donac") >= 0 || document.title.indexOf("Donat") >= 0 || document.title.indexOf("Checkout") >= 0 || document.location.href.indexOf("/bugs/") > 0 || document.location.href.indexOf("/play-now/") > 0) return; // Disable showing streamers for certain pages
+	  var isMainPage = jQuery('#twitch-embed').hasClass("main-twitch") ? true : false;
+	  var height = isMainPage ? 198 : 200;
+	  var width = isMainPage ? 310 : 350;
+	  var allowedTitles = "lineage|l2reborn|l2 reborn|reborn";
+	  var volumeEnabled = false;
+	  //var current = jQuery.localStorage.get("streamers") ? JSON.parse(jQuery.localStorage.get("streamers")) : null;
+	  var current = {"on":["papaipombo","rastangameplay","mansiberiyan","justforfans","tiilenol","therealstream","gamersevangelion","lineage2naveia"],"off":["BananoviyKeks","potsandshots","ib3nny","drklrd","xame_one","Chelleasaurus","firelob","troyauy","lord_droopy","ixquei","romariu7","kazateil","criminal178","sagirix1","wfbr_iluminado","jouhell","kimkou11","signothegamer","xsimpletime","7tatus","fake_ludwig","chacu","Chillxxez","xaviola123","polarknighty","toruscarlett","o0thefallenone0o","F3rn4ndoS","fribaron","JonnyHexx","emmanou13","sodastreamlol","erikburnns","absynttt","papa_teresa","diogofos","m09i","limonzer","flpgamer45","nfearcz","Nemps_","tangier69","expatstreamer","beltrano_tv","askimtv","naripvp","Delsedora","manojaogame","virac_l2","coollamer","K_Y_O_S_H_I","asharante","andrebianconi","thespellsinger","zelkebr","yummydain","Chandoncin","natao6","Th4nosxgr","hpzolee","asuraninside","beonybr","lenhaverdee","peeinggoat","opytha","tobisness","lordfarps_twt","callmease","jadefirelol","dhacodri","shilohl2","juanriver75","fincherplay","nebo15112","ryuugu_rena","spongebobtv","matheussna","poplavok_","okit4","aiglegivre34","ElCerus","maxxel96","neqr88","xsuly","locu92","pcdeco","nashwell","xhydram","rankelmustafa","siris91","vfrozenn","adsumus13","fribaron2","sma1712","fhow_uknow","renancalixto","l2rebornx1","m3gazord","hypertechlol","SaintFanatic00","PtacAttack","fujirin","guicorrea","kaozkill","thenilv","truegameclub","Iw4nn","moghnir","knthjsprv","l2arken","SheronFlames","SephirothPeQe","demylich","eDuck94","fVOLKERZ","saturOz89","esunavion","rafaelllmeira","frankcastle0001","iradelll","ricomelo","artem_sergeevi4","alekskerux","deadmousefiv","iblack_bird","MMORevisited","w1ndhun7er","gandallph","broodl2","imBB_","seugod","kainsc","Igmut","corkex","dragos2106","rixstv","xazraelxtv","papaibarbagamer","1ata2","bornbabyborn","jennss","shounqq","gmembaron","l2traumatic","lit4iff","biragordao","mikinhupk","ClawSo1","GreninjaAsh_","alquimistanerd","kwcptr_","insolenceq","frostyfrozenn","serejqeeetv","norekien","asjack","tr9y","tayz3ra","tv_chrupek","florgiubilei","shummike","jejupan","0mn1H","polemicol2","ritzygnd","igodfather","wtnmf","hakiisoun","dorfohm","yazalaque","nockegaming","airbalax","Lightman_c","iwaness","ErMahoney","mrnofreddy","zomgpwn","ryckab","jaycutlerin","topgunz_","buttonsmashersgaming","ivaals","maarleyl","frosteratv","dsgamesinfo","vp000","Mrazota_TV","huggat","bladleaf","corujito","lokasgg","playfreegame","l3l3fps","buenomrl","novisckitv","noahtyryl","vanesstv","xlimacr","t34slayer","B3nny_krk","synthronice","Disaster1312","ultrascp","glodoom","Aranadar","nestabilnyj","luckzwcg","sauronak","abbadon_channel","beardtopia","l2_oki","ticklerofdragons","JayCutler","msh0ly","martoo87","southcrimen","testsqwen","renegadosl2","bokutoh","kelrok","korvan1","grin_sane","wiperlineage","ermahoney","m3g4bl4st3r","beastwc","skyrenofficial","ninjesuspg","poplavoknew","stiflerboy","Raints","amdurlive","semfisgaming","ardagonzin","Cleberserk","mrgoodymarley","memphishood","dwarf_anao","semreligiao","wercelemrj","danimetalhc","lud0v1k","Luuar","nervinplay","brunodejesus","chillxxez","blackcrame","meshuggacze","anotherwats","ikaradin","safiroyd","hellfireuzu","pornokio","ifatg","alexanderbairaktaris","pytles","pcruzf","savagel2reborn","itsaxel1","sliumpis","aactoo","TayromHenry","himexil","toro22death","meehai","Nithial91","daemondas","dwarfat","brxtsunami","adv3d","oriphix","baruckeeu","wagnerjr_yakuzamt","welanl2","revantzeisor","martiintin","midnightinadrogue","LTomKap","zoppeth","EEirial","elpyslayer_","ajeelo","Myszakel","zenithteam","revantxasia","Kaines","Kator2k20","kyqum","duartelineage2","ferHALK","sorryl2"]};
+	  if (current) {
+		  shuffle(current['on']);
+		  for (var i in current['on']) {
+			if (((isMobileDevice() && i > 1) || i > 3) && !isMainPage) break; // Do not show too many
+			shows(current['on'][i], width, height, "twitch-embed", i == 0 ? true : false);
+		  }
+		  if (isMainPage) {
+			  for (var i in current['off']) {
+				shows(current['off'][i], width, height, "twitch-embed-offline", false);
+				  if (i > 19) { break} // Avoid collapsing website
+			  }
+		  }
+	  } else {
+		  current = {"on": [], "off": []};
+		  shuffle(streamers);
+		  for (var i in streamers) {
+			  
+			  (function(streamer, pos) {
+				  setTimeout(function(){ 
+			  var XML = new XMLHttpRequest();
+            	XML.open("GET", "https://api.twitch.tv/helix/streams/?user_login=" + streamer);
+            	XML.setRequestHeader('Client-ID', 'n1hpf5enfokfyiajupf5zfs0g7mnu9');
+            	XML.send();
+        	    XML.onload = function () {
+				  var resp = JSON.parse(XML.response);
+				  var isOnline = resp['data'].length;
+				  var isStreamingL2 = isOnline && new RegExp(allowedTitles).test(resp['data'][0].title.toLowerCase());
+				  if (isOnline && isStreamingL2) {
+					current['on'].push(streamer);
+					jQuery.localStorage.set("streamers", JSON.stringify(current), (300*1000));
+					 shows(streamer, width, height, "twitch-embed", false);
+				  }  else if (!isOnline) { 
+					  current['off'].push(streamer);
+					  jQuery.localStorage.set("streamers", JSON.stringify(current), (300*1000));
+					  if (isMainPage) {
+						shows(streamer, width, height, "twitch-embed-offline", false);
+					  } 
+				}
+            	}
+			}, pos == 0 ? 1 : 600 * pos);
+		  })(streamers[i], i);			   
+		
+			  
+	  	}
+      }
+}
+document.addEventListener('DOMContentLoaded', stream, false);
+	
+function getParameterByName(name) {
+    var url = new URL(document.location.href);
+    var c = url.searchParams.get(name);
+	return c;
+}
+// Give the URL parameters variable names
+var source = getParameterByName('utm_source');
+if (source) {
+	 jQuery.localStorage.set("user_source", source, (7*24*60*60*1000));
+}
+document.addEventListener('DOMContentLoaded', function () { 
+	if (jQuery('#wpfreg_user_source').length && (jQuery.localStorage.get("user_source") ||getParameterByName('utm_source'))) {
+	    jQuery('#wpfreg_user_source').val(jQuery.localStorage.get("user_source") ? jQuery.localStorage.get("user_source") : getParameterByName('utm_source'));
+	}
+}, false);
+
+</script>
+<!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '712946296180240');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=712946296180240&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script>
+	jQuery('.buttonvote').click(function() { fbq('trackCustom', 'VoteInTop', {}); });
+	jQuery('input[name="wpforologin"]').click(function() { fbq('trackCustom', 'LogIn', {}); });
+</script>
+</head>
+<body class="page-template-default page page-id-3096 custom-background wp-custom-logo wpf-dark">
+	
+	<div class="banner" style="float: left;width: 100%;text-align: center;position: fixed;background: black;font-family: Ubuntu;z-index: 9999;color:#528fb4;top:0">
+		Need Help? <a style="font-weight:bold" target="_blank" href="https://l2reborn.com/invite/discord"> Join Discord</a>, <a href="https://l2reborn.com/community/?wpforo=lostpassword">Forgot Password?</a>
+	</div>
+	<div class="status-server" style="margin-top:24px">
+	<font color="#ddd">Auth is <font color="#1AFF00">Online</font> - L2Server is <font color="#1AFF00">Online</font></font>	
+		
+	</div>
+    <div class="search-popup">
+        <span class="search-popup-close"><i class="fa fa-times"></i></span>
+        
+<form action="https://l2reborn.com/" method="get" role="search" id="searchform_topbar" class="search-top-bar-popup search-form">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field-top-bar" id="search-field-top-bar" placeholder="Search &hellip;" value="" name="s" />
+	</label>
+	<button type="submit" class="search-submit search-top-bar-submit" id="search-top-bar-submit">
+        <span class="fa fa-search header-search-icon"></span>
+        <span class="screen-reader-text">
+            Search        </span>
+    </button>
+</form>
+    </div><!-- .search-popup -->
+
+<div id="page" class="site">
+    <div class="site-inner">
+        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+        <header id="masthead" class="site-header" role="banner">
+
+        
+        <div class="site-header-main">
+            <div class="site-branding">
+                <a href="https://l2reborn.com/" class="custom-logo-link" rel="home"><img width="128" height="148" src="https://statics.l2reborn.com/wp-content/uploads//2020/03/4214.png" class="custom-logo" alt="Lineage II Reborn" /></a>                    <p class="site-title">
+                        <a href="https://l2reborn.com/" rel="home" title="Lineage II Reborn"><img src="//statics.l2reborn.com//wp-content/uploads/2019/10/logo2transparency.png"/>
+                        </a>
+                    </p>
+                                    <p class="site-description">The Real Classic L2 Experience</p>
+                
+            </div><!-- .site-branding -->
+
+                        <div class="menu-wrapper">
+                <button id="menu-toggle" class="menu-toggle toggled-on" aria-expanded="true" aria-controls="site-navigation social-navigation"></button>
+                <div id="site-header-menu" class="site-header-menu clearfix">
+
+                        <nav id="site-navigation" class="main-navigation container" role="navigation" aria-label="Primary Menu">
+				            <div class="menu-main-container"><ul id="menu-main" class="primary-menu"><li id="menu-item-720" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-720"><a href="https://l2reborn.com">Home</a></li>
+<li id="menu-item-633" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-633"><a href="https://l2reborn.com/info-rules/">Rules &#038; Info</a>
+<ul class="sub-menu">
+	<li id="menu-item-3413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3413"><a href="https://l2reborn.com/stats/">Stats</a></li>
+	<li id="menu-item-3126" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3096 current_page_item menu-item-3126"><a href="https://l2reborn.com/npc-data/" aria-current="page">NPC Data</a></li>
+	<li id="menu-item-3163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3163"><a href="https://l2reborn.com/live-streaming/">Live Streaming</a></li>
+	<li id="menu-item-14500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14500"><a href="https://l2reborn.com/recommendation-system/">Referral System</a></li>
+	<li id="menu-item-6337" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6337"><a href="https://l2reborn.com/category/events/">Events</a></li>
+	<li id="menu-item-7489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7489"><a href="https://l2reborn.com/item-search/">Database Search</a></li>
+	<li id="menu-item-15027" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15027"><a href="https://l2reborn.com/raidbosses-map/">Raid Bosses Map</a></li>
+</ul>
+</li>
+<li id="menu-item-15828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15828"><a href="https://l2reborn.com/play-now/">Play Now</a></li>
+<li id="menu-item-614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-614"><a href="https://l2reborn.com/farming-guide/">Quests</a></li>
+<li id="menu-item-359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-359"><a href="https://l2reborn.com/donations/">Contribute</a></li>
+<li id="menu-item-427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-427"><a href="https://l2reborn.com/reward/">Free Vip</a></li>
+<li id="menu-item-557" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-557"><a href="/community/">Forum</a></li>
+<li id="menu-item-310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-310"><a href="https://l2reborn.com/community/?wpforo=signup">Register</a></li>
+<li id="menu-item-488" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-488"><a href="https://l2reborn.com/community/?wpforo=signin">Login</a></li>
+<li id="menu-item-5034" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5034"><a href="https://l2reborn.com/support/">Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-15198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15198"><a href="https://l2reborn.com/unstuck-character/">Unstuck Character</a></li>
+	<li id="menu-item-6114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6114"><a href="https://l2reborn.com/my-support-tickets/">My Tickets</a></li>
+</ul>
+</li>
+</ul></div>                        </nav><!-- .main-navigation -->
+                </div><!-- .site-header-menu -->
+            </div><!-- .menu-wrapper -->
+            
+        </div><!-- .site-header-main -->
+
+
+    
+</header>
+
+        <div id="content" class="site-content container">
+
+
+	<div id="primary" class="content-area row">
+		<main id="main" class="site-main col-md-8 col-sm-12 col-md-offset-2" role="main">
+
+
+
+			
+<article id="post-3096" class="post-3096 page type-page status-publish hentry">
+
+	<header class="entry-header">
+		<h1 class="entry-title">NPC Data</h1>	</header>
+
+	
+	<div class="entry-content">
+		<h1><img class="alignnone size-full wp-image-5567" src="https://l2reborn.com/wp-content/uploads/2020/03/54125.png" alt="" width="223" height="39" /></h1>
+<div></div>
+<p>Given many people is getting confused by different npc data provided by websites like l2pmfun, l2portal, etc., which correspond to other Lineage 2 Chronicles, we&#8217;ve decided to make our database available so everyone can check the exact stats our server is using.</p>
+<p>This is Official L2 Interlude Retail x1 Drop Data, if you think you&#8217;ve found a mistake please get in touch with us.</p>
+<form method="get"><input class="bar1" name="npc" required="" type="text" placeholder="Name of the npc you want to search" /><input class="buttonvote" style="background-color: #4caf50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;" type="submit" value="Find NPC" /></p>
+</form>
+<p style="font-size: 18px;"><a href="https://l2reborn.com/npc-data/level/0/">Level 1-9</a> <a href="https://l2reborn.com/npc-data/level/10/">Level 10-19</a> <a href="https://l2reborn.com/npc-data/level/20/">Level 20-29</a> <a href="https://l2reborn.com/npc-data/level/30/">Level 30-39</a> <a href="https://l2reborn.com/npc-data/level/40/">Level 40-49</a> <a href="https://l2reborn.com/npc-data/level/50/">Level 50-59</a> <a href="https://l2reborn.com/npc-data/level/60/">Level 60-69</a> <a href="https://l2reborn.com/npc-data/level/70/">Level 70-79</a> <a href="https://l2reborn.com/npc-data/level/80/">Level 80-89</a></p>
+<p style="font-size: 16px;"><a href="https://l2reborn.com/npc-data/raids/">Show list of Raid Bosses</a></p>
+<style>.raid{color:red}</style><h3> Raid Bosses</h3><a class="raid" href="/npc/25372/discarded-guardian/">Discarded Guardian (20) </a><br/><a class="raid" href="/npc/25378/madness-beast/">Madness Beast (20) </a><br/><a class="raid" href="/npc/25375/zombie-lord-farakelsus/">Zombie Lord Farakelsus (20) </a><br/><a class="raid" href="/npc/25146/serpent-demon-bifrons/">Serpent Demon Bifrons (21) </a><br/><a class="raid" href="/npc/25380/kaysha-herald-of-icarus/">Kaysha Herald of Icarus (21) </a><br/><a class="raid" href="/npc/25357/sukar-wererat-chief/">Sukar Wererat Chief (21) </a><br/><a class="raid" href="/npc/25373/malex-herald-of-dagoniel/">Malex Herald of Dagoniel (21) </a><br/><a class="raid" href="/npc/25001/greyclaw-kutus/">Greyclaw Kutus (23) </a><br/><a class="raid" href="/npc/25366/kuroboros-priest/">Kuroboros' Priest (23) </a><br/><a class="raid" href="/npc/25362/tracker-leader-sharuk/">Tracker Leader Sharuk (23) </a><br/><a class="raid" href="/npc/25060/unrequited-kael/">Unrequited Kael (24) </a><br/><a class="raid" href="/npc/25127/langk-matriarch-rashkos/">Langk Matriarch Rashkos (24) </a><br/><a class="raid" href="/npc/25369/soul-scavenger/">Soul Scavenger (25) </a><br/><a class="raid" href="/npc/25076/princess-molrang/">Princess Molrang (25) </a><br/><a class="raid" href="/npc/25426/betrayer-of-urutu-freki/">Betrayer of Urutu Freki (25) </a><br/><a class="raid" href="/npc/25019/pan-dryad/">Pan Dryad (25) </a><br/><a class="raid" href="/npc/25149/zombie-lord-crowl/">Zombie Lord Crowl (25) </a><br/><a class="raid" href="/npc/25166/ikuntai/">Ikuntai (25) </a><br/><a class="raid" href="/npc/25429/mammon-collector-talos/">Mammon Collector Talos (25) </a><br/><a class="raid" href="/npc/25365/patriarch-kuroboros/">Patriarch Kuroboros (26) </a><br/><a class="raid" href="/npc/25360/tiger-hornet/">Tiger Hornet (26) </a><br/><a class="raid" href="/npc/25272/partisan-leader-talakin/">Partisan Leader Talakin (28) </a><br/><a class="raid" href="/npc/25038/tirak/">Tirak (28) </a><br/><a class="raid" href="/npc/25095/elf-renoa/">Elf Renoa (29) </a><br/><a class="raid" href="/npc/25188/apepi/">Apepi (30) </a><br/><a class="raid" href="/npc/25501/boss-akata/">Boss Akata (30) </a><br/><a class="raid" href="/npc/25112/agent-of-beres-meana/">Agent of Beres Meana (30) </a><br/><a class="raid" href="/npc/25004/turek-mercenary-captain/">Turek Mercenary Captain (30) </a><br/><a class="raid" href="/npc/25079/cats-eye-bandit/">Cat's Eye Bandit (30) </a><br/><a class="raid" href="/npc/25352/giant-wasteland-basilisk/">Giant Wasteland Basilisk (30) </a><br/><a class="raid" href="/npc/25169/ragraman/">Ragraman (30) </a><br/><a class="raid" href="/npc/25392/captain-of-queens-royal-guards/">Captain of Queen's Royal Guards (32) </a><br/><a class="raid" href="/npc/25401/skyla/">Skyla (32) </a><br/><a class="raid" href="/npc/25404/corsair-captain-kylon/">Corsair Captain Kylon (33) </a><br/><a class="raid" href="/npc/25128/vuku-grand-seer-gharmash/">Vuku Grand Seer Gharmash (33) </a><br/><a class="raid" href="/npc/25391/nurkas-messenger/">Nurka's Messenger (33) </a><br/><a class="raid" href="/npc/25189/cronoss-servitor-mumu/">Cronos's Servitor Mumu (34) </a><br/><a class="raid" href="/npc/25383/revenant-of-sir-calibus/">Revenant of Sir Calibus (34) </a><br/><a class="raid" href="/npc/25023/stakato-queen-zyrnna/">Stakato Queen Zyrnna (34) </a><br/><a class="raid" href="/npc/25020/breka-warlock-pastu/">Breka Warlock Pastu (34) </a><br/><a class="raid" href="/npc/25185/tasaba-patriarch-hellena/">Tasaba Patriarch Hellena (35) </a><br/><a class="raid" href="/npc/25388/red-eye-captain-trakia/">Red Eye Captain Trakia (35) </a><br/><a class="raid" href="/npc/25063/chertuba-of-great-soul/">Chertuba of Great Soul (35) </a><br/><a class="raid" href="/npc/25152/flame-lord-shadar/">Flame Lord Shadar (35) </a><br/><a class="raid" href="/npc/25398/eye-of-beleth/">Eye of Beleth (35) </a><br/><a class="raid" href="/npc/25041/remmel/">Remmel (35) </a><br/><a class="raid" href="/npc/25223/soul-collector-acheron/">Soul Collector Acheron (35) </a><br/><a class="raid" href="/npc/25354/gargoyle-lord-sirocco/">Gargoyle Lord Sirocco (35) </a><br/><a class="raid" href="/npc/25098/sejarrs-servitor/">Sejarr's Servitor (35) </a><br/><a class="raid" href="/npc/25118/guilotine-warden-of-the-execution-grounds/">Guilotine Warden of the Execution Grounds (35) </a><br/><a class="raid" href="/npc/25211/sebek/">Sebek (36) </a><br/><a class="raid" href="/npc/25385/evil-spirit-tempest/">Evil Spirit Tempest (36) </a><br/><a class="raid" href="/npc/25506/rayito-the-looter/">Rayito the Looter (37) </a><br/><a class="raid" href="/npc/25170/lizardmen-leader-hellion/">Lizardmen Leader Hellion (38) </a><br/><a class="raid" href="/npc/25394/premo-prime/">Premo Prime (38) </a><br/><a class="raid" href="/npc/25504/nellis-vengeful-spirit/">Nellis' Vengeful Spirit (39) </a><br/><a class="raid" href="/npc/25082/leader-of-cat-gang/">Leader of Cat Gang (39) </a><br/><a class="raid" href="/npc/25487/water-spirit-lian/">Water Spirit Lian (40) </a><br/><a class="raid" href="/npc/25410/road-scavenger-leader/">Road Scavenger Leader (40) </a><br/><a class="raid" href="/npc/25064/wizard-of-storm-teruk/">Wizard of Storm Teruk (40) </a><br/><a class="raid" href="/npc/25490/gwindorr/">Gwindorr (40) </a><br/><a class="raid" href="/npc/25208/water-couatle-ateka/">Water Couatle Ateka (40) </a><br/><a class="raid" href="/npc/25415/nakondas/">Nakondas (40) </a><br/><a class="raid" href="/npc/25155/shaman-king-selu/">Shaman King Selu (40) </a><br/><a class="raid" href="/npc/25214/fafurions-page-sika/">Fafurion's Page Sika (40) </a><br/><a class="raid" href="/npc/25115/icarus-sample-1/">Icarus Sample 1 (40) </a><br/><a class="raid" href="/npc/25134/leto-chief-talkin/">Leto Chief Talkin (40) </a><br/><a class="raid" href="/npc/25007/retreat-spider-cletu/">Retreat Spider Cletu (42) </a><br/><a class="raid" href="/npc/25192/earth-protector-panathen/">Earth Protector Panathen (43) </a><br/><a class="raid" href="/npc/25088/crazy-mechanic-golem/">Crazy Mechanic Golem (43) </a><br/><a class="raid" href="/npc/25099/rotten-tree-repiro/">Rotten Tree Repiro (44) </a><br/><a class="raid" href="/npc/25438/thief-kelbar/">Thief Kelbar (44) </a><br/><a class="raid" href="/npc/25085/timak-orc-chief-ranger/">Timak Orc Chief Ranger (44) </a><br/><a class="raid" href="/npc/25418/dread-avenger-kraven/">Dread Avenger Kraven (44) </a><br/><a class="raid" href="/npc/25431/flamestone-golem/">Flamestone Golem (44) </a><br/><a class="raid" href="/npc/25102/shacram/">Shacram (45) </a><br/><a class="raid" href="/npc/25260/iron-giant-totem/">Iron Giant Totem (45) </a><br/><a class="raid" href="/npc/25498/fafurions-henchman-istary/">Fafurion's Henchman Istary (45) </a><br/><a class="raid" href="/npc/25437/timak-orc-gosmos/">Timak Orc Gosmos (45) </a><br/><a class="raid" href="/npc/25395/archon-suscepter/">Archon Suscepter (45) </a><br/><a class="raid" href="/npc/25057/biconne-of-blue-sky/">Biconne of Blue Sky (45) </a><br/><a class="raid" href="/npc/25441/evil-spirit-cyrion/">Evil Spirit Cyrion (45) </a><br/><a class="raid" href="/npc/25173/tiger-king-karuta/">Tiger King Karuta (45) </a><br/><a class="raid" href="/npc/25412/necrosentinel-royal-guard/">Necrosentinel Royal Guard (47) </a><br/><a class="raid" href="/npc/25044/barion/">Barion (47) </a><br/><a class="raid" href="/npc/25158/king-tarlk/">King Tarlk (48) </a><br/><a class="raid" href="/npc/25420/orfens-handmaiden/">Orfen's Handmaiden (48) </a><br/><a class="raid" href="/npc/25026/katu-van-leader-atui/">Katu Van Leader Atui (49) </a><br/><a class="raid" href="/npc/25047/karte/">Karte (49) </a><br/><a class="raid" href="/npc/25456/mirror-of-oblivion/">Mirror of Oblivion (49) </a><br/><a class="raid" href="/npc/25273/carnamakos/">Carnamakos (50) </a><br/><a class="raid" href="/npc/25277/liliths-witch-marilion/">Lilith's Witch Marilion (50) </a><br/><a class="raid" href="/npc/25119/messenger-of-fairy-queen-berun/">Messenger of Fairy Queen Berun (50) </a><br/><a class="raid" href="/npc/25013/ghost-of-peasant-leader/">Ghost of Peasant Leader (50) </a><br/><a class="raid" href="/npc/25217/cursed-clara/">Cursed Clara (50) </a><br/><a class="raid" href="/npc/25484/zakens-chief-mate-tillion/">Zaken's Chief Mate Tillion (50) </a><br/><a class="raid" href="/npc/25131/carnage-lord-gato/">Carnage Lord Gato (50) </a><br/><a class="raid" href="/npc/25460/deadman-ereve/">Deadman Ereve (51) </a><br/><a class="raid" href="/npc/25050/verfa/">Verfa (51) </a><br/><a class="raid" href="/npc/25473/grave-robber-kim/">Grave Robber Kim (52) </a><br/><a class="raid" href="/npc/25512/gigantic-chaos-golem/">Gigantic Chaos Golem (52) </a><br/><a class="raid" href="/npc/25496/fafurions-envoy-pingolpin/">Fafurion's Envoy Pingolpin (52) </a><br/><a class="raid" href="/npc/25067/captain-of-red-flag-shaka/">Captain of Red Flag Shaka (52) </a><br/><a class="raid" href="/npc/25481/magus-kenishee/">Magus Kenishee (53) </a><br/><a class="raid" href="/npc/25029/atraiban/">Atraiban (53) </a><br/><a class="raid" href="/npc/25509/dark-shaman-varangka/">Dark Shaman Varangka (53) </a><br/><a class="raid" href="/npc/25159/paniel-the-unicorn/">Paniel the Unicorn (54) </a><br/><a class="raid" href="/npc/25137/beleths-seer-sephia/">Beleth's Seer Sephia (55) </a><br/><a class="raid" href="/npc/25434/bandit-leader-barda/">Bandit Leader Barda (55) </a><br/><a class="raid" href="/npc/25103/sorcerer-isirr/">Sorcerer Isirr (55) </a><br/><a class="raid" href="/npc/25475/ghost-knight-kabed/">Ghost Knight Kabed (55) </a><br/><a class="raid" href="/npc/25070/enchanted-forest-watcher-ruell/">Enchanted Forest Watcher Ruell (55) </a><br/><a class="raid" href="/npc/25280/pagan-watcher-cerberon/">Pagan Watcher Cerberon (55) </a><br/><a class="raid" href="/npc/25493/evas-spirit-niniel/">Eva's Spirit Niniel (55) </a><br/><a class="raid" href="/npc/25176/black-lily/">Black Lily (55) </a><br/><a class="raid" href="/npc/25241/harit-hero-tamash/">Harit Hero Tamash (55) </a><br/><a class="raid" href="/npc/25010/furious-thieles/">Furious Thieles (55) </a><br/><a class="raid" href="/npc/25259/zakens-butcher-krantz/">Zaken's Butcher Krantz (55) </a><br/><a class="raid" href="/npc/25463/harit-guardian-garangky/">Harit Guardian Garangky (56) </a><br/><a class="raid" href="/npc/25122/refugee-hopeful-leo/">Refugee Hopeful Leo (56) </a><br/><a class="raid" href="/npc/25230/timak-seer-ragoth/">Timak Seer Ragoth (57) </a><br/><a class="raid" href="/npc/25032/evas-guardian-millenu/">Eva's Guardian Millenu (58) </a><br/><a class="raid" href="/npc/25089/soulless-wild-boar/">Soulless Wild Boar (59) </a><br/><a class="raid" href="/npc/25238/abyss-brukunt/">Abyss Brukunt (59) </a><br/><a class="raid" href="/npc/29060/captain-of-the-ice-queens-royal-guard/">Captain of the Ice Queen's Royal Guard (59) </a><br/><a class="raid" href="/npc/25182/demon-kurikups/">Demon Kurikups (59) </a><br/><a class="raid" href="/npc/25016/the-3rd-underwater-guardian/">The 3rd Underwater Guardian (60) </a><br/><a class="raid" href="/npc/25179/guardian-of-the-statue-of-giant-karum/">Guardian of the Statue of Giant Karum (60) </a><br/><a class="raid" href="/npc/25106/ghost-of-the-well-lidia/">Ghost of the Well Lidia (60) </a><br/><a class="raid" href="/npc/25162/giant-marpanak/">Giant Marpanak (60) </a><br/><a class="raid" href="/npc/25407/lord-ishka/">Lord Ishka (60) </a><br/><a class="raid" href="/npc/29056/ice-fairy-sirra/">Ice Fairy Sirra (60) </a><br/><a class="raid" href="/npc/25234/ancient-weird-drake/">Ancient Weird Drake (60) </a><br/><a class="raid" href="/npc/25256/taik-high-prefect-arak/">Taik High Prefect Arak (60) </a><br/><a class="raid" href="/npc/25423/fairy-queen-timiniel/">Fairy Queen Timiniel (61) </a><br/><a class="raid" href="/npc/25226/roaring-lord-kastor/">Roaring Lord Kastor (62) </a><br/><a class="raid" href="/npc/25467/gorgolos/">Gorgolos (64) </a><br/><a class="raid" href="/npc/25051/rahha/">Rahha (65) </a><br/><a class="raid" href="/npc/25478/shilens-priest-hisilrome/">Shilen's Priest Hisilrome (65) </a><br/><a class="raid" href="/npc/25125/fierce-tiger-king-angel/">Fierce Tiger King Angel (65) </a><br/><a class="raid" href="/npc/25444/enmity-ghost-ramdal/">Enmity Ghost Ramdal (65) </a><br/><a class="raid" href="/npc/25140/hekaton-prime/">Hekaton Prime (65) </a><br/><a class="raid" href="/npc/25255/gargoyle-lord-tiphon/">Gargoyle Lord Tiphon (65) </a><br/><a class="raid" href="/npc/25470/last-titan-utenus/">Last Titan Utenus (66) </a><br/><a class="raid" href="/npc/25322/demons-agent-falston/">Demon's Agent Falston (66) </a><br/><a class="raid" href="/npc/25263/kernons-faithful-servant-kelone/">Kernon's Faithful Servant Kelone (67) </a><br/><a class="raid" href="/npc/25073/bloody-priest-rudelto/">Bloody Priest Rudelto (69) </a><br/><a class="raid" href="/npc/25233/spirit-of-andras-the-betrayer/">Spirit of Andras the Betrayer (69) </a><br/><a class="raid" href="/npc/25281/anakims-nemesis-zakaron/">Anakim's Nemesis Zakaron (70) </a><br/><a class="raid" href="/npc/25035/shilens-messenger-cabrio/">Shilen's Messenger Cabrio (70) </a><br/><a class="raid" href="/npc/25252/palibati-queen-themis/">Palibati Queen Themis (70) </a><br/><a class="raid" href="/npc/25269/beast-lord-behemoth/">Beast Lord Behemoth (70) </a><br/><a class="raid" href="/npc/25092/korim/">Korim (70) </a><br/><a class="raid" href="/npc/25453/meanas-anor/">Meanas Anor (70) </a><br/><a class="raid" href="/npc/25198/fafurions-herald-lokness/">Fafurion's Herald Lokness (70) </a><br/><a class="raid" href="/npc/25325/flame-of-splendor-barakiel/">Flame of Splendor Barakiel (70) </a><br/><a class="raid" href="/npc/25163/roaring-skylancer/">Roaring Skylancer (70) </a><br/><a class="raid" href="/npc/25447/immortal-savior-mardil/">Immortal Savior Mardil (71) </a><br/><a class="raid" href="/npc/25328/eilhalder-von-hellmann/">Eilhalder von Hellmann (71) </a><br/><a class="raid" href="/npc/25199/water-dragon-seer-sheshark/">Water Dragon Seer Sheshark (72) </a><br/><a class="raid" href="/npc/25248/doom-blade-tanatos/">Doom Blade Tanatos (72) </a><br/><a class="raid" href="/npc/25235/vanor-chief-kandra/">Vanor Chief Kandra (72) </a><br/><a class="raid" href="/npc/25220/death-lord-hallate/">Death Lord Hallate (73) </a><br/><a class="raid" href="/npc/25523/plague-golem/">Plague Golem (73) </a><br/><a class="raid" href="/npc/25296/icicle-emperor-bumbalump/">Icicle Emperor Bumbalump (74) </a><br/><a class="raid" href="/npc/25202/krokian-padisha-sobekk/">Krokian Padisha Sobekk (74) </a><br/><a class="raid" href="/npc/25109/antharas-priest-cloe/">Antharas Priest Cloe (74) </a><br/><a class="raid" href="/npc/25282/death-lord-shax/">Death Lord Shax (75) </a><br/><a class="raid" href="/npc/25276/death-lord-ipos/">Death Lord Ipos (75) </a><br/><a class="raid" href="/npc/25244/last-lesser-giant-olkuth/">Last Lesser Giant Olkuth (75) </a><br/><a class="raid" href="/npc/25249/palatanos-of-horrific-power/">Palatanos of Horrific Power (75) </a><br/><a class="raid" href="/npc/25266/bloody-empress-decarbia/">Bloody Empress Decarbia (75) </a><br/><a class="raid" href="/npc/25229/storm-winged-naga/">Storm Winged Naga (75) </a><br/><a class="raid" href="/npc/25054/kernon/">Kernon (75) </a><br/><a class="raid" href="/npc/25524/flamestone-giant/">Flamestone Giant (76) </a><br/><a class="raid" href="/npc/25205/ocean-flame-ashakiel/">Ocean Flame Ashakiel (76) </a><br/><a class="raid" href="/npc/25293/hestia-guardian-deity-of-the-hot-springs/">Hestia Guardian Deity of the Hot Springs (78) </a><br/><a class="raid" href="/npc/25290/daimon-the-white-eyed/">Daimon the White-Eyed (78) </a><br/><a class="raid" href="/npc/25143/fire-of-wrath-shuriel/">Fire of Wrath Shuriel (78) </a><br/><a class="raid" href="/npc/25245/last-lesser-giant-glaki/">Last Lesser Giant Glaki (78) </a><br/><a class="raid" href="/npc/25450/cherub-galaxia/">Cherub Galaxia (79) </a><br/><a class="raid" href="/npc/25126/longhorn-golkonda/">Longhorn Golkonda (79) </a><br/><a class="raid" href="/npc/25527/uruka/">Uruka (80) </a><br/><a class="raid" href="/npc/25514/queen-shyeed/">Queen Shyeed (80) </a><br/><a class="raid" href="/npc/25319/ember/">Ember (80) </a><br/><a class="raid" href="/npc/25299/ketras-hero-hekaton/">Ketra's Hero Hekaton (80) </a><br/><a class="raid" href="/npc/25305/ketras-chief-brakki/">Ketra's Chief Brakki (80) </a><br/><a class="raid" href="/npc/25306/soul-of-fire-nastron/">Soul of Fire Nastron (80) </a><br/><a class="raid" href="/npc/25309/varkas-hero-shadith/">Varka's Hero Shadith (80) </a><br/><a class="raid" href="/npc/25312/varkas-commander-mos/">Varka's Commander Mos (80) </a><br/><a class="raid" href="/npc/25315/varkas-chief-horus/">Varka's Chief Horus (80) </a><br/><a class="raid" href="/npc/25286/anakim/">Anakim (80) </a><br/><a class="raid" href="/npc/25283/lilith/">Lilith (80) </a><br/><a class="raid" href="/npc/25316/soul-of-water-ashutar/">Soul of Water Ashutar (80) </a><br/><a class="raid" href="/npc/25302/ketras-commander-tayr/">Ketra's Commander Tayr (80) </a><br/>
+	</div><!-- .entry-content -->
+
+	
+</article>
+
+
+		</main><!-- .site-main -->
+			</div><!-- content-area -->
+
+        </div><!-- .site-content -->
+        
+                <footer id="colophon" class="site-footer" role="contentinfo">
+			<div id="footer-sidebar" class="secondary">
+<div id="footer-sidebar1">
+<aside id="custom_html-8" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://l2network.eu/index.php?a=in&amp;u=l2_reborn"><img src="https://statics.l2reborn.com/wp-content/uploads/2020/04/l2network.png" alt="L2Network"></a> <!--Begin L2Top.CO Vote Banner Code -->
+<a href="https://l2top.co/vote/server/L2Reborn" target="_blank" rel="noopener noreferrer"><img src="https://statics.l2reborn.com/wp-content/uploads/2019/08/l2top.co_.png" alt="Vote in L2Top.CO - Lineage 2" width="90" height="60" border="0"></a><!--End L2Top.CO Vote Banner Code--> <a href="https://topg.org/lineage2-private-servers/in-518783" target="_blank" rel="noopener noreferrer"><img src="https://topg.org/topg.gif" width="88" height="53" border="0" alt="lineage2 private servers"></a></div></aside><aside id="polylang-4" class="widget widget_polylang"><label class="screen-reader-text" for="lang_choice_polylang-4">Choose a language</label><select name="lang_choice_polylang-4" id="lang_choice_polylang-4">
+	<option value="en" selected='selected'>English</option>
+	<option value="es">Español</option>
+	<option value="zh">中文 (中国)</option>
+	<option value="ru">Русский</option>
+	<option value="pt">Português</option>
+
+</select>
+<script type="text/javascript">
+					//<![CDATA[
+					var urls_polylang4 = {"en":"https:\/\/l2reborn.com\/npc-data\/","es":"https:\/\/l2reborn.com\/es\/enciclopedia\/","zh":"https:\/\/l2reborn.com\/zh\/%e6%b2%bf%e8%a2%ad2-interlude%e6%9c%8d%e5%8a%a1%e5%99%a8\/","ru":"http:\/\/ru.l2reborn.com\/lineage-2-interlude-server\/","pt":"https:\/\/l2reborn.com\/pt\/l2reborn-servidor-de-lineage-2-interlude-x1\/"};
+					document.getElementById( "lang_choice_polylang-4" ).onchange = function() {
+						location.href = urls_polylang4[this.value];
+					}
+					//]]>
+				</script></aside></div>
+<div id="footer-sidebar2">
+<aside id="custom_html-6" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://vgw.hopzone.net/site/vote/103701/1"><img src="https://hopzone.r.worldssl.net/img/_vbanners/lineage2/lineage2-90x60-3.gif" alt="Vote our sever on HopZone.Net" width="90" height="60" border="0"></a> <a href="//top.l2jbrasil.com/index.php?a=in&amp;u=wolfypre" target="_blank" rel="noopener noreferrer"><img src="//top.l2jbrasil.com/button.php?u=wolfypre" alt="Top L2JBrasil  de Servidores de   Lineage2 " border="0"></a>  <a href="https://l2top.ru/vote/31065/" target="_blank" rel="noopener noreferrer"><img src="https://l2top.ru/vb/31065.pgif" width="88px" height="31px" border="0" alt="L2top.ru: Рейтинг-каталог серверов Lineage2"></a>
+<div id="twitch-embed" class="footer-twitch"></div></div></aside></div>
+<div id="footer-sidebar3">
+<aside id="custom_html-7" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://www.top100arena.com/in.asp?id=95723" title="Lineage 2 private server"><img src="https://www.top100arena.com/hit.asp?id=95723&amp;c=La2&amp;t=2" alt="Lineage 2 private server" width="88px" height="56px" border="0"></a> <!-- Begin XtremeTop100 code --> <a href="https://www.xtremetop100.com/in.php?site=1132368004" title="Lineage2 Free server"> <img src="https://statics.l2reborn.com/wp-content/uploads/2019/08/xtremetop100.jpg" border="0" alt="Lineage2 Free server"> </a> <!-- End XtremeTop100 code --> <a href="https://l2top.gr/index.php?a=in&amp;u=wolfypre"><img src="https://l2top.gr/button.php?u=wolfypre&amp;buttontype=static" alt="L2Top"></a>
+<br/>
+<div id="twitch-embed-2"></div></div></aside></div>
+</div>
+            <div class="site-info container">
+                            Reborn Project ©2020. <a href="https://l2reborn.com/press-kit/">Press Kit</a>
+            </div>
+        </footer>
+        
+    </div><!-- site-inner -->
+</div><!-- site -->
+
+<div id="cookie-law-info-bar"><span>We use cookies.<a  data-cli_action="accept" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; ">OK</a> <a href='/cookie-policy/' id="CONSTANT_OPEN_URL" target="_blank"  class="cli-plugin-main-link"  style="display:inline-block;" >Read more</a></span></div><div id="cookie-law-info-again" style="display:none;"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div><div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<script type="text/javascript">
+  /* <![CDATA[ */
+  cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":false,"button_1_button_colour":"#2196f3","button_1_button_hover":"#1a78c2","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"button_2_hidebar":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000","logging_on":false,"as_popup":false,"popup_overlay":true,"bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"}';
+  /* ]]> */
+</script><script type='text/javascript'>
+/* <![CDATA[ */
+var wpASPNG = {"iframeUrl":"https:\/\/l2reborn.com\/?asp_action=show_pp"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://l2reborn.com/wp-content/plugins/stripe-payments/public/assets/js/stripe-handler-ng.js?v&#038;ver=2.0.24'></script>
+<script type='text/javascript' src='https://l2reborn.com/wp-content/plugins/wordpress-helpdesk/public/vendor/push-js/bin/push.min.js?ver=1.0.7'></script>
+<script type='text/javascript' src='https://l2reborn.com/wp-content/plugins/wordpress-helpdesk/public/vendor/luminous-2.2.1/dist/Luminous.min.js?ver=2.2.1'></script>
+<script type='text/javascript' src='https://l2reborn.com/wp-content/plugins/wordpress-helpdesk/public/vendor/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js?ver=1.10.18'></script>
+<script type='text/javascript' src='https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js?ver=2.2.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var helpdesk_options = {"ajax_url":"https:\/\/l2reborn.com\/wp-admin\/admin-ajax.php","integrationsWooCommerce":"0","enableLiveChat":"0","liveChatAJAXInterval":"2000","FAQShowSearch":"1","FAQRatingEnable":"1","enableDesktopNotifications":"0","desktopNotificationsWelcomeTitle":"Welcome to Helpdesk","desktopNotificationsWelcomeText":"How can we help you today?","desktopNotificationsIcon":"","desktopNotificationsTimeout":"4000","desktopNotificationsWelcomeTimeout":"120","desktopNotificationsAJAXInterval":"2000","myTicketsDatatablesEnable":"1","myTicketsDatatablesLanguageURL":"\/\/cdn.datatables.net\/plug-ins\/9dcbecd42ad\/i18n\/English.json"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://l2reborn.com/wp-content/plugins/wordpress-helpdesk/public/js/wordpress-helpdesk-public.js?ver=1.7.7'></script>
+<script type='text/javascript' src='https://l2reborn.com/wp-content/themes/thesimplest/assets/js/skip-link-focus-fix.js?ver=1.0'></script>
+<script type='text/javascript' src='https://l2reborn.com/wp-content/themes/thesimplest/assets/js/bootstrap.min.js?ver=3.3.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thesimplest_screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://l2reborn.com/wp-content/themes/thesimplest/assets/js/main.js?ver=1.0'></script>
+<script type='text/javascript' src='https://l2reborn.com/wp-content/plugins/rbr-master/js/analyticsjs.js?ver=5.2.5'></script>
+<script type='text/javascript' src='https://l2reborn.com/wp-includes/js/wp-embed.min.js?ver=5.2.5'></script>
+</body>
+</html>
