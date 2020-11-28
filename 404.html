@@ -24,6 +24,37 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
+
+    <script>
+        function hookInputEvents(dotNetObject) {
+            document.onpointermove = function (e) {
+                e = e || window.event;
+                dotNetObject.invokeMethod('OnMouseMove', e.clientX, e.clientY)
+            };
+            document.onpointerup = function (e) {
+                e = e || window.event;
+                dotNetObject.invokeMethod('OnMouseUp', e.clientX, e.clientY)
+            };
+            document.onpointerenter = function (e) {
+                e = e || window.event;
+                dotNetObject.invokeMethod('OnMouseEnter', e.clientX, e.clientY)
+            };
+
+            document.ontouchmove = function (e) {
+                e = e || window.event;
+                dotNetObject.invokeMethod('OnTouchMove', e.touches[0].clientX, e.touches[0].clientY)
+            };
+            document.ontouchend = function (e) {
+                e = e || window.event;
+                dotNetObject.invokeMethod('OnTouchUp', e.touches[0].clientX, e.touches[0].clientY)
+            };
+            document.ontouchenter = function (e) {
+                e = e || window.event;
+                dotNetObject.invokeMethod('OnTouchEnter', e.touches[0].clientX, e.touches[0].clientY)
+            };
+
+        };
+    </script>
 </body>
 
 </html>
