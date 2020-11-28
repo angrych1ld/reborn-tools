@@ -48,9 +48,9 @@
                 e = e || window.event;
                 dotNetObject.invokeMethod('OnTouchUp', e.touches[0].clientX, e.touches[0].clientY)
             };
-            document.ontouchenter = function (e) {
+            document.ontouchstart = function (e) {
                 e = e || window.event;
-                dotNetObject.invokeMethod('OnTouchEnter', e.touches[0].clientX, e.touches[0].clientY)
+                dotNetObject.invokeMethod('OnTouchStart', e.touches[0].clientX, e.touches[0].clientY)
             };
 
         };
