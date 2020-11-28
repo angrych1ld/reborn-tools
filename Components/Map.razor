@@ -1,0 +1,72 @@
+﻿<div>
+    <div class="map-wrapper" style="@("width: " + MapSize.x + "px; height: " + MapSize.y + "px")" draggable="false">
+        <div class="map-container" style="@MapContainerStyle">
+            <img class="map-image" src="Maps/world-map-big.png" />
+        </div>
+        <div class="interaction-region"
+             @ontouchstart="TouchDown"
+             @onpointerdown="MouseDown">
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [Parameter] public (int x, int y) MapSize { get; set; }
+
+
+    private (double x, double y) mapContainerSize = (1812, 2620);
+
+    private (double x, double y) mapContainerPosition = (0, 0);
+
+    private bool isDragging = false;
+
+    private string MapContainerStyle
+    {
+        get
+        {
+            return $"top: {mapContainerPosition.y}px; left: {mapContainerPosition.x}px; width: {mapContainerSize.x}px; height:{mapContainerSize.y}px";
+        }
+    }
+
+    protected override Task OnInitializedAsync()
+    {
+        MainLayout.OnPointerMove += PointerMove;
+        MainLayout.OnPointerUp += PointerUp;
+
+        return base.OnInitializedAsync();
+    }
+
+    private void MouseDown(MouseEventArgs args)
+    {
+        isDragging = true;
+    }
+
+    private void TouchDown(TouchEventArgs args)
+    {
+        isDragging = true;
+    }
+
+    private void PointerMove((double x, double y) delta)
+    {
+        if (!isDragging) return;
+
+        mapContainerPosition.x += delta.x;
+        mapContainerPosition.y += delta.y;
+
+        ClampContainerPosition();
+
+        StateHasChanged();
+    }
+
+    private void ClampContainerPosition()
+    {
+        mapContainerPosition.x = Math.Clamp(mapContainerPosition.x, -mapContainerSize.x + MapSize.x, 0);
+        mapContainerPosition.y = Math.Clamp(mapContainerPosition.y, -mapContainerSize.y + MapSize.y, 0);
+    }
+
+    private void PointerUp()
+    {
+        isDragging = false;
+    }
+}

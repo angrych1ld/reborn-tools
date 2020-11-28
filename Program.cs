@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
-namespace Reborn_Tools
+namespace RebornTools
 {
     public class Program
     {

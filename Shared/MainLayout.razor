@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime JsRuntime
 
 <div class="page">
     <div class="sidebar">
@@ -12,3 +13,67 @@
     </div>
 
 </div>
+
+@code {
+    public static event Action<(double x, double y)> OnPointerMove;
+    public static event Action OnPointerUp;
+
+    private (double x, double y) lastPosition;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        /// Hook MouseEvent on the client
+        var dotNetReference = DotNetObjectReference.Create(this);
+        await JsRuntime.InvokeVoidAsync("hookInputEvents", dotNetReference);
+    }
+
+    [JSInvokable("OnMouseMove")]
+    public async Task OnMouseMove(double clientX, double clientY)
+    {
+        OnPointerMove?.Invoke((clientX - lastPosition.x, clientY - lastPosition.y));
+        lastPosition = (clientX, clientY);
+
+        await Task.CompletedTask;
+    }
+
+    [JSInvokable]
+    public async Task OnMouseEnter(double clientX, double clientY)
+    {
+        lastPosition = (clientX, clientY);
+
+        await Task.CompletedTask;
+    }
+
+    [JSInvokable]
+    public async Task OnMouseUp(double clientX, double clientY)
+    {
+        OnPointerUp?.Invoke();
+
+        await Task.CompletedTask;
+    }
+
+    [JSInvokable]
+    public async Task OnTouchMove(double clientX, double clientY)
+    {
+        OnPointerMove?.Invoke((clientX - lastPosition.x, clientY - lastPosition.y));
+        lastPosition = (clientX, clientY);
+
+        await Task.CompletedTask;
+    }
+
+    [JSInvokable]
+    public async Task OnTouchUp(double clientX, double clientY)
+    {
+        OnPointerUp?.Invoke();
+
+        await Task.CompletedTask;
+    }
+
+    [JSInvokable]
+    public async Task OnTouchEnter(double clientX, double clientY)
+    {
+        lastPosition = (clientX, clientY);
+
+        await Task.CompletedTask;
+    }
+}
