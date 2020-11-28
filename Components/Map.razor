@@ -1,4 +1,6 @@
-﻿<div>
+﻿@using System.Globalization;
+
+<div>
     <div class="map-wrapper" style="@("width: " + MapSize.x + "px; height: " + MapSize.y + "px")" draggable="false">
         <div class="map-container" style="@MapContainerStyle">
             <img class="map-image" src="Maps/world-map-big.png" />
@@ -25,7 +27,11 @@
     {
         get
         {
-            return $"top: {(int)mapContainerPosition.y}px; left: {(int)mapContainerPosition.x}px; width: {(int)mapContainerSize.x}px; height:{(int)mapContainerSize.y}px";
+            CultureInfo usCulture = CultureInfo.GetCultureInfo("en-us");
+            return $"top: {mapContainerPosition.y.ToString(usCulture)}px; " +
+                    $"left: {mapContainerPosition.x.ToString(usCulture)}px; " +
+                    $"width: {mapContainerSize.x.ToString(usCulture)}px; " +
+                    $"height:{mapContainerSize.y.ToString(usCulture)}px";
         }
     }
 
