@@ -1,6 +1,7 @@
 ﻿using AngleSharp.Dom;
 using AngleSharp.Html.Dom;
 using AngleSharp.Html.Parser;
+using Microsoft.AspNetCore.Components.WebAssembly.Http;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,13 +10,15 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Reborn_Tools
+namespace RebornTools
 {
     public class DataAccess
     {
         public static async Task<List<RaidBossStatus>> FetchRaidbossStatus(HttpClient httpClient)
         {
-            string rawResult = await httpClient.GetStringAsync(@"https://l2reborn.com/wp-content/uploads/raids/raids.json");
+            HttpRequestMessage req = new HttpRequestMessage(HttpMethod.Get, @"https://l2reborn.com/wp-content/uploads/raids/raids.json");
+            req.SetBrowserRequestCache(BrowserRequestCache.NoCache);
+            string rawResult = await (await httpClient.SendAsync(req)).Content.ReadAsStringAsync();
 
             using JsonDocument doc = JsonDocument.Parse(rawResult);
 
