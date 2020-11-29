@@ -43,6 +43,21 @@
     user-select: none;
     pointer-events: all;
 }
+/* /Components/TooltipDisplay.razor.rz.scp.css */
+.tooltip-display-wrapper[b-oafs8wsskm] {
+    position:fixed;
+    pointer-events: none;
+
+    background-color: rgb(20, 20, 20);
+    padding: 1rem;
+}
+
+
+#tooltip-display-raidboss[b-oafs8wsskm] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* /Pages/Raidbosses.razor.rz.scp.css */
 a[b-d1wzk2uyx6], a:visited[b-d1wzk2uyx6], a:hover[b-d1wzk2uyx6], a:active[b-d1wzk2uyx6] {
     color: inherit;
