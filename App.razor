@@ -1,3 +1,5 @@
+@inject IJSRuntime JsRuntime
+
 <Router AppAssembly="@typeof(Program).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
@@ -8,3 +10,146 @@
         </LayoutView>
     </NotFound>
 </Router>
+
+<MatPortalHost></MatPortalHost>
+
+@code{
+    @code {
+        public static App Instance { get; private set; }
+
+        public static event Action<(double x, double y)> OnPointerMove;
+        public static event Action OnPointerUp;
+        public static event Action<string> OnKeyDown;
+        public static event Action<string> OnkeyUp;
+        public static event Action OnWindowSizeChange;
+        public static bool IsKeyHeld(string key) => heldKeys.Contains(key);
+        public static event Action<float> AnimationUpdate;
+        public static event Action<double> OnWheel;
+
+        private static HashSet<string> heldKeys = new HashSet<string>();
+        private (double x, double y) lastPosition;
+        private float lastAnimationTimestamp;
+
+        protected override Task OnInitializedAsync()
+        {
+            Instance = this;
+            return base.OnInitializedAsync();
+        }
+
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            /// Hookup any needed events
+            var dotNetReference = DotNetObjectReference.Create(this);
+            await JsRuntime.InvokeVoidAsync("hookInputEvents", dotNetReference);
+            await JsRuntime.InvokeVoidAsync("anim.start", dotNetReference);
+        }
+
+        [JSInvokable("eventRequestAnimationFrame")]
+        public async void MainLoop(float timeStamp)
+        {
+            AnimationUpdate?.Invoke((timeStamp - lastAnimationTimestamp) * 0.001f);
+            lastAnimationTimestamp = timeStamp;
+
+            await Task.CompletedTask;
+        }
+
+        public async Task<BoundingClientRect> GetBoundingRect(ElementReference element)
+        {
+            return await JsRuntime.InvokeAsync<BoundingClientRect>("MyDOMGetBoundingClientRect", element);
+        }
+
+        [JSInvokable]
+        public async Task WindowSizeChanged()
+        {
+            OnWindowSizeChange?.Invoke();
+            await Task.CompletedTask;
+        }
+
+        [JSInvokable]
+        public async Task MouseWheel(double delta)
+        {
+            OnWheel?.Invoke(delta);
+            await Task.CompletedTask;
+        }
+
+        [JSInvokable]
+        public async Task KeyDown(string key)
+        {
+            key = key.ToLower();
+
+            if (!heldKeys.Contains(key))
+            {
+                heldKeys.Add(key);
+            }
+
+            OnKeyDown?.Invoke(key);
+
+            await Task.CompletedTask;
+        }
+
+        [JSInvokable]
+        public async Task KeyUp(string key)
+        {
+            key = key.ToLower();
+
+            if (heldKeys.Contains(key))
+            {
+                heldKeys.Remove(key);
+            }
+
+            OnkeyUp?.Invoke(key);
+
+            await Task.CompletedTask;
+        }
+
+        [JSInvokable("OnMouseMove")]
+        public async Task OnMouseMove(double clientX, double clientY)
+        {
+            OnPointerMove?.Invoke((clientX - lastPosition.x, clientY - lastPosition.y));
+            lastPosition = (clientX, clientY);
+
+            await Task.CompletedTask;
+        }
+
+        [JSInvokable]
+        public async Task OnMouseEnter(double clientX, double clientY)
+        {
+            lastPosition = (clientX, clientY);
+
+            await Task.CompletedTask;
+        }
+
+        [JSInvokable]
+        public async Task OnMouseUp(double clientX, double clientY)
+        {
+            OnPointerUp?.Invoke();
+
+            await Task.CompletedTask;
+        }
+
+        [JSInvokable]
+        public async Task OnTouchMove(double clientX, double clientY)
+        {
+            OnPointerMove?.Invoke((clientX - lastPosition.x, clientY - lastPosition.y));
+            lastPosition = (clientX, clientY);
+
+            await Task.CompletedTask;
+        }
+
+        [JSInvokable]
+        public async Task OnTouchUp(double clientX, double clientY)
+        {
+            OnPointerUp?.Invoke();
+
+            await Task.CompletedTask;
+        }
+
+        [JSInvokable]
+        public async Task OnTouchStart(double clientX, double clientY)
+        {
+            lastPosition = (clientX, clientY);
+
+            await Task.CompletedTask;
+        }
+    }
+}

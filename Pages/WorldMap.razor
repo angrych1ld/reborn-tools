@@ -1,9 +1,23 @@
 ﻿@page "/world-map"
 
-<h3>WorldMap</h3>
-
-<Map MapSize="(769, 548)"></Map>
+<div class="map">
+    <Map @ref="map"></Map>
+</div>
 
 @code {
+    Map map;
 
+    private double _zoom = 0;
+
+    public bool panelOpen;
+
+    protected override Task OnInitializedAsync()
+    {
+        App.OnWheel += (delta) => {
+            _zoom = Math.Clamp(_zoom - delta * 0.0001f, 0, 1);
+            map.SetZoomPercentValue(_zoom);
+        };
+
+        return base.OnInitializedAsync();
+    }
 }

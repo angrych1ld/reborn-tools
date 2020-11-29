@@ -1,7 +1,7 @@
 ﻿@using System.Globalization;
 
-<div>
-    <div class="map-wrapper" style="@("width: " + MapSize.x + "px; height: " + MapSize.y + "px")" draggable="false">
+<div class="map-holder">
+    <div class="map-wrapper" draggable="false" @ref="wrapperRef">
         <div class="map-container" style="@MapContainerStyle">
             <img class="map-image" src="Maps/world-map-big.png" />
         </div>
@@ -12,16 +12,23 @@
     </div>
 </div>
 
-
 @code {
-    [Parameter] public (int x, int y) MapSize { get; set; }
+    [Parameter] public bool AllowMove { get; set; } = true;
 
+    private const double fullMapPixelSizeX = 1812d;
+    private const double fullMapPixelSizeY = 2620d;
+    private const double mapAspect = fullMapPixelSizeY / fullMapPixelSizeX;
+    private const float containerSizeAnimationSpeed = 300f;
+    private const float containerPositionAnimationSpeed = 800f;
 
     private (double x, double y) mapContainerSize = (1812, 2620);
-
     private (double x, double y) mapContainerPosition = (0, 0);
 
+    private (int x, int y) mapSize = (1, 1);
+
     private bool isDragging = false;
+
+    private ElementReference wrapperRef;
 
     private string MapContainerStyle
     {
@@ -37,10 +44,52 @@
 
     protected override Task OnInitializedAsync()
     {
-        MainLayout.OnPointerMove += PointerMove;
-        MainLayout.OnPointerUp += PointerUp;
+        App.OnPointerMove += PointerMove;
+        App.OnPointerUp += PointerUp;
+        App.AnimationUpdate += Update;
+        App.OnWindowSizeChange += () => UpdateMapSize().ConfigureAwait(false);
 
         return base.OnInitializedAsync();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            UpdateMapSize().ConfigureAwait(false);
+        }
+
+        base.OnAfterRender(firstRender);
+    }
+
+    private async Task UpdateMapSize()
+    {
+        BoundingClientRect rect = await App.Instance.GetBoundingRect(wrapperRef);
+
+        // Clamp it to 1 to make sure it's above 0
+        mapSize = (Math.Max(1, (int)rect.Width), (int)Math.Max(1, rect.Height));
+
+        ClampContainerPosition();
+        StateHasChanged();
+    }
+
+    private void Update(float deltaTime)
+    {
+    }
+
+    private double MoveTowards(double original, double target, double maxDelta)
+    {
+        if (original < target)
+        {
+            original += maxDelta;
+            if (original > target) original = target;
+        }
+        if (original > target)
+        {
+            original -= maxDelta;
+            if (original < target) original = target;
+        }
+        return original;
     }
 
     private void MouseDown(MouseEventArgs args)
@@ -55,7 +104,7 @@
 
     private void PointerMove((double x, double y) delta)
     {
-        if (!isDragging) return;
+        if (!isDragging || !AllowMove) return;
 
         mapContainerPosition.x += delta.x;
         mapContainerPosition.y += delta.y;
@@ -65,10 +114,72 @@
         StateHasChanged();
     }
 
+    public void SetZoomPixelHeight(double pixelHeight)
+    {
+        var oldSize = mapContainerSize;
+
+        mapContainerSize = (pixelHeight / mapAspect, pixelHeight);
+
+        //mapContainerPosition.x = (mapContainerPosition.x - oldSize.x * 0.5f) / (-mapContainerSize.x / oldSize.x) + mapContainerSize.x * 0.5f;
+        //mapContainerPosition.y = (mapContainerPosition.y - oldSize.y * 0.5f) / (-mapContainerSize.y / oldSize.y) + mapContainerSize.y * 0.5f;
+
+        Console.WriteLine(mapContainerPosition + " " + mapSize + " " + mapContainerSize + " " + oldSize);
+
+        //mapContainerPosition.x = (mapContainerPosition.x) * (mapContainerSize.x / oldSize.x);
+        //mapContainerPosition.y = (mapContainerPosition.y) * (mapContainerSize.y / oldSize.y);
+
+        mapContainerPosition.x = -((-mapContainerPosition.x + mapSize.x * 0.5) * (mapContainerSize.x / oldSize.x) - mapSize.x * 0.5f);
+        mapContainerPosition.y = -((-mapContainerPosition.y + mapSize.y * 0.5) * (mapContainerSize.y / oldSize.y) - mapSize.y * 0.5f);
+
+        //-newOffset = (-offset + mapSize * 0.5) * (newMapSize / mapSize) - newMapSize * 0.5f
+
+        //-newConPos = (-conPos + mapSize) * (newConSize / conSize) - mapSize
+        ClampContainerPosition();
+        StateHasChanged();
+
+
+
+        //targetMapContainerSize = (pixelHeight / mapAspect, pixelHeight);
+        //targetMapContainerPosition.x += (mapSize.x / 2 - mapContainerPosition.x) * ((targetMapContainerSize.x / mapContainerSize.x) - 1);
+        //targetMapContainerPosition.y += (mapSize.x / 2 - mapContainerPosition.x) * ((targetMapContainerSize.x / mapContainerSize.x) - 1);
+    }
+
+    public void SetZoomPercentValue(double percent)
+    {
+        percent = Math.Clamp(Math.Pow(percent, 2) * 99 + 1, 1, 10);
+
+        double targetPixelHeight = 0;
+
+        // Figure out if height or width should decide the scale
+        if (mapSize.x * mapAspect > mapSize.y)
+        {
+            targetPixelHeight = mapSize.x * percent * mapAspect;
+        }
+        else
+        {
+            targetPixelHeight = mapSize.y * percent;
+        }
+
+        SetZoomPixelHeight(targetPixelHeight);
+    }
+
     private void ClampContainerPosition()
     {
-        mapContainerPosition.x = Math.Clamp(mapContainerPosition.x, -mapContainerSize.x + MapSize.x, 0);
-        mapContainerPosition.y = Math.Clamp(mapContainerPosition.y, -mapContainerSize.y + MapSize.y, 0);
+        // Make sure container is not larger than wrapper
+        double missingX = mapSize.x - mapContainerSize.x;
+        double missingY = (mapSize.y - mapContainerSize.y) / mapAspect;
+
+        double missing = Math.Max(missingX, missingY);
+        if (missing > 0)
+        {
+            missing += 0.00001f;
+            mapContainerSize.x += missing;
+            mapContainerSize.y += missing * mapAspect;
+        }
+
+        // Make sure map is not out of bounds
+        mapContainerPosition.x = Math.Clamp(mapContainerPosition.x, -mapContainerSize.x + mapSize.x, 0);
+        mapContainerPosition.y = Math.Clamp(mapContainerPosition.y, -mapContainerSize.y + mapSize.y, 0);
     }
 
     private void PointerUp()
