@@ -5,7 +5,7 @@
         <div class="map-container" style="@MapContainerStyle">
             <img class="map-image" src="Maps/world-map-big.png" />
             <div class="map-trinkets">
-                <div class="map-trinket" style="@("top: " + targetPosition.y * 100 + "%; left: " + targetPosition.x * 100 + "%")" hidden="@(!targetPlaced)">
+                <div class="map-trinket" style="@TargetStyle" hidden="@(!targetPlaced)">
                     <img src="Map Gui/target-icon.png" class="map-trinket-content-center" />
                 </div>
             </div>
@@ -52,6 +52,15 @@
                     $"left: {mapContainerPosition.x.ToString(usCulture)}px; " +
                     $"width: {mapContainerSize.x.ToString(usCulture)}px; " +
                     $"height:{mapContainerSize.y.ToString(usCulture)}px";
+        }
+    }
+
+    private string TargetStyle
+    {
+        get
+        {
+            CultureInfo usCulture = CultureInfo.GetCultureInfo("en-us");
+            return "top: " + (targetPosition.y * 100).ToString(usCulture) + "%; left: " + (targetPosition.x * 100).ToString(usCulture) + "%";
         }
     }
 
