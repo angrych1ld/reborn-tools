@@ -45,12 +45,16 @@ else
                     </td>
                     <td class="text-center">
                         <a href="@rb.RebornSummaryAddress" target="_blank">
-                            <span class="oi oi-external-link" aria-hidden="true"></span>&nbsp; Summary
+                            <Tooltip TooltipType="TooltipType.Text" Data="@("l2reborn.com")">
+                                <span class="oi oi-external-link" aria-hidden="true"></span>&nbsp; Summary
+                            </Tooltip>
                         </a>
                     </td>
                     <td class="text-center">
                         <a href="@(@"http://gracia.l2portal.com/Map.aspx?NpcID=" + rb.ID)" target="_blank">
-                            <span class="oi oi-external-link" aria-hidden="true"></span>&nbsp; Location
+                            <Tooltip TooltipType="TooltipType.Text" Data="@("gracia.l2portal.com")">
+                                <span class="oi oi-external-link" aria-hidden="true"></span>&nbsp; Location
+                            </Tooltip>
                         </a>
                     </td>
                 </tr>
@@ -79,20 +83,28 @@ else
             {
                 Task<List<RaidBoss>> rbTask = DataAccess.FetchRaidbosses(Http);
                 Task<List<RaidBossStatus>> rbsTask = DataAccess.FetchRaidbossStatus(Http);
-                await Task.WhenAll(rbTask, rbsTask);
+                Task<List<RaidbossLocation>> rblTask = DataAccess.FetchRaidbossLocations(Http);
+                await Task.WhenAll(rbTask, rbsTask, rblTask);
 
                 rbData = rbTask.Result.ToList();
                 foreach (RaidBoss rb in rbData)
                 {
                     RaidBossStatus st = rbsTask.Result.FirstOrDefault(s => s.ID == rb.ID);
+                    RaidbossLocation loc = rblTask.Result.FirstOrDefault(l => l.RaidbossID == rb.ID);
                     if (st != null)
                     {
                         rb.Alive = st.Alive;
                     }
+                    if (loc != null)
+                    {
+                        rb.CoordinateX = loc.CoorX;
+                        rb.CoordinateY = loc.CoorY;
+                    }
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                Console.WriteLine(ex);
                 loadingError = true;
             }
         }

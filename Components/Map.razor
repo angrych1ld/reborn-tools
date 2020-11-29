@@ -4,6 +4,11 @@
     <div class="map-wrapper" draggable="false" @ref="wrapperRef">
         <div class="map-container" style="@MapContainerStyle">
             <img class="map-image" src="Maps/world-map-big.png" />
+            <div class="map-trinkets">
+                <div class="map-trinket" style="@("top: " + targetPosition.y * 100 + "%; left: " + targetPosition.x * 100 + "%")" hidden="@(!targetPlaced)">
+                    <img src="Map Gui/target-icon.png" class="map-trinket-content-center" />
+                </div>
+            </div>
         </div>
         <div class="interaction-region"
              @ontouchstart="TouchDown"
@@ -15,6 +20,11 @@
 @code {
     [Parameter] public bool AllowMove { get; set; } = true;
 
+    private static (int x, int y) topLeftCors = (-132092, -247533);
+    private static (int x, int y) botRightCors = (235064, 264954);
+    private static (int x, int y) coordinateSize = (botRightCors.x - topLeftCors.x, botRightCors.y - topLeftCors.y);
+    private const int focusSize = 100;
+
     private const double fullMapPixelSizeX = 1812d;
     private const double fullMapPixelSizeY = 2620d;
     private const double mapAspect = fullMapPixelSizeY / fullMapPixelSizeX;
@@ -23,6 +33,9 @@
 
     private (double x, double y) mapContainerSize = (1812, 2620);
     private (double x, double y) mapContainerPosition = (0, 0);
+
+    private (double x, double y) targetPosition = (0, 0);
+    private bool targetPlaced = false;
 
     private (int x, int y) mapSize = (1, 1);
 
@@ -52,6 +65,11 @@
         return base.OnInitializedAsync();
     }
 
+    public async Task SetUp()
+    {
+        await UpdateMapSize();
+    }
+
     protected override void OnAfterRender(bool firstRender)
     {
         if (firstRender)
@@ -69,8 +87,14 @@
         // Clamp it to 1 to make sure it's above 0
         mapSize = (Math.Max(1, (int)rect.Width), (int)Math.Max(1, rect.Height));
 
-        ClampContainerPosition();
-        StateHasChanged();
+        // Check if position is valid
+        if (mapSize.x != 1 && mapSize.y != 1)
+        {
+            ClampContainerPosition();
+            StateHasChanged();
+        }
+
+        Console.WriteLine(mapSize);
     }
 
     private void Update(float deltaTime)
@@ -120,26 +144,11 @@
 
         mapContainerSize = (pixelHeight / mapAspect, pixelHeight);
 
-        //mapContainerPosition.x = (mapContainerPosition.x - oldSize.x * 0.5f) / (-mapContainerSize.x / oldSize.x) + mapContainerSize.x * 0.5f;
-        //mapContainerPosition.y = (mapContainerPosition.y - oldSize.y * 0.5f) / (-mapContainerSize.y / oldSize.y) + mapContainerSize.y * 0.5f;
-
-        //mapContainerPosition.x = (mapContainerPosition.x) * (mapContainerSize.x / oldSize.x);
-        //mapContainerPosition.y = (mapContainerPosition.y) * (mapContainerSize.y / oldSize.y);
-
         mapContainerPosition.x = -((-mapContainerPosition.x + mapSize.x * 0.5) * (mapContainerSize.x / oldSize.x) - mapSize.x * 0.5f);
         mapContainerPosition.y = -((-mapContainerPosition.y + mapSize.y * 0.5) * (mapContainerSize.y / oldSize.y) - mapSize.y * 0.5f);
 
-        //-newOffset = (-offset + mapSize * 0.5) * (newMapSize / mapSize) - newMapSize * 0.5f
-
-        //-newConPos = (-conPos + mapSize) * (newConSize / conSize) - mapSize
         ClampContainerPosition();
         StateHasChanged();
-
-
-
-        //targetMapContainerSize = (pixelHeight / mapAspect, pixelHeight);
-        //targetMapContainerPosition.x += (mapSize.x / 2 - mapContainerPosition.x) * ((targetMapContainerSize.x / mapContainerSize.x) - 1);
-        //targetMapContainerPosition.y += (mapSize.x / 2 - mapContainerPosition.x) * ((targetMapContainerSize.x / mapContainerSize.x) - 1);
     }
 
     public void SetZoomPercentValue(double percent)
@@ -159,6 +168,23 @@
         }
 
         SetZoomPixelHeight(targetPixelHeight);
+    }
+
+    public void SetTargetAtCoordinates(int coorX, int coorY)
+    {
+        targetPlaced = true;
+        targetPosition = (((double)coorX - topLeftCors.x) / coordinateSize.x, ((double)coorY - topLeftCors.y) / coordinateSize.y);
+        StateHasChanged();
+    }
+
+    public void FocusPositionCoordinates(int coorX, int coorY)
+    {
+        mapContainerPosition = (
+            -(mapContainerSize.x * ((double)(coorX - topLeftCors.x)) / coordinateSize.x - mapSize.x * 0.5f),
+            -(mapContainerSize.y * ((double)(coorY - topLeftCors.y)) / coordinateSize.y - mapSize.y * 0.5f));
+
+        ClampContainerPosition();
+        StateHasChanged();
     }
 
     private void ClampContainerPosition()

@@ -5,11 +5,11 @@
         <span>@textData</span>
     </div>
     <div id="tooltip-display-raidboss" hidden="@(currentType != TooltipType.Raidboss)">
-        <span>@raidbossData.Title</span>
-        <span>@raidbossData.Level</span>
+        <span style="font-size: 1.25rem">@raidbossData.Title</span>
+        <span>Level: @raidbossData.Level</span>
         <span>@(raidbossData.Alive == null ? "Unknown" : (raidbossData.Alive.Value ? "Alive" : "Dead"))</span>
-        <div id="tooltip-raidboss-map" style="width: 10rem; height: 10rem;">
-            <Map AllowMove="false"></Map>
+        <div id="tooltip-raidboss-map" style="width: 16rem; height: 16rem;">
+            <Map AllowMove="false" @ref="map"></Map>
         </div>
     </div>
 </div>
@@ -17,17 +17,34 @@
 @code {
     private bool isHidden = true;
     private TooltipType currentType = TooltipType.None;
+    private Map map;
 
     private (int x, int y) position;
 
     // Datas
     private RaidBoss raidbossData = new RaidBoss();
     private string textData;
+    private bool waitingForRenderRaidboss = false;
+
 
 
     protected override void OnInitialized()
     {
         service.TooltipChanged += (t) => TooltipChanged(t).ConfigureAwait(false);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (waitingForRenderRaidboss)
+        {
+            waitingForRenderRaidboss = false;
+            await map.SetUp();
+
+            map.SetTargetAtCoordinates(raidbossData.CoordinateX, raidbossData.CoordinateY);
+            map.SetZoomPercentValue(0.2);
+            map.FocusPositionCoordinates(raidbossData.CoordinateX, raidbossData.CoordinateY);
+            StateHasChanged();
+        }
     }
 
     private async Task TooltipChanged(Tooltip tooltip)
@@ -48,6 +65,7 @@
             else if (tooltip.TooltipType == TooltipType.Raidboss)
             {
                 raidbossData = tooltip.Data as RaidBoss;
+                waitingForRenderRaidboss = true;
             }
         }
 

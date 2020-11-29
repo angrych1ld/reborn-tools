@@ -11,6 +11,8 @@ namespace RebornTools
         public string Title { get; set; }
         public int Level { get; set; }
         public bool? Alive { get; set; }
+        public int CoordinateX { get; set; }
+        public int CoordinateY { get; set; }
 
 
         public string RebornSummaryAddress { get; set; }

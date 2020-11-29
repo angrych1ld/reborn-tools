@@ -1,0 +1,1244 @@
+﻿[
+  {
+    "RaidbossID": 25001,
+    "CoorX": -54416,
+    "CoorY": 146480,
+    "CoorZ": -2887
+  },
+  {
+    "RaidbossID": 25004,
+    "CoorX": -94208,
+    "CoorY": 100240,
+    "CoorZ": -3520
+  },
+  {
+    "RaidbossID": 25007,
+    "CoorX": 124240,
+    "CoorY": 75376,
+    "CoorZ": -2800
+  },
+  {
+    "RaidbossID": 25010,
+    "CoorX": 113920,
+    "CoorY": 52960,
+    "CoorZ": -3735
+  },
+  {
+    "RaidbossID": 25013,
+    "CoorX": 169744,
+    "CoorY": 11920,
+    "CoorZ": -2732
+  },
+  {
+    "RaidbossID": 25016,
+    "CoorX": 76787,
+    "CoorY": 245775,
+    "CoorZ": -10376
+  },
+  {
+    "RaidbossID": 25019,
+    "CoorX": 7376,
+    "CoorY": 169376,
+    "CoorZ": -3600
+  },
+  {
+    "RaidbossID": 25020,
+    "CoorX": 90384,
+    "CoorY": 125568,
+    "CoorZ": -2128
+  },
+  {
+    "RaidbossID": 25023,
+    "CoorX": 27280,
+    "CoorY": 101744,
+    "CoorZ": -3696
+  },
+  {
+    "RaidbossID": 25026,
+    "CoorX": 92976,
+    "CoorY": 7920,
+    "CoorZ": -3914
+  },
+  {
+    "RaidbossID": 25029,
+    "CoorX": 54941,
+    "CoorY": 206705,
+    "CoorZ": -3728
+  },
+  {
+    "RaidbossID": 25032,
+    "CoorX": 88532,
+    "CoorY": 245798,
+    "CoorZ": -10376
+  },
+  {
+    "RaidbossID": 25035,
+    "CoorX": 180968,
+    "CoorY": 12035,
+    "CoorZ": -2720
+  },
+  {
+    "RaidbossID": 25038,
+    "CoorX": -57360,
+    "CoorY": 186272,
+    "CoorZ": -4967
+  },
+  {
+    "RaidbossID": 25041,
+    "CoorX": 10416,
+    "CoorY": 126880,
+    "CoorZ": -3676
+  },
+  {
+    "RaidbossID": 25044,
+    "CoorX": 107792,
+    "CoorY": 27728,
+    "CoorZ": -3488
+  },
+  {
+    "RaidbossID": 25047,
+    "CoorX": 116352,
+    "CoorY": 27648,
+    "CoorZ": -3319
+  },
+  {
+    "RaidbossID": 25050,
+    "CoorX": 125520,
+    "CoorY": 27216,
+    "CoorZ": -3632
+  },
+  {
+    "RaidbossID": 25051,
+    "CoorX": 117760,
+    "CoorY": -9072,
+    "CoorZ": -3264
+  },
+  {
+    "RaidbossID": 25054,
+    "CoorX": 113230,
+    "CoorY": 16247,
+    "CoorZ": 3960
+  },
+  {
+    "RaidbossID": 25057,
+    "CoorX": 107056,
+    "CoorY": 168176,
+    "CoorZ": -3456
+  },
+  {
+    "RaidbossID": 25060,
+    "CoorX": -60428,
+    "CoorY": 188264,
+    "CoorZ": -4512
+  },
+  {
+    "RaidbossID": 25063,
+    "CoorX": -91024,
+    "CoorY": 116304,
+    "CoorZ": -3466
+  },
+  {
+    "RaidbossID": 25064,
+    "CoorX": 92528,
+    "CoorY": 84752,
+    "CoorZ": -3703
+  },
+  {
+    "RaidbossID": 25067,
+    "CoorX": 94992,
+    "CoorY": -23168,
+    "CoorZ": -2176
+  },
+  {
+    "RaidbossID": 25070,
+    "CoorX": 125600,
+    "CoorY": 50100,
+    "CoorZ": -3600
+  },
+  {
+    "RaidbossID": 25073,
+    "CoorX": 143265,
+    "CoorY": 110044,
+    "CoorZ": -3944
+  },
+  {
+    "RaidbossID": 25076,
+    "CoorX": -60976,
+    "CoorY": 127552,
+    "CoorZ": -2960
+  },
+  {
+    "RaidbossID": 25079,
+    "CoorX": 53712,
+    "CoorY": 102656,
+    "CoorZ": -1072
+  },
+  {
+    "RaidbossID": 25082,
+    "CoorX": 88512,
+    "CoorY": 140576,
+    "CoorZ": -3483
+  },
+  {
+    "RaidbossID": 25085,
+    "CoorX": 66944,
+    "CoorY": 67504,
+    "CoorZ": -3704
+  },
+  {
+    "RaidbossID": 25088,
+    "CoorX": 90848,
+    "CoorY": 16368,
+    "CoorZ": -5296
+  },
+  {
+    "RaidbossID": 25089,
+    "CoorX": 165424,
+    "CoorY": 93776,
+    "CoorZ": -2992
+  },
+  {
+    "RaidbossID": 25092,
+    "CoorX": 114830,
+    "CoorY": 17847,
+    "CoorZ": 1944
+  },
+  {
+    "RaidbossID": 25095,
+    "CoorX": -37856,
+    "CoorY": 198128,
+    "CoorZ": -2672
+  },
+  {
+    "RaidbossID": 25098,
+    "CoorX": 123536,
+    "CoorY": 133504,
+    "CoorZ": -3584
+  },
+  {
+    "RaidbossID": 25099,
+    "CoorX": 64048,
+    "CoorY": 16048,
+    "CoorZ": -3536
+  },
+  {
+    "RaidbossID": 25102,
+    "CoorX": 113840,
+    "CoorY": 84256,
+    "CoorZ": -2480
+  },
+  {
+    "RaidbossID": 25103,
+    "CoorX": 135872,
+    "CoorY": 94592,
+    "CoorZ": -3735
+  },
+  {
+    "RaidbossID": 25106,
+    "CoorX": 173880,
+    "CoorY": -11412,
+    "CoorZ": -2880
+  },
+  {
+    "RaidbossID": 25109,
+    "CoorX": 152660,
+    "CoorY": 110387,
+    "CoorZ": -5520
+  },
+  {
+    "RaidbossID": 25112,
+    "CoorX": 116128,
+    "CoorY": 139392,
+    "CoorZ": -3640
+  },
+  {
+    "RaidbossID": 25115,
+    "CoorX": 94000,
+    "CoorY": 197500,
+    "CoorZ": -3300
+  },
+  {
+    "RaidbossID": 25118,
+    "CoorX": 50896,
+    "CoorY": 146576,
+    "CoorZ": -3645
+  },
+  {
+    "RaidbossID": 25119,
+    "CoorX": 121872,
+    "CoorY": 64032,
+    "CoorZ": -3536
+  },
+  {
+    "RaidbossID": 25122,
+    "CoorX": 86300,
+    "CoorY": -8200,
+    "CoorZ": -3000
+  },
+  {
+    "RaidbossID": 25125,
+    "CoorX": 170656,
+    "CoorY": 85184,
+    "CoorZ": -2000
+  },
+  {
+    "RaidbossID": 25126,
+    "CoorX": 114830,
+    "CoorY": 14647,
+    "CoorZ": 6992
+  },
+  {
+    "RaidbossID": 25127,
+    "CoorX": -47552,
+    "CoorY": 219232,
+    "CoorZ": -2413
+  },
+  {
+    "RaidbossID": 25128,
+    "CoorX": 17696,
+    "CoorY": 179056,
+    "CoorZ": -3520
+  },
+  {
+    "RaidbossID": 25131,
+    "CoorX": 75488,
+    "CoorY": -9360,
+    "CoorZ": -2720
+  },
+  {
+    "RaidbossID": 25134,
+    "CoorX": 87536,
+    "CoorY": 75872,
+    "CoorZ": -3591
+  },
+  {
+    "RaidbossID": 25137,
+    "CoorX": 125280,
+    "CoorY": 102576,
+    "CoorZ": -3305
+  },
+  {
+    "RaidbossID": 25140,
+    "CoorX": 191975,
+    "CoorY": 56959,
+    "CoorZ": -7616
+  },
+  {
+    "RaidbossID": 25143,
+    "CoorX": 116430,
+    "CoorY": 14647,
+    "CoorZ": 6992
+  },
+  {
+    "RaidbossID": 25146,
+    "CoorX": -13056,
+    "CoorY": 215680,
+    "CoorZ": -3760
+  },
+  {
+    "RaidbossID": 25149,
+    "CoorX": -12656,
+    "CoorY": 138176,
+    "CoorZ": -3584
+  },
+  {
+    "RaidbossID": 25152,
+    "CoorX": 43872,
+    "CoorY": 123968,
+    "CoorZ": -2928
+  },
+  {
+    "RaidbossID": 25155,
+    "CoorX": 73520,
+    "CoorY": 66912,
+    "CoorZ": -3728
+  },
+  {
+    "RaidbossID": 25158,
+    "CoorX": 77104,
+    "CoorY": 5408,
+    "CoorZ": -3088
+  },
+  {
+    "RaidbossID": 25159,
+    "CoorX": 124984,
+    "CoorY": 43200,
+    "CoorZ": -3625
+  },
+  {
+    "RaidbossID": 25162,
+    "CoorX": 194107,
+    "CoorY": 53884,
+    "CoorZ": -4368
+  },
+  {
+    "RaidbossID": 25163,
+    "CoorX": 130500,
+    "CoorY": 59098,
+    "CoorZ": 3584
+  },
+  {
+    "RaidbossID": 25166,
+    "CoorX": -21800,
+    "CoorY": 152000,
+    "CoorZ": -2900
+  },
+  {
+    "RaidbossID": 25169,
+    "CoorX": -54464,
+    "CoorY": 170288,
+    "CoorZ": -3136
+  },
+  {
+    "RaidbossID": 25170,
+    "CoorX": 26064,
+    "CoorY": 121808,
+    "CoorZ": -3738
+  },
+  {
+    "RaidbossID": 25173,
+    "CoorX": 75968,
+    "CoorY": 110784,
+    "CoorZ": -2512
+  },
+  {
+    "RaidbossID": 25176,
+    "CoorX": 92544,
+    "CoorY": 115232,
+    "CoorZ": -3200
+  },
+  {
+    "RaidbossID": 25179,
+    "CoorX": 181814,
+    "CoorY": 52379,
+    "CoorZ": -4344
+  },
+  {
+    "RaidbossID": 25182,
+    "CoorX": 41966,
+    "CoorY": 215417,
+    "CoorZ": -3728
+  },
+  {
+    "RaidbossID": 25185,
+    "CoorX": 88123,
+    "CoorY": 166312,
+    "CoorZ": -3412
+  },
+  {
+    "RaidbossID": 25188,
+    "CoorX": 88256,
+    "CoorY": 176208,
+    "CoorZ": -3488
+  },
+  {
+    "RaidbossID": 25189,
+    "CoorX": 68832,
+    "CoorY": 203024,
+    "CoorZ": -3547
+  },
+  {
+    "RaidbossID": 25192,
+    "CoorX": 125920,
+    "CoorY": 190208,
+    "CoorZ": -3291
+  },
+  {
+    "RaidbossID": 25198,
+    "CoorX": 102656,
+    "CoorY": 157424,
+    "CoorZ": -3735
+  },
+  {
+    "RaidbossID": 25199,
+    "CoorX": 108096,
+    "CoorY": 157408,
+    "CoorZ": -3688
+  },
+  {
+    "RaidbossID": 25202,
+    "CoorX": 119760,
+    "CoorY": 157392,
+    "CoorZ": -3744
+  },
+  {
+    "RaidbossID": 25205,
+    "CoorX": 123808,
+    "CoorY": 153408,
+    "CoorZ": -3671
+  },
+  {
+    "RaidbossID": 25208,
+    "CoorX": 73776,
+    "CoorY": 201552,
+    "CoorZ": -3760
+  },
+  {
+    "RaidbossID": 25211,
+    "CoorX": 76352,
+    "CoorY": 193216,
+    "CoorZ": -3648
+  },
+  {
+    "RaidbossID": 25214,
+    "CoorX": 112112,
+    "CoorY": 209936,
+    "CoorZ": -3616
+  },
+  {
+    "RaidbossID": 25217,
+    "CoorX": 89904,
+    "CoorY": 105712,
+    "CoorZ": -3292
+  },
+  {
+    "RaidbossID": 25220,
+    "CoorX": 116430,
+    "CoorY": 16247,
+    "CoorZ": -2120
+  },
+  {
+    "RaidbossID": 25223,
+    "CoorX": 43152,
+    "CoorY": 152352,
+    "CoorZ": -2848
+  },
+  {
+    "RaidbossID": 25226,
+    "CoorX": 104240,
+    "CoorY": -3664,
+    "CoorZ": -3392
+  },
+  {
+    "RaidbossID": 25229,
+    "CoorX": 137568,
+    "CoorY": -19488,
+    "CoorZ": -3552
+  },
+  {
+    "RaidbossID": 25230,
+    "CoorX": 66672,
+    "CoorY": 46704,
+    "CoorZ": -3920
+  },
+  {
+    "RaidbossID": 25233,
+    "CoorX": 185800,
+    "CoorY": -26500,
+    "CoorZ": -2000
+  },
+  {
+    "RaidbossID": 25234,
+    "CoorX": 120080,
+    "CoorY": 111248,
+    "CoorZ": -3047
+  },
+  {
+    "RaidbossID": 25235,
+    "CoorX": 116400,
+    "CoorY": -62528,
+    "CoorZ": -3264
+  },
+  {
+    "RaidbossID": 25238,
+    "CoorX": 155000,
+    "CoorY": 85400,
+    "CoorZ": -3200
+  },
+  {
+    "RaidbossID": 25241,
+    "CoorX": 165984,
+    "CoorY": 88048,
+    "CoorZ": -2384
+  },
+  {
+    "RaidbossID": 25244,
+    "CoorX": 187360,
+    "CoorY": 45840,
+    "CoorZ": -5856
+  },
+  {
+    "RaidbossID": 25245,
+    "CoorX": 172000,
+    "CoorY": 55000,
+    "CoorZ": -5400
+  },
+  {
+    "RaidbossID": 25248,
+    "CoorX": 127903,
+    "CoorY": -13399,
+    "CoorZ": -3720
+  },
+  {
+    "RaidbossID": 25249,
+    "CoorX": 147104,
+    "CoorY": -20560,
+    "CoorZ": -3377
+  },
+  {
+    "RaidbossID": 25252,
+    "CoorX": 192376,
+    "CoorY": 22087,
+    "CoorZ": -3608
+  },
+  {
+    "RaidbossID": 25255,
+    "CoorX": 170048,
+    "CoorY": -24896,
+    "CoorZ": -3440
+  },
+  {
+    "RaidbossID": 25256,
+    "CoorX": 170320,
+    "CoorY": 42640,
+    "CoorZ": -4832
+  },
+  {
+    "RaidbossID": 25259,
+    "CoorX": 42050,
+    "CoorY": 208107,
+    "CoorZ": -3752
+  },
+  {
+    "RaidbossID": 25260,
+    "CoorX": 93120,
+    "CoorY": 19440,
+    "CoorZ": -3607
+  },
+  {
+    "RaidbossID": 25263,
+    "CoorX": 144400,
+    "CoorY": -28192,
+    "CoorZ": -1920
+  },
+  {
+    "RaidbossID": 25266,
+    "CoorX": 188983,
+    "CoorY": 13647,
+    "CoorZ": -2672
+  },
+  {
+    "RaidbossID": 25269,
+    "CoorX": 123504,
+    "CoorY": -23696,
+    "CoorZ": -3481
+  },
+  {
+    "RaidbossID": 25272,
+    "CoorX": 49248,
+    "CoorY": 127792,
+    "CoorZ": -3552
+  },
+  {
+    "RaidbossID": 25273,
+    "CoorX": 23800,
+    "CoorY": 119500,
+    "CoorZ": -8976
+  },
+  {
+    "RaidbossID": 25276,
+    "CoorX": 154088,
+    "CoorY": -14116,
+    "CoorZ": -3736
+  },
+  {
+    "RaidbossID": 25277,
+    "CoorX": 54651,
+    "CoorY": 180269,
+    "CoorZ": -4976
+  },
+  {
+    "RaidbossID": 25280,
+    "CoorX": 85622,
+    "CoorY": 88766,
+    "CoorZ": -5120
+  },
+  {
+    "RaidbossID": 25281,
+    "CoorX": 151053,
+    "CoorY": 88124,
+    "CoorZ": -5424
+  },
+  {
+    "RaidbossID": 25282,
+    "CoorX": 179311,
+    "CoorY": -7632,
+    "CoorZ": -4896
+  },
+  {
+    "RaidbossID": 25283,
+    "CoorX": 184410,
+    "CoorY": -10111,
+    "CoorZ": -5488
+  },
+  {
+    "RaidbossID": 25286,
+    "CoorX": 185000,
+    "CoorY": -13000,
+    "CoorZ": -5488
+  },
+  {
+    "RaidbossID": 25290,
+    "CoorX": 186304,
+    "CoorY": -43744,
+    "CoorZ": -3193
+  },
+  {
+    "RaidbossID": 25293,
+    "CoorX": 134672,
+    "CoorY": -115600,
+    "CoorZ": -1216
+  },
+  {
+    "RaidbossID": 25296,
+    "CoorX": 158352,
+    "CoorY": -121088,
+    "CoorZ": -2240
+  },
+  {
+    "RaidbossID": 25299,
+    "CoorX": 148160,
+    "CoorY": -73808,
+    "CoorZ": -4919
+  },
+  {
+    "RaidbossID": 25302,
+    "CoorX": 145504,
+    "CoorY": -81664,
+    "CoorZ": -6016
+  },
+  {
+    "RaidbossID": 25305,
+    "CoorX": 145008,
+    "CoorY": -84992,
+    "CoorZ": -6240
+  },
+  {
+    "RaidbossID": 25306,
+    "CoorX": 142368,
+    "CoorY": -82512,
+    "CoorZ": -6487
+  },
+  {
+    "RaidbossID": 25309,
+    "CoorX": 115552,
+    "CoorY": -39200,
+    "CoorZ": -2480
+  },
+  {
+    "RaidbossID": 25312,
+    "CoorX": 109216,
+    "CoorY": -36160,
+    "CoorZ": -938
+  },
+  {
+    "RaidbossID": 25315,
+    "CoorX": 105584,
+    "CoorY": -43024,
+    "CoorZ": -1728
+  },
+  {
+    "RaidbossID": 25316,
+    "CoorX": 105452,
+    "CoorY": -36775,
+    "CoorZ": -1050
+  },
+  {
+    "RaidbossID": 25319,
+    "CoorX": 184542,
+    "CoorY": -106330,
+    "CoorZ": -6304
+  },
+  {
+    "RaidbossID": 25322,
+    "CoorX": 93296,
+    "CoorY": -75104,
+    "CoorZ": -1824
+  },
+  {
+    "RaidbossID": 25325,
+    "CoorX": 91008,
+    "CoorY": -85904,
+    "CoorZ": -2736
+  },
+  {
+    "RaidbossID": 25328,
+    "CoorX": 59331,
+    "CoorY": -42403,
+    "CoorZ": -3003
+  },
+  {
+    "RaidbossID": 25352,
+    "CoorX": -16912,
+    "CoorY": 174912,
+    "CoorZ": -3264
+  },
+  {
+    "RaidbossID": 25354,
+    "CoorX": -16096,
+    "CoorY": 184288,
+    "CoorZ": -3817
+  },
+  {
+    "RaidbossID": 25357,
+    "CoorX": -3456,
+    "CoorY": 112864,
+    "CoorZ": -3456
+  },
+  {
+    "RaidbossID": 25360,
+    "CoorX": 29216,
+    "CoorY": 179280,
+    "CoorZ": -3624
+  },
+  {
+    "RaidbossID": 25362,
+    "CoorX": -55920,
+    "CoorY": 186768,
+    "CoorZ": -3336
+  },
+  {
+    "RaidbossID": 25365,
+    "CoorX": -62000,
+    "CoorY": 190256,
+    "CoorZ": -3687
+  },
+  {
+    "RaidbossID": 25366,
+    "CoorX": -62368,
+    "CoorY": 179440,
+    "CoorZ": -3594
+  },
+  {
+    "RaidbossID": 25369,
+    "CoorX": -45616,
+    "CoorY": 111024,
+    "CoorZ": -3808
+  },
+  {
+    "RaidbossID": 25372,
+    "CoorX": -111092,
+    "CoorY": 232173,
+    "CoorZ": -3448
+  },
+  {
+    "RaidbossID": 25373,
+    "CoorX": 9649,
+    "CoorY": 77467,
+    "CoorZ": -3808
+  },
+  {
+    "RaidbossID": 25375,
+    "CoorX": 22500,
+    "CoorY": 80300,
+    "CoorZ": -2772
+  },
+  {
+    "RaidbossID": 25378,
+    "CoorX": -54096,
+    "CoorY": 84288,
+    "CoorZ": -3512
+  },
+  {
+    "RaidbossID": 25380,
+    "CoorX": -47367,
+    "CoorY": 51548,
+    "CoorZ": -5904
+  },
+  {
+    "RaidbossID": 25383,
+    "CoorX": 51632,
+    "CoorY": 153920,
+    "CoorZ": -3552
+  },
+  {
+    "RaidbossID": 25385,
+    "CoorX": 53600,
+    "CoorY": 143472,
+    "CoorZ": -3872
+  },
+  {
+    "RaidbossID": 25388,
+    "CoorX": 40128,
+    "CoorY": 101920,
+    "CoorZ": -1241
+  },
+  {
+    "RaidbossID": 25391,
+    "CoorX": 45600,
+    "CoorY": 120592,
+    "CoorZ": -2455
+  },
+  {
+    "RaidbossID": 25392,
+    "CoorX": 29928,
+    "CoorY": 107160,
+    "CoorZ": -3708
+  },
+  {
+    "RaidbossID": 25394,
+    "CoorX": 101888,
+    "CoorY": 200224,
+    "CoorZ": -3680
+  },
+  {
+    "RaidbossID": 25395,
+    "CoorX": 15000,
+    "CoorY": 119000,
+    "CoorZ": -11900
+  },
+  {
+    "RaidbossID": 25398,
+    "CoorX": 5000,
+    "CoorY": 189000,
+    "CoorZ": -3728
+  },
+  {
+    "RaidbossID": 25401,
+    "CoorX": 117808,
+    "CoorY": 102880,
+    "CoorZ": -3600
+  },
+  {
+    "RaidbossID": 25404,
+    "CoorX": 35992,
+    "CoorY": 191312,
+    "CoorZ": -3104
+  },
+  {
+    "RaidbossID": 25407,
+    "CoorX": 115072,
+    "CoorY": 112272,
+    "CoorZ": -3018
+  },
+  {
+    "RaidbossID": 25410,
+    "CoorX": 72192,
+    "CoorY": 125424,
+    "CoorZ": -3657
+  },
+  {
+    "RaidbossID": 25412,
+    "CoorX": 81920,
+    "CoorY": 113136,
+    "CoorZ": -3056
+  },
+  {
+    "RaidbossID": 25415,
+    "CoorX": 128352,
+    "CoorY": 138464,
+    "CoorZ": -3467
+  },
+  {
+    "RaidbossID": 25418,
+    "CoorX": 62416,
+    "CoorY": 8096,
+    "CoorZ": -3376
+  },
+  {
+    "RaidbossID": 25420,
+    "CoorX": 42032,
+    "CoorY": 24128,
+    "CoorZ": -4704
+  },
+  {
+    "RaidbossID": 25423,
+    "CoorX": 113600,
+    "CoorY": 47120,
+    "CoorZ": -4640
+  },
+  {
+    "RaidbossID": 25426,
+    "CoorX": -18048,
+    "CoorY": -101264,
+    "CoorZ": -2112
+  },
+  {
+    "RaidbossID": 25429,
+    "CoorX": 172064,
+    "CoorY": -214752,
+    "CoorZ": -3565
+  },
+  {
+    "RaidbossID": 25431,
+    "CoorX": 79648,
+    "CoorY": 18320,
+    "CoorZ": -5232
+  },
+  {
+    "RaidbossID": 25434,
+    "CoorX": 104096,
+    "CoorY": -16896,
+    "CoorZ": -1803
+  },
+  {
+    "RaidbossID": 25437,
+    "CoorX": 67296,
+    "CoorY": 64128,
+    "CoorZ": -3723
+  },
+  {
+    "RaidbossID": 25438,
+    "CoorX": 107000,
+    "CoorY": 92000,
+    "CoorZ": -2272
+  },
+  {
+    "RaidbossID": 25441,
+    "CoorX": 111440,
+    "CoorY": 82912,
+    "CoorZ": -2912
+  },
+  {
+    "RaidbossID": 25444,
+    "CoorX": 116430,
+    "CoorY": 17847,
+    "CoorZ": -4384
+  },
+  {
+    "RaidbossID": 25447,
+    "CoorX": 113230,
+    "CoorY": 17847,
+    "CoorZ": -1424
+  },
+  {
+    "RaidbossID": 25450,
+    "CoorX": 113230,
+    "CoorY": 14647,
+    "CoorZ": 9559
+  },
+  {
+    "RaidbossID": 25453,
+    "CoorX": 156704,
+    "CoorY": -6096,
+    "CoorZ": -4185
+  },
+  {
+    "RaidbossID": 25456,
+    "CoorX": 133632,
+    "CoorY": 87072,
+    "CoorZ": -3623
+  },
+  {
+    "RaidbossID": 25460,
+    "CoorX": 150304,
+    "CoorY": 67776,
+    "CoorZ": -3688
+  },
+  {
+    "RaidbossID": 25463,
+    "CoorX": 166288,
+    "CoorY": 68096,
+    "CoorZ": -3264
+  },
+  {
+    "RaidbossID": 25467,
+    "CoorX": 186192,
+    "CoorY": 61472,
+    "CoorZ": -4160
+  },
+  {
+    "RaidbossID": 25470,
+    "CoorX": 186896,
+    "CoorY": 56276,
+    "CoorZ": -4576
+  },
+  {
+    "RaidbossID": 25473,
+    "CoorX": 175712,
+    "CoorY": 29856,
+    "CoorZ": -3776
+  },
+  {
+    "RaidbossID": 25475,
+    "CoorX": 183568,
+    "CoorY": 24560,
+    "CoorZ": -3184
+  },
+  {
+    "RaidbossID": 25478,
+    "CoorX": 168288,
+    "CoorY": 28368,
+    "CoorZ": -3632
+  },
+  {
+    "RaidbossID": 25481,
+    "CoorX": 53517,
+    "CoorY": 205413,
+    "CoorZ": -3728
+  },
+  {
+    "RaidbossID": 25484,
+    "CoorX": 43160,
+    "CoorY": 220463,
+    "CoorZ": -3680
+  },
+  {
+    "RaidbossID": 25487,
+    "CoorX": 83056,
+    "CoorY": 183232,
+    "CoorZ": -3616
+  },
+  {
+    "RaidbossID": 25490,
+    "CoorX": 86528,
+    "CoorY": 216864,
+    "CoorZ": -3584
+  },
+  {
+    "RaidbossID": 25493,
+    "CoorX": 83174,
+    "CoorY": 254428,
+    "CoorZ": -10873
+  },
+  {
+    "RaidbossID": 25496,
+    "CoorX": 88300,
+    "CoorY": 258000,
+    "CoorZ": -10200
+  },
+  {
+    "RaidbossID": 25498,
+    "CoorX": 126624,
+    "CoorY": 174448,
+    "CoorZ": -3056
+  },
+  {
+    "RaidbossID": 25501,
+    "CoorX": 48575,
+    "CoorY": -106191,
+    "CoorZ": -1568
+  },
+  {
+    "RaidbossID": 25504,
+    "CoorX": 123000,
+    "CoorY": -141000,
+    "CoorZ": -1100
+  },
+  {
+    "RaidbossID": 25506,
+    "CoorX": 127900,
+    "CoorY": -160600,
+    "CoorZ": -1100
+  },
+  {
+    "RaidbossID": 25509,
+    "CoorX": 74000,
+    "CoorY": -102000,
+    "CoorZ": 900
+  },
+  {
+    "RaidbossID": 25512,
+    "CoorX": 96524,
+    "CoorY": -111070,
+    "CoorZ": -3335
+  },
+  {
+    "RaidbossID": 25514,
+    "CoorX": 80000,
+    "CoorY": -55000,
+    "CoorZ": -6000
+  },
+  {
+    "RaidbossID": 25523,
+    "CoorX": 170000,
+    "CoorY": -60000,
+    "CoorZ": -3500
+  },
+  {
+    "RaidbossID": 25524,
+    "CoorX": 144600,
+    "CoorY": -5500,
+    "CoorZ": -4100
+  },
+  {
+    "RaidbossID": 25527,
+    "CoorX": 3776,
+    "CoorY": -6768,
+    "CoorZ": -32
+  },
+  {
+    "RaidbossID": 29001,
+    "CoorX": -21610,
+    "CoorY": 181594,
+    "CoorZ": -5734
+  },
+  {
+    "RaidbossID": 29006,
+    "CoorX": 17726,
+    "CoorY": 108915,
+    "CoorZ": -6480
+  },
+  {
+    "RaidbossID": 29014,
+    "CoorX": 55024,
+    "CoorY": 17368,
+    "CoorZ": -5412
+  },
+  {
+    "RaidbossID": 29019,
+    "CoorX": 185708,
+    "CoorY": 114298,
+    "CoorZ": -8221
+  },
+  {
+    "RaidbossID": 29020,
+    "CoorX": 114830,
+    "CoorY": 16247,
+    "CoorZ": 10080
+  },
+  {
+    "RaidbossID": 29020,
+    "CoorX": 115213,
+    "CoorY": 16623,
+    "CoorZ": 10080
+  },
+  {
+    "RaidbossID": 29022,
+    "CoorX": 55312,
+    "CoorY": 219168,
+    "CoorZ": -3223
+  },
+  {
+    "RaidbossID": 29028,
+    "CoorX": 213896,
+    "CoorY": -115436,
+    "CoorZ": -1644
+  },
+  {
+    "RaidbossID": 29047,
+    "CoorX": 174238,
+    "CoorY": -89792,
+    "CoorZ": -5002
+  },
+  {
+    "RaidbossID": 29054,
+    "CoorX": 11882,
+    "CoorY": -49216,
+    "CoorZ": -3008
+  },
+  {
+    "RaidbossID": 29056,
+    "CoorX": 102800,
+    "CoorY": -126000,
+    "CoorZ": -2500
+  },
+  {
+    "RaidbossID": 29060,
+    "CoorX": 106000,
+    "CoorY": -128000,
+    "CoorZ": -3000
+  },
+  {
+    "RaidbossID": 29062,
+    "CoorX": -35765,
+    "CoorY": -50351,
+    "CoorZ": 1704
+  },
+  {
+    "RaidbossID": 29065,
+    "CoorX": 26528,
+    "CoorY": -8244,
+    "CoorZ": -20
+  }
+]
