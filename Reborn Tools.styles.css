@@ -1,13 +1,36 @@
 /* /Components/Map.razor.rz.scp.css */
-
-
 .map-image[b-s5g7okepyo] {
+    position: relative;
+
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+.map-trinkets[b-s5g7okepyo] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top:0;
+    left:0;
+
+    pointer-events: none;
+}
+
+.map-trinket-content-center[b-s5g7okepyo] {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.map-trinket[b-s5g7okepyo] {
+    position: absolute;
+}
+ 
 .map-holder[b-s5g7okepyo] {
     position: relative;
     width: 100%;
@@ -50,6 +73,8 @@
 
     background-color: rgb(20, 20, 20);
     padding: 1rem;
+
+    color: white;
 }
 
 
