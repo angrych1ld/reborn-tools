@@ -8,12 +8,19 @@
     padding: 0;
 }
 
-.map-wrapper[b-s5g7okepyo] {
+.map-holder[b-s5g7okepyo] {
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+}
 
+.map-wrapper[b-s5g7okepyo] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     user-select: none;
     pointer-events: none;
 }
@@ -39,6 +46,14 @@
 /* /Pages/Raidbosses.razor.rz.scp.css */
 a[b-d1wzk2uyx6], a:visited[b-d1wzk2uyx6], a:hover[b-d1wzk2uyx6], a:active[b-d1wzk2uyx6] {
     color: inherit;
+}
+/* /Pages/WorldMap.razor.rz.scp.css */
+.map[b-zr9oq4tpgn] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-mrwdygufxv] {

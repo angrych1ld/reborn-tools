@@ -9,6 +9,8 @@
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="Reborn Tools.styles.css" rel="stylesheet" />
+    <script src="_content/MatBlazor/dist/matBlazor.js"></script>
+    <link href="_content/MatBlazor/dist/matBlazor.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -26,6 +28,22 @@
     <script src="_framework/blazor.webassembly.js"></script>
 
     <script>
+        window.anim = {
+            start: function (instance) {
+                return window.requestAnimationFrame(function (timestamp) { anim.callback(instance, timestamp); });
+            },
+
+            callback: function (instance, timestamp) {
+                instance.invokeMethod('eventRequestAnimationFrame', timestamp);
+
+                var callbackId = window.requestAnimationFrame(function (timestamp) { anim.callback(instance, timestamp); });
+            },
+
+            stop: function (callbackId) {
+                window.cancelAnimationFrame(callbackId);
+            }
+        };
+
         function hookInputEvents(dotNetObject) {
             document.onpointermove = function (e) {
                 e = e || window.event;
@@ -39,6 +57,10 @@
                 e = e || window.event;
                 dotNetObject.invokeMethod('OnMouseEnter', e.clientX, e.clientY)
             };
+            document.onwheel = function (e) {
+                e = e || window.event;
+                dotNetObject.invokeMethod('MouseWheel', e.deltaY);
+            }
 
             document.ontouchmove = function (e) {
                 e = e || window.event;
@@ -53,6 +75,21 @@
                 dotNetObject.invokeMethod('OnTouchStart', e.touches[0].clientX, e.touches[0].clientY)
             };
 
+            document.onkeydown = function (e) {
+                e = e || window.event;
+                dotNetObject.invokeMethod('KeyDown', e.key);
+            };
+
+            document.onkeyup = function (e) {
+                e = e || window.event;
+                dotNetObject.invokeMethod('KeyUp', e.key);
+            };
+
+            window.onresize = function (e) {
+                dotNetObject.invokeMethod('WindowSizeChanged');
+            }
+
+            MyDOMGetBoundingClientRect = (element, parm) => { return element.getBoundingClientRect(); };
         };
     </script>
 </body>
