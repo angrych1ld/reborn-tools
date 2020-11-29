@@ -38,7 +38,7 @@ else
             @foreach (var rb in rbData)
             {
                 <tr>
-                    <td>@rb.Title</td>
+                    <td><Tooltip TooltipType="TooltipType.Raidboss" Data="rb"><a>@rb.Title</a></Tooltip></td>
                     <td class="text-center">@rb.Level</td>
                     <td class="@(rb.Alive == null ? "table-secondary" : (rb.Alive.Value ? "table-success" : "table-danger")) text-center">
                         @(rb.Alive == null ? "Unknown" : (rb.Alive.Value ? "Alive" : "Dead"))

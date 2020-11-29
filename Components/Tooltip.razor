@@ -1,0 +1,32 @@
+﻿@inject TooltipService service
+
+<div @ref="wrapperRef"
+     @onmouseover="Show"
+     @ontouchstart="Show"
+     @ontouchleave="Hide"
+     @ontouchend="Hide"
+     @onmouseout="Hide"
+     @ondeactivate="Hide"
+     >
+    @ChildContent
+</div>
+
+@code {
+    [Parameter] public RenderFragment ChildContent { get; set; }
+
+    [Parameter] public TooltipType TooltipType { get; set; }
+
+    [Parameter] public object Data { get; set; }
+
+    public ElementReference wrapperRef;
+
+    public void Hide()
+    {
+        service.Hide(this);
+    }
+
+    public void Show()
+    {
+        service.Display(this);
+    }
+}

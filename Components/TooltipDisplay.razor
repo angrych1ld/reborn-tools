@@ -1,0 +1,56 @@
+﻿@inject TooltipService service
+
+<div class="tooltip-display-wrapper" hidden="@isHidden" style="@("top: " + position.y + "px; left: " + position.x + "px;")">
+    <div id="tooltip-display-text" hidden="@(currentType != TooltipType.Text)">
+        <span>@textData</span>
+    </div>
+    <div id="tooltip-display-raidboss" hidden="@(currentType != TooltipType.Raidboss)">
+        <span>@raidbossData.Title</span>
+        <span>@raidbossData.Level</span>
+        <span>@(raidbossData.Alive == null ? "Unknown" : (raidbossData.Alive.Value ? "Alive" : "Dead"))</span>
+        <div id="tooltip-raidboss-map" style="width: 10rem; height: 10rem;">
+            <Map AllowMove="false"></Map>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool isHidden = true;
+    private TooltipType currentType = TooltipType.None;
+
+    private (int x, int y) position;
+
+    // Datas
+    private RaidBoss raidbossData = new RaidBoss();
+    private string textData;
+
+
+    protected override void OnInitialized()
+    {
+        service.TooltipChanged += (t) => TooltipChanged(t).ConfigureAwait(false);
+    }
+
+    private async Task TooltipChanged(Tooltip tooltip)
+    {
+        isHidden = tooltip == null;
+
+        if (!isHidden)
+        {
+            currentType = tooltip.TooltipType;
+            BoundingClientRect tooltipableRect = await App.Instance.GetBoundingRect(tooltip.wrapperRef);
+
+            position = ((int)tooltipableRect.X, (int)tooltipableRect.Y + (int)tooltipableRect.Height + 2);
+
+            if (tooltip.TooltipType == TooltipType.Text)
+            {
+                textData = tooltip.Data as string;
+            }
+            else if (tooltip.TooltipType == TooltipType.Raidboss)
+            {
+                raidbossData = tooltip.Data as RaidBoss;
+            }
+        }
+
+        StateHasChanged();
+    }
+}
