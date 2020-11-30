@@ -26,7 +26,7 @@
       "Microsoft.JSInterop.dll": "sha256-21OaCJJX+k6M+dYEFb5j1eJU+K+Sk6lvYDaRnsKqy8A=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-E1ZVZc8ppcbuan9B4K4NDw+BijA0pjKkIIwlnGerx9g=",
       "System.IO.Pipelines.dll": "sha256-CETD5tkXtiKEgbXyN\/lp0Ejf6LcHIhgeQIEyow2mhmY=",
-      "Reborn Tools.dll": "sha256-6g03XqXmQzVggZLUaH8w2axHgW2t50zaMrbexhYfpgs=",
+      "Reborn Tools.dll": "sha256-zMXMGN5ngIZ7hFWcz+pP\/p+Utv6VArmbDmCQHJeG37A=",
       "System.Collections.Concurrent.dll": "sha256-+Se9MujYyXeorM4Dz03\/i129Aj09TOKDTy06ruM7vTY=",
       "System.Collections.Immutable.dll": "sha256-DuhuoOJeXerXlQkAwwvcHRPIGzosHMSVqAL6+V1CYfA=",
       "System.Collections.NonGeneric.dll": "sha256-39LRlXkrWiX2kyLLJxf8o2DaJeYF2V5WOc7abxVgcks=",
@@ -53,7 +53,7 @@
       "System.Runtime.Serialization.Primitives.dll": "sha256-YX5W2sF+qUluxoMhuxWlo7Q\/4vRAuxhxIoA1V\/63yD0=",
       "System.Text.Encoding.CodePages.dll": "sha256-oAJJZ+G8nrWhjtuJrGv3GjeqXwbx4g+SNRGFFIYPgA0=",
       "System.Text.Encodings.Web.dll": "sha256-p+w4VfOQe4xpDeMVUmqzR+TJIhbDwykCrATzc5\/TVUM=",
-      "System.Text.Json.dll": "sha256-Obipw86WbgHlX+CQ45kpAkvh5cj4ISzsPylhaonjgdE=",
+      "System.Text.Json.dll": "sha256-v7Iev4xMS0tzXs3LNRv16396hhrVOck2YUtYqvEs5wU=",
       "System.Text.RegularExpressions.dll": "sha256-5B0fRkbwQit2gmKaVvbSHq3EkZUGOYPahPJDRe1GwYM=",
       "System.Private.CoreLib.dll": "sha256-Icy5Px+Rj7EjqdxEES0Rvm7yGZCqTHKp\/b6jrQC5dAw="
     },
