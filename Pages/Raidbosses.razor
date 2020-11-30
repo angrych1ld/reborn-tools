@@ -8,7 +8,7 @@
 
 <MatBody1>Map Type</MatBody1>
 <MatRadioGroup @bind-Value="MapType" TValue="string">
-    <MatRadioButton Value="@Map.DEFAULT_MAP_TYPE" TValue="string" >Default</MatRadioButton>
+    <MatRadioButton Value="@Map.DEFAULT_MAP_TYPE" TValue="string">Default</MatRadioButton>
     <MatRadioButton Value="@Map.CT2_RELIEF_MAP_TYPE" TValue="string">CT2 Relief</MatRadioButton>
 </MatRadioGroup>
 
@@ -41,7 +41,7 @@ else
                 @(context.Alive == null ? "Unknown" : (context.Alive.Value ? "Alive" : "Dead"))
             </td>
             <td>
-                <MatButtonLink Href="@context.RebornSummaryAddress" Target="_blank">
+                <MatButtonLink Href="@("https://l2reborn.com/npc/" + @context.ID + "/" + context.Title)" Target="_blank">
                     <MatIcon Icon="link"></MatIcon>&nbsp; Summary
                 </MatButtonLink>
             </td>
@@ -89,22 +89,15 @@ else
             {
                 Task<List<RaidBoss>> rbTask = DataAccess.FetchRaidbosses(Http);
                 Task<List<RaidBossStatus>> rbsTask = DataAccess.FetchRaidbossStatus(Http);
-                Task<List<RaidbossLocation>> rblTask = DataAccess.FetchRaidbossLocations(Http);
-                await Task.WhenAll(rbTask, rbsTask, rblTask);
+                await Task.WhenAll(rbTask, rbsTask);
 
                 rbData = rbTask.Result.ToList();
                 foreach (RaidBoss rb in rbData)
                 {
                     RaidBossStatus st = rbsTask.Result.FirstOrDefault(s => s.ID == rb.ID);
-                    RaidbossLocation loc = rblTask.Result.FirstOrDefault(l => l.RaidbossID == rb.ID);
                     if (st != null)
                     {
                         rb.Alive = st.Alive;
-                    }
-                    if (loc != null)
-                    {
-                        rb.CoordinateX = loc.CoorX;
-                        rb.CoordinateY = loc.CoorY;
                     }
                 }
             }

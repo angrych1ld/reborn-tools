@@ -9,6 +9,10 @@
         <span style="font-size: 1.25rem">@raidbossData.Title</span>
         <span>Level: @raidbossData.Level</span>
         <span>@(raidbossData.Alive == null ? "Unknown" : (raidbossData.Alive.Value ? "Alive" : "Dead"))</span>
+        <br />
+        <span style="text-align:left; @(raidbossData.LocationSource == RaidBoss.LocationSourceType.L2RebornManual ? "color: lightgreen;" : "")">
+            @("Loc source: " + raidbossData.LocationSource.ToString())
+        </span>
         <div id="tooltip-raidboss-map" style="width: 16rem; height: 16rem;">
             <Map AllowMove="false" @ref="map"></Map>
         </div>

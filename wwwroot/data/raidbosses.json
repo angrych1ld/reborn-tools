@@ -1,0 +1,1952 @@
+[
+    {
+       "ID":25372,
+       "Title":"Discarded Guardian ",
+       "Level":20,
+       "CoordinateX":-111092,
+       "CoordinateY":232173,
+       "CoordinateZ":-3448,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25378,
+       "Title":"Madness Beast ",
+       "Level":20,
+       "CoordinateX":-54096,
+       "CoordinateY":84288,
+       "CoordinateZ":-3512,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25375,
+       "Title":"Zombie Lord Farakelsus ",
+       "Level":20,
+       "CoordinateX":22500,
+       "CoordinateY":80300,
+       "CoordinateZ":-2772,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25146,
+       "Title":"Serpent Demon Bifrons ",
+       "Level":21,
+       "CoordinateX":-13056,
+       "CoordinateY":215680,
+       "CoordinateZ":-3760,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25380,
+       "Title":"Kaysha Herald of Icarus ",
+       "Level":21,
+       "CoordinateX":-47367,
+       "CoordinateY":51548,
+       "CoordinateZ":-5904,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25357,
+       "Title":"Sukar Wererat Chief ",
+       "Level":21,
+       "CoordinateX":-3456,
+       "CoordinateY":112864,
+       "CoordinateZ":-3456,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25373,
+       "Title":"Malex Herald of Dagoniel ",
+       "Level":21,
+       "CoordinateX":9649,
+       "CoordinateY":77467,
+       "CoordinateZ":-3808,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25001,
+       "Title":"Greyclaw Kutus ",
+       "Level":23,
+       "CoordinateX":-54416,
+       "CoordinateY":146480,
+       "CoordinateZ":-2887,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25366,
+       "Title":"Kuroboros\u0027 Priest ",
+       "Level":23,
+       "CoordinateX":-62368,
+       "CoordinateY":179440,
+       "CoordinateZ":-3594,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25362,
+       "Title":"Tracker Leader Sharuk ",
+       "Level":23,
+       "CoordinateX":-55920,
+       "CoordinateY":186768,
+       "CoordinateZ":-3336,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25060,
+       "Title":"Unrequited Kael ",
+       "Level":24,
+       "CoordinateX":-60428,
+       "CoordinateY":188264,
+       "CoordinateZ":-4512,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25127,
+       "Title":"Langk Matriarch Rashkos ",
+       "Level":24,
+       "CoordinateX":-47552,
+       "CoordinateY":219232,
+       "CoordinateZ":-2413,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25369,
+       "Title":"Soul Scavenger ",
+       "Level":25,
+       "CoordinateX":-45616,
+       "CoordinateY":111024,
+       "CoordinateZ":-3808,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25076,
+       "Title":"Princess Molrang ",
+       "Level":25,
+       "CoordinateX":-60976,
+       "CoordinateY":127552,
+       "CoordinateZ":-2960,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25426,
+       "Title":"Betrayer of Urutu Freki ",
+       "Level":25,
+       "CoordinateX":-18048,
+       "CoordinateY":-101264,
+       "CoordinateZ":-2112,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25019,
+       "Title":"Pan Dryad ",
+       "Level":25,
+       "CoordinateX":7376,
+       "CoordinateY":169376,
+       "CoordinateZ":-3600,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25149,
+       "Title":"Zombie Lord Crowl ",
+       "Level":25,
+       "CoordinateX":-12656,
+       "CoordinateY":138176,
+       "CoordinateZ":-3584,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25166,
+       "Title":"Ikuntai ",
+       "Level":25,
+       "CoordinateX":-21960,
+       "CoordinateY":152152,
+       "CoordinateZ":-2900,
+       "LocationSource":2,
+       "AliveInt":2
+    },
+    {
+       "ID":25429,
+       "Title":"Mammon Collector Talos ",
+       "Level":25,
+       "CoordinateX":172064,
+       "CoordinateY":-214752,
+       "CoordinateZ":-3565,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25365,
+       "Title":"Patriarch Kuroboros ",
+       "Level":26,
+       "CoordinateX":-62000,
+       "CoordinateY":190256,
+       "CoordinateZ":-3687,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25360,
+       "Title":"Tiger Hornet ",
+       "Level":26,
+       "CoordinateX":29216,
+       "CoordinateY":179280,
+       "CoordinateZ":-3624,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25272,
+       "Title":"Partisan Leader Talakin ",
+       "Level":28,
+       "CoordinateX":49248,
+       "CoordinateY":127792,
+       "CoordinateZ":-3552,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25038,
+       "Title":"Tirak ",
+       "Level":28,
+       "CoordinateX":-57360,
+       "CoordinateY":186272,
+       "CoordinateZ":-4967,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25095,
+       "Title":"Elf Renoa ",
+       "Level":29,
+       "CoordinateX":-37856,
+       "CoordinateY":198128,
+       "CoordinateZ":-2672,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25188,
+       "Title":"Apepi ",
+       "Level":30,
+       "CoordinateX":88256,
+       "CoordinateY":176208,
+       "CoordinateZ":-3488,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25501,
+       "Title":"Boss Akata ",
+       "Level":30,
+       "CoordinateX":48575,
+       "CoordinateY":-106191,
+       "CoordinateZ":-1568,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25112,
+       "Title":"Agent of Beres Meana ",
+       "Level":30,
+       "CoordinateX":116128,
+       "CoordinateY":139392,
+       "CoordinateZ":-3640,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25004,
+       "Title":"Turek Mercenary Captain ",
+       "Level":30,
+       "CoordinateX":-94208,
+       "CoordinateY":100240,
+       "CoordinateZ":-3520,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25079,
+       "Title":"Cat\u0027s Eye Bandit ",
+       "Level":30,
+       "CoordinateX":53712,
+       "CoordinateY":102656,
+       "CoordinateZ":-1072,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25352,
+       "Title":"Giant Wasteland Basilisk ",
+       "Level":30,
+       "CoordinateX":-16912,
+       "CoordinateY":174912,
+       "CoordinateZ":-3264,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25169,
+       "Title":"Ragraman ",
+       "Level":30,
+       "CoordinateX":-54464,
+       "CoordinateY":170288,
+       "CoordinateZ":-3136,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25392,
+       "Title":"Captain of Queen\u0027s Royal Guards ",
+       "Level":32,
+       "CoordinateX":29928,
+       "CoordinateY":107160,
+       "CoordinateZ":-3708,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25401,
+       "Title":"Skyla ",
+       "Level":32,
+       "CoordinateX":117808,
+       "CoordinateY":102880,
+       "CoordinateZ":-3600,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25404,
+       "Title":"Corsair Captain Kylon ",
+       "Level":33,
+       "CoordinateX":35992,
+       "CoordinateY":191312,
+       "CoordinateZ":-3104,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25128,
+       "Title":"Vuku Grand Seer Gharmash ",
+       "Level":33,
+       "CoordinateX":17696,
+       "CoordinateY":179056,
+       "CoordinateZ":-3520,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25391,
+       "Title":"Nurka\u0027s Messenger ",
+       "Level":33,
+       "CoordinateX":45600,
+       "CoordinateY":120592,
+       "CoordinateZ":-2455,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25189,
+       "Title":"Cronos\u0027s Servitor Mumu ",
+       "Level":34,
+       "CoordinateX":68832,
+       "CoordinateY":203024,
+       "CoordinateZ":-3547,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25383,
+       "Title":"Revenant of Sir Calibus ",
+       "Level":34,
+       "CoordinateX":51632,
+       "CoordinateY":153920,
+       "CoordinateZ":-3552,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25023,
+       "Title":"Stakato Queen Zyrnna ",
+       "Level":34,
+       "CoordinateX":27280,
+       "CoordinateY":101744,
+       "CoordinateZ":-3696,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25020,
+       "Title":"Breka Warlock Pastu ",
+       "Level":34,
+       "CoordinateX":90384,
+       "CoordinateY":125568,
+       "CoordinateZ":-2128,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25185,
+       "Title":"Tasaba Patriarch Hellena ",
+       "Level":35,
+       "CoordinateX":88123,
+       "CoordinateY":166312,
+       "CoordinateZ":-3412,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25388,
+       "Title":"Red Eye Captain Trakia ",
+       "Level":35,
+       "CoordinateX":40128,
+       "CoordinateY":101920,
+       "CoordinateZ":-1241,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25063,
+       "Title":"Chertuba of Great Soul ",
+       "Level":35,
+       "CoordinateX":-91024,
+       "CoordinateY":116304,
+       "CoordinateZ":-3466,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25152,
+       "Title":"Flame Lord Shadar ",
+       "Level":35,
+       "CoordinateX":43872,
+       "CoordinateY":123968,
+       "CoordinateZ":-2928,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25398,
+       "Title":"Eye of Beleth ",
+       "Level":35,
+       "CoordinateX":5000,
+       "CoordinateY":189000,
+       "CoordinateZ":-3728,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25041,
+       "Title":"Remmel ",
+       "Level":35,
+       "CoordinateX":10416,
+       "CoordinateY":126880,
+       "CoordinateZ":-3676,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25223,
+       "Title":"Soul Collector Acheron ",
+       "Level":35,
+       "CoordinateX":43152,
+       "CoordinateY":152352,
+       "CoordinateZ":-2848,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25354,
+       "Title":"Gargoyle Lord Sirocco ",
+       "Level":35,
+       "CoordinateX":-16096,
+       "CoordinateY":184288,
+       "CoordinateZ":-3817,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25098,
+       "Title":"Sejarr\u0027s Servitor ",
+       "Level":35,
+       "CoordinateX":123536,
+       "CoordinateY":133504,
+       "CoordinateZ":-3584,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25118,
+       "Title":"Guilotine Warden of the Execution Grounds ",
+       "Level":35,
+       "CoordinateX":50896,
+       "CoordinateY":146576,
+       "CoordinateZ":-3645,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25211,
+       "Title":"Sebek ",
+       "Level":36,
+       "CoordinateX":76352,
+       "CoordinateY":193216,
+       "CoordinateZ":-3648,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25385,
+       "Title":"Evil Spirit Tempest ",
+       "Level":36,
+       "CoordinateX":53600,
+       "CoordinateY":143472,
+       "CoordinateZ":-3872,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25506,
+       "Title":"Rayito the Looter ",
+       "Level":37,
+       "CoordinateX":127900,
+       "CoordinateY":-160600,
+       "CoordinateZ":-1100,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25170,
+       "Title":"Lizardmen Leader Hellion ",
+       "Level":38,
+       "CoordinateX":26064,
+       "CoordinateY":121808,
+       "CoordinateZ":-3738,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25394,
+       "Title":"Premo Prime ",
+       "Level":38,
+       "CoordinateX":101888,
+       "CoordinateY":200224,
+       "CoordinateZ":-3680,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25504,
+       "Title":"Nellis\u0027 Vengeful Spirit ",
+       "Level":39,
+       "CoordinateX":123000,
+       "CoordinateY":-141000,
+       "CoordinateZ":-1100,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25082,
+       "Title":"Leader of Cat Gang ",
+       "Level":39,
+       "CoordinateX":88512,
+       "CoordinateY":140576,
+       "CoordinateZ":-3483,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25487,
+       "Title":"Water Spirit Lian ",
+       "Level":40,
+       "CoordinateX":83056,
+       "CoordinateY":183232,
+       "CoordinateZ":-3616,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25410,
+       "Title":"Road Scavenger Leader ",
+       "Level":40,
+       "CoordinateX":72192,
+       "CoordinateY":125424,
+       "CoordinateZ":-3657,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25064,
+       "Title":"Wizard of Storm Teruk ",
+       "Level":40,
+       "CoordinateX":92528,
+       "CoordinateY":84752,
+       "CoordinateZ":-3703,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25490,
+       "Title":"Gwindorr ",
+       "Level":40,
+       "CoordinateX":86528,
+       "CoordinateY":216864,
+       "CoordinateZ":-3584,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25208,
+       "Title":"Water Couatle Ateka ",
+       "Level":40,
+       "CoordinateX":73776,
+       "CoordinateY":201552,
+       "CoordinateZ":-3760,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25415,
+       "Title":"Nakondas ",
+       "Level":40,
+       "CoordinateX":128352,
+       "CoordinateY":138464,
+       "CoordinateZ":-3467,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25155,
+       "Title":"Shaman King Selu ",
+       "Level":40,
+       "CoordinateX":73520,
+       "CoordinateY":66912,
+       "CoordinateZ":-3728,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25214,
+       "Title":"Fafurion\u0027s Page Sika ",
+       "Level":40,
+       "CoordinateX":112112,
+       "CoordinateY":209936,
+       "CoordinateZ":-3616,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25115,
+       "Title":"Icarus Sample 1 ",
+       "Level":40,
+       "CoordinateX":94000,
+       "CoordinateY":197500,
+       "CoordinateZ":-3300,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25134,
+       "Title":"Leto Chief Talkin ",
+       "Level":40,
+       "CoordinateX":87536,
+       "CoordinateY":75872,
+       "CoordinateZ":-3591,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25007,
+       "Title":"Retreat Spider Cletu ",
+       "Level":42,
+       "CoordinateX":124240,
+       "CoordinateY":75376,
+       "CoordinateZ":-2800,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25192,
+       "Title":"Earth Protector Panathen ",
+       "Level":43,
+       "CoordinateX":125920,
+       "CoordinateY":190208,
+       "CoordinateZ":-3291,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25088,
+       "Title":"Crazy Mechanic Golem ",
+       "Level":43,
+       "CoordinateX":90848,
+       "CoordinateY":16368,
+       "CoordinateZ":-5296,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25099,
+       "Title":"Rotten Tree Repiro ",
+       "Level":44,
+       "CoordinateX":64048,
+       "CoordinateY":16048,
+       "CoordinateZ":-3536,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25438,
+       "Title":"Thief Kelbar ",
+       "Level":44,
+       "CoordinateX":107000,
+       "CoordinateY":92000,
+       "CoordinateZ":-2272,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25085,
+       "Title":"Timak Orc Chief Ranger ",
+       "Level":44,
+       "CoordinateX":66944,
+       "CoordinateY":67504,
+       "CoordinateZ":-3704,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25418,
+       "Title":"Dread Avenger Kraven ",
+       "Level":44,
+       "CoordinateX":62416,
+       "CoordinateY":8096,
+       "CoordinateZ":-3376,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25431,
+       "Title":"Flamestone Golem ",
+       "Level":44,
+       "CoordinateX":79648,
+       "CoordinateY":18320,
+       "CoordinateZ":-5232,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25102,
+       "Title":"Shacram ",
+       "Level":45,
+       "CoordinateX":113840,
+       "CoordinateY":84256,
+       "CoordinateZ":-2480,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25260,
+       "Title":"Iron Giant Totem ",
+       "Level":45,
+       "CoordinateX":93120,
+       "CoordinateY":19440,
+       "CoordinateZ":-3607,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25498,
+       "Title":"Fafurion\u0027s Henchman Istary ",
+       "Level":45,
+       "CoordinateX":126624,
+       "CoordinateY":174448,
+       "CoordinateZ":-3056,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25437,
+       "Title":"Timak Orc Gosmos ",
+       "Level":45,
+       "CoordinateX":67296,
+       "CoordinateY":64128,
+       "CoordinateZ":-3723,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25395,
+       "Title":"Archon Suscepter ",
+       "Level":45,
+       "CoordinateX":15000,
+       "CoordinateY":119000,
+       "CoordinateZ":-11900,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25057,
+       "Title":"Biconne of Blue Sky ",
+       "Level":45,
+       "CoordinateX":107056,
+       "CoordinateY":168176,
+       "CoordinateZ":-3456,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25441,
+       "Title":"Evil Spirit Cyrion ",
+       "Level":45,
+       "CoordinateX":111440,
+       "CoordinateY":82912,
+       "CoordinateZ":-2912,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25173,
+       "Title":"Tiger King Karuta ",
+       "Level":45,
+       "CoordinateX":75968,
+       "CoordinateY":110784,
+       "CoordinateZ":-2512,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25412,
+       "Title":"Necrosentinel Royal Guard ",
+       "Level":47,
+       "CoordinateX":81920,
+       "CoordinateY":113136,
+       "CoordinateZ":-3056,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25044,
+       "Title":"Barion ",
+       "Level":47,
+       "CoordinateX":107792,
+       "CoordinateY":27728,
+       "CoordinateZ":-3488,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25158,
+       "Title":"King Tarlk ",
+       "Level":48,
+       "CoordinateX":77104,
+       "CoordinateY":5408,
+       "CoordinateZ":-3088,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25420,
+       "Title":"Orfen\u0027s Handmaiden ",
+       "Level":48,
+       "CoordinateX":42032,
+       "CoordinateY":24128,
+       "CoordinateZ":-4704,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25026,
+       "Title":"Katu Van Leader Atui ",
+       "Level":49,
+       "CoordinateX":92976,
+       "CoordinateY":7920,
+       "CoordinateZ":-3914,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25047,
+       "Title":"Karte ",
+       "Level":49,
+       "CoordinateX":116352,
+       "CoordinateY":27648,
+       "CoordinateZ":-3319,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25456,
+       "Title":"Mirror of Oblivion ",
+       "Level":49,
+       "CoordinateX":133632,
+       "CoordinateY":87072,
+       "CoordinateZ":-3623,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25273,
+       "Title":"Carnamakos ",
+       "Level":50,
+       "CoordinateX":23800,
+       "CoordinateY":119500,
+       "CoordinateZ":-8976,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25277,
+       "Title":"Lilith\u0027s Witch Marilion ",
+       "Level":50,
+       "CoordinateX":54651,
+       "CoordinateY":180269,
+       "CoordinateZ":-4976,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25119,
+       "Title":"Messenger of Fairy Queen Berun ",
+       "Level":50,
+       "CoordinateX":121872,
+       "CoordinateY":64032,
+       "CoordinateZ":-3536,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25013,
+       "Title":"Ghost of Peasant Leader ",
+       "Level":50,
+       "CoordinateX":169744,
+       "CoordinateY":11920,
+       "CoordinateZ":-2732,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25217,
+       "Title":"Cursed Clara ",
+       "Level":50,
+       "CoordinateX":89904,
+       "CoordinateY":105712,
+       "CoordinateZ":-3292,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25484,
+       "Title":"Zaken\u0027s Chief Mate Tillion ",
+       "Level":50,
+       "CoordinateX":43160,
+       "CoordinateY":220463,
+       "CoordinateZ":-3680,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25131,
+       "Title":"Carnage Lord Gato ",
+       "Level":50,
+       "CoordinateX":75488,
+       "CoordinateY":-9360,
+       "CoordinateZ":-2720,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25460,
+       "Title":"Deadman Ereve ",
+       "Level":51,
+       "CoordinateX":150304,
+       "CoordinateY":67776,
+       "CoordinateZ":-3688,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25050,
+       "Title":"Verfa ",
+       "Level":51,
+       "CoordinateX":125520,
+       "CoordinateY":27216,
+       "CoordinateZ":-3632,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25473,
+       "Title":"Grave Robber Kim ",
+       "Level":52,
+       "CoordinateX":175712,
+       "CoordinateY":29856,
+       "CoordinateZ":-3776,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25512,
+       "Title":"Gigantic Chaos Golem ",
+       "Level":52,
+       "CoordinateX":96524,
+       "CoordinateY":-111070,
+       "CoordinateZ":-3335,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25496,
+       "Title":"Fafurion\u0027s Envoy Pingolpin ",
+       "Level":52,
+       "CoordinateX":88300,
+       "CoordinateY":258000,
+       "CoordinateZ":-10200,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25067,
+       "Title":"Captain of Red Flag Shaka ",
+       "Level":52,
+       "CoordinateX":94992,
+       "CoordinateY":-23168,
+       "CoordinateZ":-2176,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25481,
+       "Title":"Magus Kenishee ",
+       "Level":53,
+       "CoordinateX":53517,
+       "CoordinateY":205413,
+       "CoordinateZ":-3728,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25029,
+       "Title":"Atraiban ",
+       "Level":53,
+       "CoordinateX":54941,
+       "CoordinateY":206705,
+       "CoordinateZ":-3728,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25509,
+       "Title":"Dark Shaman Varangka ",
+       "Level":53,
+       "CoordinateX":74000,
+       "CoordinateY":-102000,
+       "CoordinateZ":900,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25159,
+       "Title":"Paniel the Unicorn ",
+       "Level":54,
+       "CoordinateX":124984,
+       "CoordinateY":43200,
+       "CoordinateZ":-3625,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25137,
+       "Title":"Beleth\u0027s Seer Sephia ",
+       "Level":55,
+       "CoordinateX":125280,
+       "CoordinateY":102576,
+       "CoordinateZ":-3305,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25434,
+       "Title":"Bandit Leader Barda ",
+       "Level":55,
+       "CoordinateX":104096,
+       "CoordinateY":-16896,
+       "CoordinateZ":-1803,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25103,
+       "Title":"Sorcerer Isirr ",
+       "Level":55,
+       "CoordinateX":135872,
+       "CoordinateY":94592,
+       "CoordinateZ":-3735,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25475,
+       "Title":"Ghost Knight Kabed ",
+       "Level":55,
+       "CoordinateX":183568,
+       "CoordinateY":24560,
+       "CoordinateZ":-3184,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25070,
+       "Title":"Enchanted Forest Watcher Ruell ",
+       "Level":55,
+       "CoordinateX":125600,
+       "CoordinateY":50100,
+       "CoordinateZ":-3600,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25280,
+       "Title":"Pagan Watcher Cerberon ",
+       "Level":55,
+       "CoordinateX":85622,
+       "CoordinateY":88766,
+       "CoordinateZ":-5120,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25493,
+       "Title":"Eva\u0027s Spirit Niniel ",
+       "Level":55,
+       "CoordinateX":83174,
+       "CoordinateY":254428,
+       "CoordinateZ":-10873,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25176,
+       "Title":"Black Lily ",
+       "Level":55,
+       "CoordinateX":92544,
+       "CoordinateY":115232,
+       "CoordinateZ":-3200,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25241,
+       "Title":"Harit Hero Tamash ",
+       "Level":55,
+       "CoordinateX":165984,
+       "CoordinateY":88048,
+       "CoordinateZ":-2384,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25010,
+       "Title":"Furious Thieles ",
+       "Level":55,
+       "CoordinateX":113920,
+       "CoordinateY":52960,
+       "CoordinateZ":-3735,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25259,
+       "Title":"Zaken\u0027s Butcher Krantz ",
+       "Level":55,
+       "CoordinateX":42050,
+       "CoordinateY":208107,
+       "CoordinateZ":-3752,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25463,
+       "Title":"Harit Guardian Garangky ",
+       "Level":56,
+       "CoordinateX":166288,
+       "CoordinateY":68096,
+       "CoordinateZ":-3264,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25122,
+       "Title":"Refugee Hopeful Leo ",
+       "Level":56,
+       "CoordinateX":86300,
+       "CoordinateY":-8200,
+       "CoordinateZ":-3000,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25230,
+       "Title":"Timak Seer Ragoth ",
+       "Level":57,
+       "CoordinateX":66672,
+       "CoordinateY":46704,
+       "CoordinateZ":-3920,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25032,
+       "Title":"Eva\u0027s Guardian Millenu ",
+       "Level":58,
+       "CoordinateX":88532,
+       "CoordinateY":245798,
+       "CoordinateZ":-10376,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25089,
+       "Title":"Soulless Wild Boar ",
+       "Level":59,
+       "CoordinateX":165424,
+       "CoordinateY":93776,
+       "CoordinateZ":-2992,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25238,
+       "Title":"Abyss Brukunt ",
+       "Level":59,
+       "CoordinateX":155000,
+       "CoordinateY":85400,
+       "CoordinateZ":-3200,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":29060,
+       "Title":"Captain of the Ice Queen\u0027s Royal Guard ",
+       "Level":59,
+       "CoordinateX":106000,
+       "CoordinateY":-128000,
+       "CoordinateZ":-3000,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25182,
+       "Title":"Demon Kurikups ",
+       "Level":59,
+       "CoordinateX":41966,
+       "CoordinateY":215417,
+       "CoordinateZ":-3728,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25016,
+       "Title":"The 3rd Underwater Guardian ",
+       "Level":60,
+       "CoordinateX":76787,
+       "CoordinateY":245775,
+       "CoordinateZ":-10376,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25179,
+       "Title":"Guardian of the Statue of Giant Karum ",
+       "Level":60,
+       "CoordinateX":181814,
+       "CoordinateY":52379,
+       "CoordinateZ":-4344,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25106,
+       "Title":"Ghost of the Well Lidia ",
+       "Level":60,
+       "CoordinateX":173880,
+       "CoordinateY":-11412,
+       "CoordinateZ":-2880,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25162,
+       "Title":"Giant Marpanak ",
+       "Level":60,
+       "CoordinateX":194107,
+       "CoordinateY":53884,
+       "CoordinateZ":-4368,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25407,
+       "Title":"Lord Ishka ",
+       "Level":60,
+       "CoordinateX":115072,
+       "CoordinateY":112272,
+       "CoordinateZ":-3018,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":29056,
+       "Title":"Ice Fairy Sirra ",
+       "Level":60,
+       "CoordinateX":102800,
+       "CoordinateY":-126000,
+       "CoordinateZ":-2500,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25234,
+       "Title":"Ancient Weird Drake ",
+       "Level":60,
+       "CoordinateX":120080,
+       "CoordinateY":111248,
+       "CoordinateZ":-3047,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25256,
+       "Title":"Taik High Prefect Arak ",
+       "Level":60,
+       "CoordinateX":170320,
+       "CoordinateY":42640,
+       "CoordinateZ":-4832,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25423,
+       "Title":"Fairy Queen Timiniel ",
+       "Level":61,
+       "CoordinateX":113600,
+       "CoordinateY":47120,
+       "CoordinateZ":-4640,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25226,
+       "Title":"Roaring Lord Kastor ",
+       "Level":62,
+       "CoordinateX":104240,
+       "CoordinateY":-3664,
+       "CoordinateZ":-3392,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25467,
+       "Title":"Gorgolos ",
+       "Level":64,
+       "CoordinateX":186192,
+       "CoordinateY":61472,
+       "CoordinateZ":-4160,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25051,
+       "Title":"Rahha ",
+       "Level":65,
+       "CoordinateX":117760,
+       "CoordinateY":-9072,
+       "CoordinateZ":-3264,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25478,
+       "Title":"Shilen\u0027s Priest Hisilrome ",
+       "Level":65,
+       "CoordinateX":168288,
+       "CoordinateY":28368,
+       "CoordinateZ":-3632,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25125,
+       "Title":"Fierce Tiger King Angel ",
+       "Level":65,
+       "CoordinateX":170656,
+       "CoordinateY":85184,
+       "CoordinateZ":-2000,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25444,
+       "Title":"Enmity Ghost Ramdal ",
+       "Level":65,
+       "CoordinateX":116430,
+       "CoordinateY":17847,
+       "CoordinateZ":-4384,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25140,
+       "Title":"Hekaton Prime ",
+       "Level":65,
+       "CoordinateX":191975,
+       "CoordinateY":56959,
+       "CoordinateZ":-7616,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25255,
+       "Title":"Gargoyle Lord Tiphon ",
+       "Level":65,
+       "CoordinateX":170048,
+       "CoordinateY":-24896,
+       "CoordinateZ":-3440,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25470,
+       "Title":"Last Titan Utenus ",
+       "Level":66,
+       "CoordinateX":186896,
+       "CoordinateY":56276,
+       "CoordinateZ":-4576,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25322,
+       "Title":"Demon\u0027s Agent Falston ",
+       "Level":66,
+       "CoordinateX":93296,
+       "CoordinateY":-75104,
+       "CoordinateZ":-1824,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25263,
+       "Title":"Kernon\u0027s Faithful Servant Kelone ",
+       "Level":67,
+       "CoordinateX":144400,
+       "CoordinateY":-28192,
+       "CoordinateZ":-1920,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25073,
+       "Title":"Bloody Priest Rudelto ",
+       "Level":69,
+       "CoordinateX":143265,
+       "CoordinateY":110044,
+       "CoordinateZ":-3944,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25233,
+       "Title":"Spirit of Andras the Betrayer ",
+       "Level":69,
+       "CoordinateX":185800,
+       "CoordinateY":-26500,
+       "CoordinateZ":-2000,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25281,
+       "Title":"Anakim\u0027s Nemesis Zakaron ",
+       "Level":70,
+       "CoordinateX":151053,
+       "CoordinateY":88124,
+       "CoordinateZ":-5424,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25035,
+       "Title":"Shilen\u0027s Messenger Cabrio ",
+       "Level":70,
+       "CoordinateX":180968,
+       "CoordinateY":12035,
+       "CoordinateZ":-2720,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25252,
+       "Title":"Palibati Queen Themis ",
+       "Level":70,
+       "CoordinateX":192376,
+       "CoordinateY":22087,
+       "CoordinateZ":-3608,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25269,
+       "Title":"Beast Lord Behemoth ",
+       "Level":70,
+       "CoordinateX":123504,
+       "CoordinateY":-23696,
+       "CoordinateZ":-3481,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25092,
+       "Title":"Korim ",
+       "Level":70,
+       "CoordinateX":114830,
+       "CoordinateY":17847,
+       "CoordinateZ":1944,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25453,
+       "Title":"Meanas Anor ",
+       "Level":70,
+       "CoordinateX":156704,
+       "CoordinateY":-6096,
+       "CoordinateZ":-4185,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25198,
+       "Title":"Fafurion\u0027s Herald Lokness ",
+       "Level":70,
+       "CoordinateX":102656,
+       "CoordinateY":157424,
+       "CoordinateZ":-3735,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25325,
+       "Title":"Flame of Splendor Barakiel ",
+       "Level":70,
+       "CoordinateX":91008,
+       "CoordinateY":-85904,
+       "CoordinateZ":-2736,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25163,
+       "Title":"Roaring Skylancer ",
+       "Level":70,
+       "CoordinateX":130500,
+       "CoordinateY":59098,
+       "CoordinateZ":3584,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25447,
+       "Title":"Immortal Savior Mardil ",
+       "Level":71,
+       "CoordinateX":113230,
+       "CoordinateY":17847,
+       "CoordinateZ":-1424,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25328,
+       "Title":"Eilhalder von Hellmann ",
+       "Level":71,
+       "CoordinateX":59331,
+       "CoordinateY":-42403,
+       "CoordinateZ":-3003,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25199,
+       "Title":"Water Dragon Seer Sheshark ",
+       "Level":72,
+       "CoordinateX":108096,
+       "CoordinateY":157408,
+       "CoordinateZ":-3688,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25248,
+       "Title":"Doom Blade Tanatos ",
+       "Level":72,
+       "CoordinateX":127903,
+       "CoordinateY":-13399,
+       "CoordinateZ":-3720,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25235,
+       "Title":"Vanor Chief Kandra ",
+       "Level":72,
+       "CoordinateX":116400,
+       "CoordinateY":-62528,
+       "CoordinateZ":-3264,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25220,
+       "Title":"Death Lord Hallate ",
+       "Level":73,
+       "CoordinateX":116430,
+       "CoordinateY":16247,
+       "CoordinateZ":-2120,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25523,
+       "Title":"Plague Golem ",
+       "Level":73,
+       "CoordinateX":170000,
+       "CoordinateY":-60000,
+       "CoordinateZ":-3500,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25296,
+       "Title":"Icicle Emperor Bumbalump ",
+       "Level":74,
+       "CoordinateX":158352,
+       "CoordinateY":-121088,
+       "CoordinateZ":-2240,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25202,
+       "Title":"Krokian Padisha Sobekk ",
+       "Level":74,
+       "CoordinateX":119760,
+       "CoordinateY":157392,
+       "CoordinateZ":-3744,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25109,
+       "Title":"Antharas Priest Cloe ",
+       "Level":74,
+       "CoordinateX":152660,
+       "CoordinateY":110387,
+       "CoordinateZ":-5520,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25282,
+       "Title":"Death Lord Shax ",
+       "Level":75,
+       "CoordinateX":179311,
+       "CoordinateY":-7632,
+       "CoordinateZ":-4896,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25276,
+       "Title":"Death Lord Ipos ",
+       "Level":75,
+       "CoordinateX":154088,
+       "CoordinateY":-14116,
+       "CoordinateZ":-3736,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25244,
+       "Title":"Last Lesser Giant Olkuth ",
+       "Level":75,
+       "CoordinateX":187360,
+       "CoordinateY":45840,
+       "CoordinateZ":-5856,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25249,
+       "Title":"Palatanos of Horrific Power ",
+       "Level":75,
+       "CoordinateX":147104,
+       "CoordinateY":-20560,
+       "CoordinateZ":-3377,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25266,
+       "Title":"Bloody Empress Decarbia ",
+       "Level":75,
+       "CoordinateX":188983,
+       "CoordinateY":13647,
+       "CoordinateZ":-2672,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25229,
+       "Title":"Storm Winged Naga ",
+       "Level":75,
+       "CoordinateX":137568,
+       "CoordinateY":-19488,
+       "CoordinateZ":-3552,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25054,
+       "Title":"Kernon ",
+       "Level":75,
+       "CoordinateX":113230,
+       "CoordinateY":16247,
+       "CoordinateZ":3960,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25524,
+       "Title":"Flamestone Giant ",
+       "Level":76,
+       "CoordinateX":144600,
+       "CoordinateY":-5500,
+       "CoordinateZ":-4100,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25205,
+       "Title":"Ocean Flame Ashakiel ",
+       "Level":76,
+       "CoordinateX":123808,
+       "CoordinateY":153408,
+       "CoordinateZ":-3671,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25293,
+       "Title":"Hestia Guardian Deity of the Hot Springs ",
+       "Level":78,
+       "CoordinateX":134672,
+       "CoordinateY":-115600,
+       "CoordinateZ":-1216,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25290,
+       "Title":"Daimon the White-Eyed ",
+       "Level":78,
+       "CoordinateX":186304,
+       "CoordinateY":-43744,
+       "CoordinateZ":-3193,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25143,
+       "Title":"Fire of Wrath Shuriel ",
+       "Level":78,
+       "CoordinateX":116430,
+       "CoordinateY":14647,
+       "CoordinateZ":6992,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25245,
+       "Title":"Last Lesser Giant Glaki ",
+       "Level":78,
+       "CoordinateX":172000,
+       "CoordinateY":55000,
+       "CoordinateZ":-5400,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25450,
+       "Title":"Cherub Galaxia ",
+       "Level":79,
+       "CoordinateX":113230,
+       "CoordinateY":14647,
+       "CoordinateZ":9559,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25126,
+       "Title":"Longhorn Golkonda ",
+       "Level":79,
+       "CoordinateX":114830,
+       "CoordinateY":14647,
+       "CoordinateZ":6992,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25527,
+       "Title":"Uruka ",
+       "Level":80,
+       "CoordinateX":3776,
+       "CoordinateY":-6768,
+       "CoordinateZ":-32,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25514,
+       "Title":"Queen Shyeed ",
+       "Level":80,
+       "CoordinateX":80000,
+       "CoordinateY":-55000,
+       "CoordinateZ":-6000,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25319,
+       "Title":"Ember ",
+       "Level":80,
+       "CoordinateX":184542,
+       "CoordinateY":-106330,
+       "CoordinateZ":-6304,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25299,
+       "Title":"Ketra\u0027s Hero Hekaton ",
+       "Level":80,
+       "CoordinateX":148160,
+       "CoordinateY":-73808,
+       "CoordinateZ":-4919,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25305,
+       "Title":"Ketra\u0027s Chief Brakki ",
+       "Level":80,
+       "CoordinateX":145008,
+       "CoordinateY":-84992,
+       "CoordinateZ":-6240,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25306,
+       "Title":"Soul of Fire Nastron ",
+       "Level":80,
+       "CoordinateX":142368,
+       "CoordinateY":-82512,
+       "CoordinateZ":-6487,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25309,
+       "Title":"Varka\u0027s Hero Shadith ",
+       "Level":80,
+       "CoordinateX":115552,
+       "CoordinateY":-39200,
+       "CoordinateZ":-2480,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25312,
+       "Title":"Varka\u0027s Commander Mos ",
+       "Level":80,
+       "CoordinateX":109216,
+       "CoordinateY":-36160,
+       "CoordinateZ":-938,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25315,
+       "Title":"Varka\u0027s Chief Horus ",
+       "Level":80,
+       "CoordinateX":105584,
+       "CoordinateY":-43024,
+       "CoordinateZ":-1728,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25286,
+       "Title":"Anakim ",
+       "Level":80,
+       "CoordinateX":185000,
+       "CoordinateY":-13000,
+       "CoordinateZ":-5488,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25283,
+       "Title":"Lilith ",
+       "Level":80,
+       "CoordinateX":184410,
+       "CoordinateY":-10111,
+       "CoordinateZ":-5488,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25316,
+       "Title":"Soul of Water Ashutar ",
+       "Level":80,
+       "CoordinateX":105452,
+       "CoordinateY":-36775,
+       "CoordinateZ":-1050,
+       "LocationSource":1,
+       "AliveInt":2
+    },
+    {
+       "ID":25302,
+       "Title":"Ketra\u0027s Commander Tayr ",
+       "Level":80,
+       "CoordinateX":145504,
+       "CoordinateY":-81664,
+       "CoordinateZ":-6016,
+       "LocationSource":1,
+       "AliveInt":2
+    }
+ ]

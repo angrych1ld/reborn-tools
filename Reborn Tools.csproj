@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\data\raidbosses.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Components\TooltipDisplay.razor.css" />
   </ItemGroup>
 
@@ -24,6 +28,10 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Maps\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\data\raidbosses.json" />
   </ItemGroup>
 
 </Project>
