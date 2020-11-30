@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 using MatBlazor;
+using Blazored.LocalStorage;
 
 namespace RebornTools
 {
@@ -32,6 +33,8 @@ namespace RebornTools
                 config.MaximumOpacity = 100;
                 config.VisibleStateDuration = 3000;
             });
+
+            builder.Services.AddBlazoredLocalStorage();
 
             await builder.Build().RunAsync();
         }

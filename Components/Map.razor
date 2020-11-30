@@ -3,7 +3,7 @@
 <div class="map-holder">
     <div class="map-wrapper" draggable="false" @ref="wrapperRef">
         <div class="map-container" style="@MapContainerStyle">
-            <img class="map-image" src="Maps/world-map-big.png" />
+            <img class="map-image" src="@mapAddress" />
             <div class="map-trinkets">
                 <div class="map-trinket" style="@TargetStyle" hidden="@(!targetPlaced)">
                     <img src="Map Gui/target-icon.png" class="map-trinket-content-center" />
@@ -18,6 +18,9 @@
 </div>
 
 @code {
+    public const string DEFAULT_MAP_TYPE = "default";
+    public const string CT2_RELIEF_MAP_TYPE = "ct2-relief";
+
     [Parameter] public bool AllowMove { get; set; } = true;
 
     private static (int x, int y) topLeftCors = (-130936, -261374);
@@ -40,6 +43,7 @@
     private (int x, int y) mapSize = (1, 1);
 
     private bool isDragging = false;
+    private string mapAddress;
 
     private ElementReference wrapperRef;
 
@@ -64,18 +68,25 @@
         }
     }
 
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
         App.OnPointerMove += PointerMove;
         App.OnPointerUp += PointerUp;
         App.AnimationUpdate += Update;
         App.OnWindowSizeChange += () => UpdateMapSize().ConfigureAwait(false);
+        App.OnMapTypeChanged += SetMapType;
 
-        return base.OnInitializedAsync();
+        SetMapType(await App.Instance.GetMapType());
+    }
+
+    private void SetMapType(string mapType)
+    {
+        mapAddress = string.Equals(mapType, CT2_RELIEF_MAP_TYPE) ? "Maps/world-map-relief-ct2.png" : "Maps/world-map-big.png";
+        StateHasChanged();
     }
 
     /// <summary>
-    /// You might need to call this when activating a map, if it's not active when you initially load the page. 
+    /// You might need to call this when activating a map, if it's not active when you initially load the page.
     /// In other words, if you conditionally enable/disable the map.
     /// This fixes an issue where the map does not know it's size and is displayed very small.
     /// </summary>

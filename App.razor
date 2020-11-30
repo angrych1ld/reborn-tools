@@ -1,4 +1,5 @@
 @inject IJSRuntime JsRuntime
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 
 <Router AppAssembly="@typeof(Program).Assembly">
     <Found Context="routeData">
@@ -24,6 +25,7 @@
         public static event Action<float> AnimationUpdate;
         public static event Action<double> OnWheel;
         public static event Action OnViewportChange;
+        public static event Action<string> OnMapTypeChanged;
 
         private static HashSet<string> heldKeys = new HashSet<string>();
         private (double x, double y) lastPosition;
@@ -55,6 +57,17 @@
         public async Task<BoundingClientRect> GetBoundingRect(ElementReference element)
         {
             return await JsRuntime.InvokeAsync<BoundingClientRect>("MyDOMGetBoundingClientRect", element);
+        }
+
+        public async Task ChangeMapType(string newType)
+        {
+            await localStorage.SetItemAsync("map-type", newType);
+            OnMapTypeChanged?.Invoke(newType);
+        }
+
+        public async Task<string> GetMapType()
+        {
+            return await localStorage.GetItemAsync<string>("map-type") ?? "";
         }
 
         [JSInvokable]

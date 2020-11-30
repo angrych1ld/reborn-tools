@@ -6,6 +6,12 @@
 <MatH3>Raidboss List</MatH3>
 <p>For Level 20-40 spawn status is given, may be up to 10 minutes old</p>
 
+<MatBody1>Map Type</MatBody1>
+<MatRadioGroup @bind-Value="MapType" TValue="string">
+    <MatRadioButton Value="@Map.DEFAULT_MAP_TYPE" TValue="string" >Default</MatRadioButton>
+    <MatRadioButton Value="@Map.CT2_RELIEF_MAP_TYPE" TValue="string">CT2 Relief</MatRadioButton>
+</MatRadioGroup>
+
 <MatIconButton Icon="refresh" @onclick="Reload" Style="margin-bottom: 0.5rem"></MatIconButton>
 
 @if (rbData == null)
@@ -18,7 +24,7 @@
 else
 {
     <br />
-    <MatTable Items="@rbData" Striped="true" FilterByColumnName="Title" DebounceMilliseconds="150" Class="mat-elevation-z5" 
+    <MatTable Items="@rbData" Striped="true" FilterByColumnName="Title" DebounceMilliseconds="150" Class="mat-elevation-z5"
               ShowPaging="false" UseSortHeaderRow="true" PageSize="1000">
         <MatTableHeader>
             <MatSortHeaderRow SortChanged="@SortDataChanged">
@@ -51,12 +57,25 @@ else
         private List<RaidBoss> rbData;
         private bool loadingError;
 
-        string sortId;
-        MatSortDirection sortDirection;
+        private string sortId;
+        private MatSortDirection sortDirection;
+
+        private string _mapType;
+        private string MapType
+        {
+            get { return _mapType; }
+            set
+            {
+                _mapType = value;
+                MapTypeValueChanged().ConfigureAwait(false);
+            }
+        }
 
 
         protected override async Task OnInitializedAsync()
         {
+            MapType = await App.Instance.GetMapType();
+
             await Reload();
             SortDataChanged(null);
         }
@@ -147,6 +166,11 @@ else
                         break;
                 }
             }
+        }
+
+        private async Task MapTypeValueChanged()
+        {
+            await App.Instance.ChangeMapType(MapType);
         }
     }
 }
