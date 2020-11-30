@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Reborn Tools</title>
     <base href="/reborn-tools/" />
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="Reborn Tools.styles.css" rel="stylesheet" />
     <script src="_content/MatBlazor/dist/matBlazor.js"></script>
@@ -87,6 +86,9 @@
 
             window.onresize = function (e) {
                 dotNetObject.invokeMethod('WindowSizeChanged');
+            }
+            window.onscroll = function (e) {
+                dotNetObject.invokeMethod('PageScroll');
             }
 
             MyDOMGetBoundingClientRect = (element, parm) => { return element.getBoundingClientRect(); };
