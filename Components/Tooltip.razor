@@ -1,6 +1,6 @@
 ﻿@inject TooltipService service
 
-<div @ref="wrapperRef" style="display: inline-flex"
+<div @ref="wrapperRef" style="@WrapperStyle"
      @onmouseover="Show"
      @ontouchstart="Show"
      @ontouchleave="Hide"
@@ -18,7 +18,20 @@
 
     [Parameter] public object Data { get; set; }
 
+    [Parameter] public bool Absolute { get; set; }
+
     public ElementReference wrapperRef;
+
+    public string WrapperStyle
+    {
+        get
+        {
+            return "display: inline-flex; " + (!Absolute ? "" :
+                "position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+
+                );
+        }
+    }
 
     public void Hide()
     {

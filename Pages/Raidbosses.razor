@@ -29,7 +29,7 @@ else
             </MatSortHeaderRow>
         </MatTableHeader>
         <MatTableRow>
-            <td><Tooltip TooltipType="TooltipType.Raidboss" Data="@context"><a>@context.Title</a></Tooltip></td>
+            <td style="position: relative"><a>@context.Title</a> <Tooltip TooltipType="TooltipType.Raidboss" Data="@context" Absolute="true"></Tooltip></td>
             <td class="text-center">@context.Level</td>
             <td class="@(context.Alive == null ? "table-secondary" : (context.Alive.Value ? "table-success" : "table-danger")) text-center">
                 @(context.Alive == null ? "Unknown" : (context.Alive.Value ? "Alive" : "Dead"))
