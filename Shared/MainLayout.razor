@@ -13,7 +13,7 @@
         </MatAppBar>
 
         <MatAppBarContent>
-            <MatDrawerContainer Style="width: 100vw; height: 100vh;">
+            <MatDrawerContainer Style="padding: 0 2rem">
                 <MatDrawer @bind-Opened="@Opened" Mode="@MatDrawerMode.Modal" @ref="drawer">
                     <NavMenu />
                 </MatDrawer>
@@ -28,9 +28,6 @@
     <MatToastContainer></MatToastContainer>
     <MatPortalHost></MatPortalHost>
 </MatThemeProvider>
-<div class="body-wrapper">
-
-</div>
 
 @code {
     MatTheme siteTheme = new MatTheme()

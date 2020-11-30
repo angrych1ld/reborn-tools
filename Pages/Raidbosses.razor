@@ -22,7 +22,7 @@ else
               ShowPaging="false" UseSortHeaderRow="true" PageSize="1000">
         <MatTableHeader>
             <MatSortHeaderRow SortChanged="@SortDataChanged">
-                <MatSortHeader SortId="name" Style="min-width: 8rem">Name</MatSortHeader>
+                <MatSortHeader SortId="name" Style="min-width: 20rem">Name</MatSortHeader>
                 <MatSortHeader SortId="level">Level</MatSortHeader>
                 <MatSortHeader SortId="status">Status</MatSortHeader>
                 <th>Summary(L2Reborn)</th>
@@ -122,13 +122,13 @@ else
                 switch (sortId)
                 {
                     case "name":
-                        rbData.Sort((r1, r2) => string.Compare(r1.Title, r2.Title));
+                        rbData.Sort((r1, r2) => string.Compare(r1.Title, r2.Title) * 10 + Math.Clamp(r1.Level.CompareTo(r2.Level), -1, 1));
                         break;
                     case "level":
                         rbData.Sort((r1, r2) => r1.Level.CompareTo(r2.Level));
                         break;
                     case "status":
-                        rbData.Sort((r1, r2) => r1.AliveInt.CompareTo(r2.AliveInt));
+                        rbData.Sort((r1, r2) => r1.AliveInt.CompareTo(r2.AliveInt) * 10 + Math.Clamp(r1.Level.CompareTo(r2.Level), -1, 1));
                         break;
                 }
             }
@@ -137,13 +137,13 @@ else
                 switch (sortId)
                 {
                     case "name":
-                        rbData.Sort((r1, r2) => string.Compare(r2.Title, r1.Title));
+                        rbData.Sort((r1, r2) => string.Compare(r2.Title, r1.Title) * 10 + Math.Clamp(r1.Level.CompareTo(r2.Level), -1, 1));
                         break;
                     case "level":
                         rbData.Sort((r1, r2) => r2.Level.CompareTo(r1.Level));
                         break;
                     case "status":
-                        rbData.Sort((r1, r2) => r2.AliveInt.CompareTo(r1.AliveInt));
+                        rbData.Sort((r1, r2) => r2.AliveInt.CompareTo(r1.AliveInt) * 10 + Math.Clamp(r1.Level.CompareTo(r2.Level), -1, 1));
                         break;
                 }
             }

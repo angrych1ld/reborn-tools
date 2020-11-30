@@ -7,10 +7,6 @@ html, body {
     font-family: var(--mdc-typography-subtitle1-font-family, var(--mdc-typography-font-family, Roboto, sans-serif));
 }
 
-.body-wrapper {
-    margin: 0 0rem;
-}
-
 .mdc-table {
     font-family: var(--mdc-typography-subtitle1-font-family, var(--mdc-typography-font-family, Roboto, sans-serif));
 }
