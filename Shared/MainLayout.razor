@@ -1,14 +1,61 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager navManager
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+<MatThemeProvider Theme="@siteTheme">
+    <MatAppBarContainer>
+        <MatAppBar Fixed="true">
+            <MatAppBarRow>
+                <MatAppBarSection>
+                    <MatIconButton Icon="menu" OnClick="@((e) => ButtonClicked())"></MatIconButton>
+                    <MatAppBarTitle>L2Reborn Tools</MatAppBarTitle>
+                </MatAppBarSection>
+            </MatAppBarRow>
+        </MatAppBar>
 
-    <div class="main">
-        <div class="content px-4">
-            @Body
-        </div>
-    </div>
+        <MatAppBarContent>
+            <MatDrawerContainer Style="width: 100vw; height: 100vh;">
+                <MatDrawer @bind-Opened="@Opened" Mode="@MatDrawerMode.Modal" @ref="drawer">
+                    <NavMenu />
+                </MatDrawer>
+                <MatDrawerContent>
+                    @Body
+                    
+                </MatDrawerContent>
+            </MatDrawerContainer>
+        </MatAppBarContent>
+    </MatAppBarContainer>
+    <TooltipDisplay></TooltipDisplay>
+    <MatToastContainer></MatToastContainer>
+    <MatPortalHost></MatPortalHost>
+</MatThemeProvider>
+<div class="body-wrapper">
 
 </div>
+
+@code {
+    MatTheme siteTheme = new MatTheme()
+    {
+        Background = MatThemeColors.Brown._500.Value,
+        Primary = MatThemeColors.LightGreen._800.Value,
+        Secondary = MatThemeColors.Yellow._600.Value,
+    };
+
+    private MatDrawer drawer;
+
+    public bool Opened {get;set;} = false;
+
+    protected override void OnInitialized()
+    {
+        navManager.LocationChanged += OnLocationChanged;
+    }
+
+    void ButtonClicked()
+    {
+        Opened = !drawer.Opened;
+    }
+
+    private void OnLocationChanged(object sender, LocationChangedEventArgs args)
+    {
+        Opened = false;
+    }
+}

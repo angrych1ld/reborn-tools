@@ -20,8 +20,8 @@
 @code {
     [Parameter] public bool AllowMove { get; set; } = true;
 
-    private static (int x, int y) topLeftCors = (-132092, -247533);
-    private static (int x, int y) botRightCors = (235064, 264954);
+    private static (int x, int y) topLeftCors = (-130936, -261374);
+    private static (int x, int y) botRightCors = (231836, 262621);
     private static (int x, int y) coordinateSize = (botRightCors.x - topLeftCors.x, botRightCors.y - topLeftCors.y);
     private const int focusSize = 100;
 
@@ -74,6 +74,12 @@
         return base.OnInitializedAsync();
     }
 
+    /// <summary>
+    /// You might need to call this when activating a map, if it's not active when you initially load the page. 
+    /// In other words, if you conditionally enable/disable the map.
+    /// This fixes an issue where the map does not know it's size and is displayed very small.
+    /// </summary>
+    /// <returns></returns>
     public async Task SetUp()
     {
         await UpdateMapSize();
@@ -102,8 +108,6 @@
             ClampContainerPosition();
             StateHasChanged();
         }
-
-        Console.WriteLine(mapSize);
     }
 
     private void Update(float deltaTime)

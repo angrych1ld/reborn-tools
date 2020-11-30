@@ -1,3 +1,7 @@
-﻿a, a:visited, a:hover, a:active {
-    color: inherit;
+﻿td.table-success {
+    background-color: lightgreen;
+}
+
+td.table-danger {
+    background-color: indianred;
 }

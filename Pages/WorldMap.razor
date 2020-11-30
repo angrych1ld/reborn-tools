@@ -13,11 +13,17 @@
 
     protected override Task OnInitializedAsync()
     {
-        App.OnWheel += (delta) => {
+        App.OnWheel += (delta) =>
+        {
             _zoom = Math.Clamp(_zoom - delta * 0.0001f, 0, 1);
             map.SetZoomPercentValue(_zoom);
         };
 
         return base.OnInitializedAsync();
+    }
+
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        return base.OnAfterRenderAsync(firstRender);
     }
 }

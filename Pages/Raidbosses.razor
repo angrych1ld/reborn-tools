@@ -1,66 +1,49 @@
 ﻿@page "/raidbosses"
 
 @inject HttpClient Http
+@inject IMatToaster Toaster
 
-<h1>Raidboss List</h1>
-<h5>For Level 20-40 spawn status is given, may be up to 10 minutes old</h5>
-<button @onclick="Reload" class="btn btn-primary" style="margin-bottom:1rem">Reload</button>
+<MatH3>Raidboss List</MatH3>
+<p>For Level 20-40 spawn status is given, may be up to 10 minutes old</p>
+
+<MatIconButton Icon="refresh" @onclick="Reload" Style="margin-bottom: 0.5rem"></MatIconButton>
 
 @if (rbData == null)
 {
-    @if (loadingError)
+    if (!loadingError)
     {
-        <div class="alert alert-danger" role="alert">
-            Something went wrong.
-        </div>
-    }
-    else
-    {
-        <div class="spinner-border" role="status" style="margin-left: 1rem">
-            <span class="sr-only">Loading...</span>
-        </div>
+        <MatProgressBar Indeterminate="true"></MatProgressBar>
     }
 }
 else
 {
-    <table class="table table-hover">
-        <thead class="thead-dark">
-            <tr>
-                <th>Name</th>
-                <th class="text-center">Level</th>
-                <th class="text-center">Status</th>
-                <th class="text-center">Summary(L2Reborn)</th>
-                <th class="text-center">Location(L2Portal)</th>
-            </tr>
-        </thead>
-        <tbody>
+    <br />
+    <MatTable Items="@rbData" Striped="true" FilterByColumnName="Title" DebounceMilliseconds="150" Class="mat-elevation-z5" 
+              ShowPaging="false" UseSortHeaderRow="true" PageSize="1000">
+        <MatTableHeader>
+            <MatSortHeaderRow SortChanged="@SortDataChanged">
+                <MatSortHeader SortId="name" Style="min-width: 8rem">Name</MatSortHeader>
+                <MatSortHeader SortId="level">Level</MatSortHeader>
+                <MatSortHeader SortId="status">Status</MatSortHeader>
+                <th>Summary(L2Reborn)</th>
+            </MatSortHeaderRow>
+        </MatTableHeader>
+        <MatTableRow>
+            <td><Tooltip TooltipType="TooltipType.Raidboss" Data="@context"><a>@context.Title</a></Tooltip></td>
+            <td class="text-center">@context.Level</td>
+            <td class="@(context.Alive == null ? "table-secondary" : (context.Alive.Value ? "table-success" : "table-danger")) text-center">
+                @(context.Alive == null ? "Unknown" : (context.Alive.Value ? "Alive" : "Dead"))
+            </td>
+            <td>
+                <MatButtonLink Href="@context.RebornSummaryAddress" Target="_blank">
+                    <MatIcon Icon="link"></MatIcon>&nbsp; Summary
+                </MatButtonLink>
+            </td>
+        </MatTableRow>
+    </MatTable>
+    <div class="very-useful-div" style="height: 20rem">
 
-            @foreach (var rb in rbData)
-            {
-                <tr>
-                    <td><Tooltip TooltipType="TooltipType.Raidboss" Data="rb"><a>@rb.Title</a></Tooltip></td>
-                    <td class="text-center">@rb.Level</td>
-                    <td class="@(rb.Alive == null ? "table-secondary" : (rb.Alive.Value ? "table-success" : "table-danger")) text-center">
-                        @(rb.Alive == null ? "Unknown" : (rb.Alive.Value ? "Alive" : "Dead"))
-                    </td>
-                    <td class="text-center">
-                        <a href="@rb.RebornSummaryAddress" target="_blank">
-                            <Tooltip TooltipType="TooltipType.Text" Data="@("l2reborn.com")">
-                                <span class="oi oi-external-link" aria-hidden="true"></span>&nbsp; Summary
-                            </Tooltip>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="@(@"http://gracia.l2portal.com/Map.aspx?NpcID=" + rb.ID)" target="_blank">
-                            <Tooltip TooltipType="TooltipType.Text" Data="@("gracia.l2portal.com")">
-                                <span class="oi oi-external-link" aria-hidden="true"></span>&nbsp; Location
-                            </Tooltip>
-                        </a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    </div>
 }
 
 @code {
@@ -68,10 +51,14 @@ else
         private List<RaidBoss> rbData;
         private bool loadingError;
 
+        string sortId;
+        MatSortDirection sortDirection;
+
 
         protected override async Task OnInitializedAsync()
         {
             await Reload();
+            SortDataChanged(null);
         }
 
         private async Task Reload()
@@ -105,7 +92,60 @@ else
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
+                Toaster.Add("Something went wrong", MatToastType.Danger);
                 loadingError = true;
+            }
+
+            SortData();
+        }
+
+        void SortDataChanged(MatSortChangedEvent sort)
+        {
+            sortId = sort?.SortId ?? "level";
+            sortDirection = (sort == null ? MatSortDirection.Asc : sort.Direction);
+
+            if (sortDirection == MatSortDirection.None)
+            {
+                sortId = "level";
+                sortDirection = MatSortDirection.Asc;
+            }
+
+            SortData();
+        }
+
+        private void SortData()
+        {
+            if (rbData == null) return;
+
+            if (sortDirection == MatSortDirection.Asc)
+            {
+                switch (sortId)
+                {
+                    case "name":
+                        rbData.Sort((r1, r2) => string.Compare(r1.Title, r2.Title));
+                        break;
+                    case "level":
+                        rbData.Sort((r1, r2) => r1.Level.CompareTo(r2.Level));
+                        break;
+                    case "status":
+                        rbData.Sort((r1, r2) => r1.AliveInt.CompareTo(r2.AliveInt));
+                        break;
+                }
+            }
+            else
+            {
+                switch (sortId)
+                {
+                    case "name":
+                        rbData.Sort((r1, r2) => string.Compare(r2.Title, r1.Title));
+                        break;
+                    case "level":
+                        rbData.Sort((r1, r2) => r2.Level.CompareTo(r1.Level));
+                        break;
+                    case "status":
+                        rbData.Sort((r1, r2) => r2.AliveInt.CompareTo(r1.AliveInt));
+                        break;
+                }
             }
         }
     }

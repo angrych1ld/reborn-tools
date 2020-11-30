@@ -11,9 +11,6 @@
     </NotFound>
 </Router>
 
-<MatPortalHost></MatPortalHost>
-<TooltipDisplay></TooltipDisplay>
-
 @code{
     @code {
         public static App Instance { get; private set; }
@@ -26,6 +23,7 @@
         public static bool IsKeyHeld(string key) => heldKeys.Contains(key);
         public static event Action<float> AnimationUpdate;
         public static event Action<double> OnWheel;
+        public static event Action OnViewportChange;
 
         private static HashSet<string> heldKeys = new HashSet<string>();
         private (double x, double y) lastPosition;
@@ -60,9 +58,17 @@
         }
 
         [JSInvokable]
+        public async Task PageScroll()
+        {
+            OnViewportChange?.Invoke();
+            await Task.CompletedTask;
+        }
+
+        [JSInvokable]
         public async Task WindowSizeChanged()
         {
             OnWindowSizeChange?.Invoke();
+            OnViewportChange?.Invoke();
             await Task.CompletedTask;
         }
 

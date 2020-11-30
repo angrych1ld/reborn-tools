@@ -17,5 +17,7 @@ namespace RebornTools
 
         public string RebornSummaryAddress { get; set; }
         public string L2PortalLocationAddress { get; set; }
+
+        public int AliveInt => Alive == null ? 2 : (Alive.Value ? 0 : 1);
     }
 }

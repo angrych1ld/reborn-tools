@@ -1,6 +1,7 @@
-﻿@inject TooltipService service
+﻿@using System.Globalization;
+@inject TooltipService service
 
-<div class="tooltip-display-wrapper" hidden="@isHidden" style="@("top: " + position.y + "px; left: " + position.x + "px;")">
+<div class="tooltip-display-wrapper" hidden="@isHidden" style="@DisplayWrapperStyle" @ref="wrapperRef">
     <div id="tooltip-display-text" hidden="@(currentType != TooltipType.Text)">
         <span>@textData</span>
     </div>
@@ -15,22 +16,42 @@
 </div>
 
 @code {
+    ElementReference wrapperRef;
+
     private bool isHidden = true;
     private TooltipType currentType = TooltipType.None;
     private Map map;
 
     private (int x, int y) position;
+    private bool isLeft = true;
+    private bool isTop = true;
+
 
     // Datas
     private RaidBoss raidbossData = new RaidBoss();
     private string textData;
     private bool waitingForRenderRaidboss = false;
 
-
+    private string DisplayWrapperStyle
+    {
+        get
+        {
+            CultureInfo usCulture = CultureInfo.GetCultureInfo("en-us");
+            return
+                (isLeft ? "left: " : "right: ") + position.x.ToString(usCulture) + "px; " +
+                (isTop ? "top: " : "bottom: ") + (position.y).ToString(usCulture) + "px; ";
+        }
+    }
 
     protected override void OnInitialized()
     {
         service.TooltipChanged += (t) => TooltipChanged(t).ConfigureAwait(false);
+        App.OnViewportChange += () => DetermineAnchor().ConfigureAwait(false);
+    }
+
+    private async Task DetermineAnchor()
+    {
+        BoundingClientRect boundingClientRect = await App.Instance.GetBoundingRect(wrapperRef);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -56,7 +77,7 @@
             currentType = tooltip.TooltipType;
             BoundingClientRect tooltipableRect = await App.Instance.GetBoundingRect(tooltip.wrapperRef);
 
-            position = ((int)tooltipableRect.X, (int)tooltipableRect.Y + (int)tooltipableRect.Height + 2);
+            position = ((int)tooltipableRect.X, (int)tooltipableRect.Y);
 
             if (tooltip.TooltipType == TooltipType.Text)
             {
