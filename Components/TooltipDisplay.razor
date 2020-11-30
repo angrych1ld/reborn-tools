@@ -77,7 +77,7 @@
             currentType = tooltip.TooltipType;
             BoundingClientRect tooltipableRect = await App.Instance.GetBoundingRect(tooltip.wrapperRef);
 
-            position = ((int)tooltipableRect.X, (int)tooltipableRect.Y);
+            position = ((int)tooltipableRect.X, (int)tooltipableRect.Y + (int)tooltipableRect.Height);
 
             if (tooltip.TooltipType == TooltipType.Text)
             {
