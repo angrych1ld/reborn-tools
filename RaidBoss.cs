@@ -10,7 +10,7 @@ namespace RebornTools
     {
         public enum LocationSourceType { Unknown = 0, GraciaPortal = 1, L2RebornManual = 2}
 
-        public uint ID { get; set; }
+        public uint ID { get; set; } 
         public string Title { get; set; }
         public int Level { get; set; }
         public int CoordinateX { get; set; }
