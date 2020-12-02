@@ -9,10 +9,14 @@
                     <img src="Map Gui/target-icon.png" class="map-trinket-content-center" />
                 </div>
             </div>
+            <div style="position:fixed; color: white; right: 0; bottom:0" hidden="@(!ShowPointerLocation)">
+                <span style="margin: 0.25rem">@(pointerLocation.x + " : " + pointerLocation.y)</span>
+            </div>
         </div>
         <div class="interaction-region"
              @ontouchstart="TouchDown"
-             @onpointerdown="MouseDown">
+             @onpointerdown="MouseDown"
+             @onpointermove="OnPointerHover">
         </div>
     </div>
 </div>
@@ -22,6 +26,7 @@
     public const string CT2_RELIEF_MAP_TYPE = "ct2-relief";
 
     [Parameter] public bool AllowMove { get; set; } = true;
+    [Parameter] public bool ShowPointerLocation { get; set; } = false;
 
     private static (int x, int y) topLeftCors = (-130936, -261374);
     private static (int x, int y) botRightCors = (231836, 262621);
@@ -36,6 +41,7 @@
 
     private (double x, double y) mapContainerSize = (1812, 2620);
     private (double x, double y) mapContainerPosition = (0, 0);
+    private (int x, int y) pointerLocation = (0, 0);
 
     private (double x, double y) targetPosition = (0, 0);
     private bool targetPlaced = false;
@@ -148,6 +154,20 @@
     private void TouchDown(TouchEventArgs args)
     {
         isDragging = true;
+    }
+
+    private void OnPointerHover(MouseEventArgs args)
+    {
+        pointerLocation = WrapperToCoordinateLocation((args.OffsetX, args.OffsetY));
+
+        StateHasChanged();
+    }
+
+    private (int x, int y) WrapperToCoordinateLocation((double x, double y) wrapperLocation)
+    {
+        (double x, double y) containerLocation = (wrapperLocation.x - mapContainerPosition.x, wrapperLocation.y - mapContainerPosition.y);
+        return ((int)(topLeftCors.x + coordinateSize.x * (containerLocation.x / mapContainerSize.x)),
+            (int)(topLeftCors.y + coordinateSize.y * (containerLocation.y / mapContainerSize.y)));
     }
 
     private void PointerMove((double x, double y) delta)
