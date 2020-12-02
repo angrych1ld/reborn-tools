@@ -13,6 +13,9 @@
         <span style="text-align:left; @(raidbossData.LocationSource == RaidBoss.LocationSourceType.L2RebornManual ? "color: lightgreen;" : "")">
             @("Loc source: " + raidbossData.LocationSource.ToString())
         </span>
+        <span style="text-align:left;">
+            @("Within: " + raidbossData.EnvironmentTypeTitle)
+        </span>
         <div id="tooltip-raidboss-map" style="width: 16rem; height: 16rem;">
             <Map AllowMove="false" @ref="map"></Map>
         </div>
