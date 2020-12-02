@@ -19,7 +19,8 @@ namespace RebornTools
             InsideNecropolis = 5,
             InsideFortress = 6,
             InsideTemple = 7,
-            SchoolOfDarkArts = 8
+            SchoolOfDarkArts = 8,
+            TopOfMountain = 9
         }
 
         public uint ID { get; set; }
@@ -60,6 +61,8 @@ namespace RebornTools
                         return "Temple";
                     case LocationEnvironmentType.SchoolOfDarkArts:
                         return "School of DA";
+                    case LocationEnvironmentType.TopOfMountain:
+                        return "Top of Mountain";
                     default:
                         return "Unknown";
                 }
