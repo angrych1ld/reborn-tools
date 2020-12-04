@@ -91,6 +91,17 @@
                 dotNetObject.invokeMethod('PageScroll');
             }
 
+            window.clipboardCopy = {
+                copyText: function (text) {
+                    navigator.clipboard.writeText(text).then(function () {
+                        alert("Copied to clipboard!");
+                    })
+                        .catch(function (error) {
+                            alert(error);
+                        });
+                }
+            };
+
             MyDOMGetBoundingClientRect = (element, parm) => { return element.getBoundingClientRect(); };
         };
     </script>

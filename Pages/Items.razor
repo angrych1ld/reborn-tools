@@ -1,0 +1,134 @@
+﻿@page "/items"
+
+@inject HttpClient Http
+@inject IMatToaster Toaster
+@inject L2ItemService itemService
+@inject IJSRuntime JsRuntime
+
+<MatH3>Item List</MatH3>
+<MatButton OnClick="CopyTextToClipboard">Copy Serialized Data</MatButton>
+<MatButtonLink Href="items/create">Create</MatButtonLink>
+
+@if (items == null)
+{
+    if (!loadingError)
+    {
+        <MatProgressBar Indeterminate="true"></MatProgressBar>
+    }
+}
+else
+{
+    <br />
+    <MatTable Items="@items" Striped="true" FilterByColumnName="Title" DebounceMilliseconds="150" Class="mat-elevation-z5" PageSize="100">
+        <MatTableHeader>
+            <th></th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Actions</th>
+            <th>Buy Price</th>
+            <th>Craft Price</th>
+            <th>Crystal Price</th>
+            <th>Craft-Sell Profit</th>
+        </MatTableHeader>
+        <MatTableRow>
+            <td><img src="@("l2-icons/" + context.Icon)" /></td>
+            <td>@context.ID</td>
+            <td>@context.Title</td>
+            <td>
+                <MatButtonLink Href="@("/items/edit/" + context.ID)">Edit</MatButtonLink>
+                <MatButtonLink Href="@("/items/description/" + context.ID)">Description</MatButtonLink>
+            </td>
+            <td>
+                @if (context.BuyPriceMin != 0 || context.BuyPriceMax != 0)
+                    {
+                    <span class="@MoneyTextClass(context.BuyPriceMin)">@Money5(context.BuyPriceMin)</span> <br />
+                    <span class="@MoneyTextClass(context.BuyPriceMax)">@Money5(context.BuyPriceMax)</span>
+                    }
+            </td>
+            <td>
+                @if (!context.CraftPrice.IsZero)
+                    {
+                    <span class="@MoneyTextClass(context.CraftPrice.Min)">@Money5(context.CraftPrice.Min)</span> <br />
+                    <span class="@MoneyTextClass(context.CraftPrice.Max)">@Money5(context.CraftPrice.Max)</span>
+                    }
+            </td>
+            <td>
+                @if (!context.CrystalPrice.IsZero)
+                    {
+                    <span class="@MoneyTextClass(context.CrystalPrice.Min)">@Money5(context.CrystalPrice.Min)</span> <br />
+                    <span class="@MoneyTextClass(context.CrystalPrice.Max)">@Money5(context.CrystalPrice.Max)</span>
+                    }
+            </td>
+            <td>
+                @if (!context.CraftBuyProfit.IsZero)
+                    {
+                    <span class="@MoneyTextClass(context.CraftBuyProfit.Min)">@Money5(context.CraftBuyProfit.Min)</span> <br />
+                    <span class="@MoneyTextClass(context.CraftBuyProfit.Max)">@Money5(context.CraftBuyProfit.Max)</span>
+                    }
+            </td>
+        </MatTableRow>
+    </MatTable>
+}
+
+@code {
+    @code {
+        private List<L2Item> items;
+        private bool loadingError;
+
+        protected override async Task OnInitializedAsync()
+        {
+            Reload();
+        }
+
+        private void Reload()
+        {
+            items = null;
+            loadingError = false;
+
+            try
+            {
+                items = itemService.GetItems();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                Toaster.Add("Something went wrong", MatToastType.Danger);
+                loadingError = true;
+            }
+        }
+
+        private async Task CopyTextToClipboard()
+        {
+            await JsRuntime.InvokeVoidAsync("clipboardCopy.copyText", itemService.GetItemsSerialized());
+        }
+
+        private string Money5(int money)
+        {
+            bool neg = money < 0;
+            money = Math.Abs(money);
+
+            string moneyString = money.ToString();
+            if (moneyString.Length < 4) return (neg ? "-" : "") + moneyString;
+            int ks = (moneyString.Length - 1) / 3;
+
+            decimal moneyDek = (decimal)money / ((int)Math.Pow(1000, ks));
+
+            string moneyDekString = moneyDek.ToString();
+            if (moneyDekString.Length > 4) moneyDekString = moneyDekString.Substring(0, 5);
+
+            return (neg ? "-" : "") + moneyDekString + new string('k', ks);
+        }
+
+        private string MoneyTextClass(int money)
+        {
+            if (money < 0) return "money-text money-text-neg";
+            if (money >= 1000000000) return "money-text money-text-kkk1";
+            if (money >= 100000000) return "money-text money-text-kk100";
+            if (money >= 10000000) return "money-text money-text-kk10";
+            if (money >= 1000000) return "money-text money-text-kk1";
+            if (money >= 100000) return "money-text money-text-k100";
+            if (money >= 10000) return "money-text money-text-k10";
+            return "money-text";
+        }
+    }
+}

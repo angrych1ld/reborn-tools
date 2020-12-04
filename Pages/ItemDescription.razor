@@ -1,0 +1,161 @@
+﻿@page "/items/description/{TargetIDString}"
+
+@inject L2ItemService itemService
+@inject IMatToaster Toaster
+
+<MatButtonLink Href="/items">Back</MatButtonLink>
+<MatH3>Item Description - <img src="@targetItem.IconPath" /> @(targetItem?.Title ?? "not-found")</MatH3>
+
+
+@if (targetItem != null)
+{
+    <div class=bubble-row>
+        <span>Buy Price:</span>
+        <span style="margin-left: 1rem;" class="@MoneyTextClass(targetItem.BuyPriceMin)">@Money5(targetItem.BuyPriceMin)</span> &nbsp;-&nbsp;
+        <span class="@MoneyTextClass(targetItem.BuyPriceMax)">@Money5(targetItem.BuyPriceMax)</span>
+    </div>
+
+    <div class=bubble-row>
+        <span>Crystal Price(@(targetItem.CrystalCount)):</span>
+        <span style="margin-left: 1rem;" class="@MoneyTextClass(targetItem.CrystalPrice.Min)">@Money5(targetItem.CrystalPrice.Min)</span> &nbsp;-&nbsp;
+        <span class="@MoneyTextClass(targetItem.CrystalPrice.Max)">@Money5(targetItem.CrystalPrice.Max)</span>
+    </div>
+
+    <div class=bubble-row>
+        <span>Craft->Sell Profit:</span>
+        <span style="margin-left: 1rem;" class="@MoneyTextClass(targetItem.CraftBuyProfit.Min)">@Money5(targetItem.CraftBuyProfit.Min)</span> &nbsp;-&nbsp;
+        <span class="@MoneyTextClass(targetItem.CraftBuyProfit.Max)">@Money5(targetItem.CraftBuyProfit.Max)</span>
+    </div>
+
+    <div class="bubble-col">
+        <MatH5>Craft</MatH5>
+        <div class=bubble-row>
+            <span>Chance: @targetItem.Recipe.SuccessRate%, Yields: @targetItem.Recipe.Yields</span>
+        </div>
+        <div class=bubble-row>
+            <span>Craft Service Price:</span>
+            <span style="margin-left: 1rem;" class="@MoneyTextClass(targetItem.Recipe.CraftPriceMin)">@Money5(targetItem.Recipe.CraftPriceMin)</span> &nbsp;-&nbsp;
+            <span class="@MoneyTextClass(targetItem.Recipe.CraftPriceMax)">@Money5(targetItem.Recipe.CraftPriceMax)</span>
+        </div>
+        <div class=bubble-row>
+            <span>Craft Price Total:</span>
+            <span style="margin-left: 1rem;" class="@MoneyTextClass(targetItem.CraftPrice.Min)">@Money5(targetItem.CraftPrice.Min)</span> &nbsp;-&nbsp;
+            <span class="@MoneyTextClass(targetItem.CraftPrice.Max)">@Money5(targetItem.CraftPrice.Max)</span>
+        </div>
+        <span style="margin-top: 1rem">Ingredient Price Totals:</span>
+        @foreach (RecipeIngredient ing in targetItem.Recipe.Ingredients)
+        {
+            <div class="bubble-row">
+                <img src="@itemService.GetItem(ing.ItemID, false)?.IconPath" />
+                <span style="margin-left: 1rem; margin-right: 1rem">@ing.Amount</span>
+                <p>@(itemService.GetItem(ing.ItemID, false)?.Title ?? "null")</p>
+
+                <span style="margin-left: 1rem;" class="@MoneyTextClass(itemService.GetItem(ing.ItemID, false).LowerPrice.Min * ing.Amount)">@Money5(itemService.GetItem(ing.ItemID, false).LowerPrice.Min * ing.Amount)</span> &nbsp;-&nbsp;
+                <span class="@MoneyTextClass(itemService.GetItem(ing.ItemID, false).LowerPrice.Max * ing.Amount)">@Money5(itemService.GetItem(ing.ItemID, false).LowerPrice.Max * ing.Amount)</span>
+                &nbsp;&nbsp;&nbsp;
+                <span>@((itemService.GetItem(ing.ItemID, false)?.CraftCheaper ?? false) ? "( Craft )" : "  ( Buy )")</span>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public string TargetIDString { get; set; }
+
+    public uint TargetID { get; set; }
+
+    L2Item targetItem;
+
+    private string parseFieldValue;
+
+    protected override void OnInitialized()
+    {
+        if (uint.TryParse(TargetIDString, out uint id))
+        {
+            TargetID = id;
+            targetItem = itemService.GetItem(TargetID, false);
+        }
+    }
+
+    private void OnDeleteClick(RecipeIngredient item)
+    {
+        int index = targetItem.Recipe.Ingredients.IndexOf(item);
+        if (index >= 0)
+        {
+            targetItem.Recipe.Ingredients.RemoveAt(index);
+        }
+        StateHasChanged();
+    }
+
+    private void OnAddClick()
+    {
+        targetItem.Recipe.Ingredients.Add(new RecipeIngredient());
+        StateHasChanged();
+    }
+
+    private void IconKeyPress()
+    {
+        StateHasChanged();
+    }
+
+    private void ParseDataClick()
+    {
+        if (parseFieldValue != null)
+        {
+            try
+            {
+                Recipe rec = DataParser.ParseRecipe(parseFieldValue);
+                int removed = rec.Ingredients.RemoveAll(i => !itemService.GetItems().Any(ii => ii.ID == i.ItemID));
+                if (removed > 0)
+                {
+                    Toaster.Add("Some ingredients were skipped, because the associated item does not exist", MatToastType.Danger);
+                }
+
+                targetItem.Recipe = rec;
+                StateHasChanged();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                Toaster.Add("Unable to parse recipe", MatToastType.Danger);
+            }
+        }
+
+        parseFieldValue = null;
+    }
+
+    private void OnSubmitClick()
+    {
+        itemService.UpdateItem(TargetID, targetItem);
+        Toaster.Add("Done", MatToastType.Success);
+    }
+
+    private string Money5(int money)
+    {
+        bool neg = money < 0;
+        money = Math.Abs(money);
+
+        string moneyString = money.ToString();
+        if (moneyString.Length < 4) return (neg ? "-" : "") + moneyString;
+        int ks = (moneyString.Length - 1) / 3;
+
+        decimal moneyDek = (decimal)money / ((int)Math.Pow(1000, ks));
+
+        string moneyDekString = moneyDek.ToString();
+        if (moneyDekString.Length > 4) moneyDekString = moneyDekString.Substring(0, 5);
+
+        return (neg ? "-" : "") + moneyDekString + new string('k', ks);
+    }
+
+    private string MoneyTextClass(int money)
+    {
+        if (money < 0) return "money-text money-text-neg";
+        if (money >= 1000000000) return "money-text money-text-kkk1";
+        if (money >= 100000000) return "money-text money-text-kk100";
+        if (money >= 10000000) return "money-text money-text-kk10";
+        if (money >= 1000000) return "money-text money-text-kk1";
+        if (money >= 100000) return "money-text money-text-k100";
+        if (money >= 10000) return "money-text money-text-k10";
+        return "money-text";
+    }
+}

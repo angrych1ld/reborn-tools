@@ -11,6 +11,24 @@ html, body {
     font-family: var(--mdc-typography-subtitle1-font-family, var(--mdc-typography-font-family, Roboto, sans-serif));
 }
 
+.bubble-row {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    align-items: center;
+    padding: 0.25rem;
+    margin: 0.25rem;
+}
+.bubble-col {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    align-items: flex-start;
+}
+
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
@@ -23,9 +41,44 @@ html, body {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+.money-text {
+    background-color: black;
+    color: white;
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+}
+
+.money-text-k10 {
+    color: rgb(0, 241, 231);
+}
+
+.money-text-k100 {
+    color: rgb(255, 115, 246);
+}
+
+.money-text-kk1 {
+    color: rgb(251, 252, 0);
+}
+
+.money-text-kk10 {
+    color: rgb(0, 254, 0);
+}
+
+
+.money-text-kk100 {
+    color: rgb(10, 255, 255);
+}
+
+.money-text-kkk1 {
+    color: rgb(251, 128, 234);
+}
+
+.money-text-neg {
+    color: rgb(255, 0, 0);
+}

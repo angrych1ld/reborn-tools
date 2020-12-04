@@ -1,5 +1,7 @@
 @inject IJSRuntime JsRuntime
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject L2ItemService itemService
+@inject HttpClient http
 
 <Router AppAssembly="@typeof(Program).Assembly">
     <Found Context="routeData">
@@ -31,10 +33,10 @@
         private (double x, double y) lastPosition;
         private float lastAnimationTimestamp;
 
-        protected override Task OnInitializedAsync()
+        protected override async Task OnInitializedAsync()
         {
             Instance = this;
-            return base.OnInitializedAsync();
+            //await itemService.Load(http);
         }
 
         protected override async Task OnAfterRenderAsync(bool firstRender)

@@ -20,9 +20,15 @@ namespace RebornTools
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
 
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            HttpClient httpClient = new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) };
+
+            builder.Services.AddScoped(sp => httpClient);
             builder.Services.AddMatBlazor();
             builder.Services.AddSingleton<TooltipService>();
+
+            L2ItemService itemService = new L2ItemService();
+            await itemService.Load(httpClient);
+            builder.Services.AddSingleton<L2ItemService>(itemService);
 
             builder.Services.AddMatToaster(config =>
             {

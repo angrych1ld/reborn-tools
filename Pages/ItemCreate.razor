@@ -1,0 +1,99 @@
+﻿@page "/items/create"
+
+@inject L2ItemService itemService
+@inject IMatToaster Toaster
+
+<MatButtonLink Href="/items">Back</MatButtonLink>
+
+<MatH3>Create Item</MatH3>
+
+<MatButton OnClick="OnSubmitClick">CONFIRM EDIT CHANGES</MatButton>
+<br />
+
+<div class="bubble-row">
+    <p>Parse data</p>
+    <MatTextField @bind-Value="@parseFieldValue" Label="Data" Style="margin-left: 1rem; margin-right: 1rem"></MatTextField>
+    <MatButton Type="button" OnClick="ParseDataClick">Parse</MatButton>
+</div>
+<br />
+<br />
+
+<form>
+    <MatTable Items="@items" class="mat-elevation-z5" PageSize="100">
+        <MatTableHeader>
+            <th>Icon Preview</th>
+            <th>ID</th>
+            <th>Icon</th>
+            <th>Title</th>
+            <th></th>
+        </MatTableHeader>
+        <MatTableRow>
+            <td><img src="@context.IconPath" /></td>
+            <td style="min-width: 8rem"><MatTextField @bind-Value="@context.ID" Label="ID"></MatTextField></td>
+            <td style="min-width: 20rem"><MatTextField @bind-Value="@context.Icon" Label="Icon"></MatTextField></td>
+            <td style="min-width: 20rem"><MatTextField @bind-Value="@context.Title" Label="Title"></MatTextField></td>
+            <td><MatButton OnClick="@(() => OnDeleteClick(@context))" Type="danger">X</MatButton></td>
+        </MatTableRow>
+    </MatTable>
+    <MatButton Type="button" OnClick="OnAddClick">Add</MatButton>
+</form>
+
+@foreach (string er in errors)
+{
+    <p>@er</p>
+}
+
+@code {
+    List<L2Item> items = new List<L2Item>();
+
+    private string parseFieldValue;
+    private string[] errors = new string[0];
+
+    protected override void OnInitialized()
+    {
+        items = new List<L2Item> { };
+    }
+
+    private void OnDeleteClick(L2Item item)
+    {
+        int index = items.IndexOf(item);
+        if (index >= 0)
+        {
+            items.RemoveAt(index);
+        }
+        StateHasChanged();
+    }
+
+    private void OnAddClick()
+    {
+        items.Add(new L2Item());
+        StateHasChanged();
+    }
+
+    private void IconKeyPress()
+    {
+        StateHasChanged();
+    }
+
+    private void ParseDataClick()
+    {
+        if (parseFieldValue != null)
+        {
+            items.AddRange(DataParser.ParseItems(parseFieldValue));
+            StateHasChanged();
+        }
+
+        parseFieldValue = null;
+    }
+
+    private void OnSubmitClick()
+    {
+        List<(uint id, string error)> errorList = itemService.AddItems(items);
+        items.RemoveAll(i => !errorList.Any(e => e.id == i.ID));
+
+        if (errorList.Count > 0)
+        {
+            Toaster.Add("Some items were not applied, because already exist", MatToastType.Danger);
+        }
+    }
+}

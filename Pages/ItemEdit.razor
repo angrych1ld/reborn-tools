@@ -1,0 +1,143 @@
+﻿@page "/items/edit/{TargetIDString}"
+
+@inject L2ItemService itemService
+@inject IMatToaster Toaster
+
+<MatButtonLink Href="/items">Back</MatButtonLink>
+<MatH3>Edit Item</MatH3>
+
+<MatButton OnClick="OnSubmitClick">CONFIRM EDIT CHANGES</MatButton>
+<br />
+<br />
+<br />
+
+
+@if (targetItem != null)
+{
+    <div class=bubble-row>
+        <img src="@targetItem.IconPath" />
+        <MatTextField @bind-Value="@targetItem.Icon" Label="Icon" Style="margin-left: 1rem; margin-right: 1rem"></MatTextField>
+        <MatTextField @bind-Value="@targetItem.Title" Label="Title"></MatTextField>
+    </div>
+
+    <div class="bubble-row">
+        <p>Crystals:</p>
+        <MatSelect Label="Crystal Type" @bind-Value="@targetItem.CrystalType" Style="margin-left: 1rem; margin-right: 1rem">
+            <MatOption TValue="uint" Value="0">None</MatOption>
+            <MatOption TValue="uint" Value="1458">D</MatOption>
+            <MatOption TValue="uint" Value="1459">C</MatOption>
+            <MatOption TValue="uint" Value="1460">B</MatOption>
+            <MatOption TValue="uint" Value="1461">A</MatOption>
+            <MatOption TValue="uint" Value="1462">S</MatOption>
+        </MatSelect>
+        <MatTextField @bind-Value="@targetItem.CrystalCount" Label="Amount"></MatTextField>
+    </div>
+
+    <div class="bubble-row">
+        <p>Buy price:</p>
+        <MatTextField @bind-Value="@targetItem.BuyPriceMin" Label="Min"></MatTextField>
+        <MatTextField @bind-Value="@targetItem.BuyPriceMax" Label="Max"></MatTextField>
+    </div>
+
+    <div class="bubble-col">
+        <MatH5>Recipe</MatH5>
+        <div class="bubble-row">
+            <p>Craft price:</p>
+            <MatTextField @bind-Value="@targetItem.Recipe.CraftPriceMin" Label="Min"></MatTextField>
+            <MatTextField @bind-Value="@targetItem.Recipe.CraftPriceMax" Label="Max"></MatTextField>
+        </div>
+        <div class="bubble-row">
+            <p>Parse data</p>
+            <MatTextField @bind-Value="@parseFieldValue" Label="Data" Style="margin-left: 1rem; margin-right: 1rem"></MatTextField>
+            <MatButton Type="button" OnClick="ParseDataClick">Parse</MatButton>
+        </div> <br /> <br />
+        <div class="bubble-col">
+            <div class="bubble-row">
+                <p>Details</p>
+                <MatTextField @bind-Value="@targetItem.Recipe.Yields" Style="margin-left: 1rem; margin-right: 1rem" Label="Yields"></MatTextField>
+                <MatTextField @bind-Value="@targetItem.Recipe.SuccessRate" Label="Success Rate"></MatTextField>
+            </div>
+            @foreach (RecipeIngredient ing in targetItem.Recipe.Ingredients)
+            {
+                <div class="bubble-row">
+                    <MatIconButton Icon="delete" OnClick="@(() => OnDeleteClick(ing))" Type="danger"></MatIconButton>
+                    <img src="@itemService.GetItem(ing.ItemID, false)?.IconPath" />
+                    <MatTextField @bind-Value="@ing.Amount" Label="Amount" Style="margin-left: 1rem; margin-right: 1rem"></MatTextField>
+                    <p>@(itemService.GetItem(ing.ItemID, false)?.Title ?? "null")</p>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public string TargetIDString { get; set; }
+
+    public uint TargetID { get; set; }
+
+    L2Item targetItem;
+
+    private string parseFieldValue;
+
+    protected override void OnInitialized()
+    {
+        if (uint.TryParse(TargetIDString, out uint id))
+        {
+            TargetID = id;
+            targetItem = itemService.GetItem(TargetID, true);
+        }
+    }
+
+    private void OnDeleteClick(RecipeIngredient item)
+    {
+        int index = targetItem.Recipe.Ingredients.IndexOf(item);
+        if (index >= 0)
+        {
+            targetItem.Recipe.Ingredients.RemoveAt(index);
+        }
+        StateHasChanged();
+    }
+
+    private void OnAddClick()
+    {
+        targetItem.Recipe.Ingredients.Add(new RecipeIngredient());
+        StateHasChanged();
+    }
+
+    private void IconKeyPress()
+    {
+        StateHasChanged();
+    }
+
+    private void ParseDataClick()
+    {
+        if (parseFieldValue != null)
+        {
+            try
+            {
+                Recipe rec = DataParser.ParseRecipe(parseFieldValue);
+                int removed = rec.Ingredients.RemoveAll(i => !itemService.GetItems().Any(ii => ii.ID == i.ItemID));
+                if (removed > 0)
+                {
+                    Toaster.Add("Some ingredients were skipped, because the associated item does not exist", MatToastType.Danger);
+                }
+
+                targetItem.Recipe = rec;
+                StateHasChanged();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                Toaster.Add("Unable to parse recipe", MatToastType.Danger);
+            }
+        }
+
+        parseFieldValue = null;
+    }
+
+    private void OnSubmitClick()
+    {
+        itemService.UpdateItem(TargetID, targetItem);
+        Toaster.Add("Done", MatToastType.Success);
+    }
+}

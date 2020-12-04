@@ -41,6 +41,12 @@ namespace RebornTools
             return result;
         }
 
+        public static async Task<List<L2Item>> GetItems(HttpClient http)
+        {
+            Stream dataStream = await http.GetStreamAsync("data/items.json");
+            return await JsonSerializer.DeserializeAsync<List<L2Item>>(dataStream);
+        }
+
         public static async Task<List<RaidBoss>> FetchRaidbosses(HttpClient http)
         {
             Stream dataStream = await http.GetStreamAsync("data/raidbosses.json");
