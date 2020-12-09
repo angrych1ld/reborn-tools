@@ -137,8 +137,8 @@ namespace RebornTools
                     // Adjust for recipe quantity and success rate
                     item.CraftPrice = new IntRange
                     {
-                        Min = (int)(item.CraftPrice.Min * ((double)item.Recipe.SuccessRate / 100) / item.Recipe.Yields),
-                        Max = (int)(item.CraftPrice.Max * ((double)item.Recipe.SuccessRate / 100) / item.Recipe.Yields)
+                        Min = (int)(item.CraftPrice.Min * (2d - item.Recipe.SuccessRate / 100d) / item.Recipe.Yields),
+                        Max = (int)(item.CraftPrice.Max * (2d - item.Recipe.SuccessRate / 100d) / item.Recipe.Yields)
                     };
 
                     item.CraftCheaper = item.CraftPriceMean < item.BuyPriceMean || (item.BuyPriceMin == 0 && item.BuyPriceMax == 0);
