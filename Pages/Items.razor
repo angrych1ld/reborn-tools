@@ -35,8 +35,8 @@ else
             <td>@context.ID</td>
             <td>@context.Title</td>
             <td>
-                <MatButtonLink Href="@("/items/edit/" + context.ID)">Edit</MatButtonLink>
-                <MatButtonLink Href="@("/items/description/" + context.ID)">Description</MatButtonLink>
+                <MatButtonLink Href="@("items/edit/" + context.ID)">Edit</MatButtonLink>
+                <MatButtonLink Href="@("items/description/" + context.ID)">Description</MatButtonLink>
             </td>
             <td>
                 @if (context.BuyPriceMin != 0 || context.BuyPriceMax != 0)
